@@ -44,7 +44,7 @@ const Layout = ReactElement(props => {
           href: '/',
         }, [
           Img({
-            src: '/assets/ArcheLogo.jpg',
+            src: '/assets/ArcheLogo.svg',
             alt: '',
           }),
           Span({ class: 'text1' }, 'Arche'),
@@ -56,11 +56,11 @@ const Layout = ReactElement(props => {
             setArcheVersion(event.target.value)
           },
         }, [
-          Option({ value: 'V1', selected: ArcheVersion == 'V1' }, 'V1'),
+          Option({ value: 'v1', selected: ArcheVersion == 'v1' }, 'v1'),
         ]),
 
         Div({ class: 'links' }, [
-          NavLink({ href: '/docs' }, 'Docs'),
+          // NavLink({ href: '/docs' }, 'Docs'),
           // A({ href: '/blog' }, 'Blog'),
         ]),
       ]),
@@ -68,6 +68,7 @@ const Layout = ReactElement(props => {
       // Span({ class: 'nav-spacer' }),
 
 
+      /*
       Div({ class: 'right-links' }, [
         mediaQuery.matches ? [
           Button({
@@ -76,22 +77,17 @@ const Layout = ReactElement(props => {
             onClick() {
               setIsHamburgerMenuActive(!isHamburgerMenuActive)
               window.scrollTo(0, 0)
-
-              /*
-              if (isHamburgerMenuActive) {
-                window.scrollTo(0, lastScrollY)
-              } else {
-                lastScrollY = window.scrollY
-                window.scrollTo(0, 0)
-              }
-              */
-
             },
           }, [
             HamburgerMenuIcon(),
           ]),
         ] : []
       ]),
+    */
+    ]),
+
+    Div({ class: 'nav-text' }, [
+      P('Arche (/ˈɑːrki/; Ancient Greek: ἀρχή) is a Greek word with primary senses "beginning", "origin" or "source of action" (ἐξ\' ἀρχῆς: from the beginning, οr ἐξ\' ἀρχῆς λόγος: the original argument), and later "first principle" or "element".'),
     ]),
 
     Slider({
@@ -104,7 +100,7 @@ const Layout = ReactElement(props => {
 
     Footer([
       P({
-        style: { fontSize: '12px', color: 'grey' },
+        style: { fontSize: '12px', color: '#888888' },
       }, `© ${new Date().getFullYear()} Richard Yufei Tong`),
     ]),
   ])

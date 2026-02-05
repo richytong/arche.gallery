@@ -33,5 +33,5 @@ window.useRef = React.useRef
 window.useState = React.useState
 
 // config
-window.defaultArcheVersion = 'V1'
+window.defaultArcheVersion = 'v1'
 window.defaultDocsViewerClassName = 'Arche'
