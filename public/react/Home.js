@@ -3,7 +3,7 @@ import Layout from './Layout.js'
 import readmeMdast from '../mdast/Arche-v1-readme.js'
 
 // removes the link heading and duplicate logo
-readmeMdast.children.splice(0, 1)
+readmeMdast.children.splice(0, 3)
 
 // readmeContent ReactElement
 const readmeContent = ReactElementFromMdast({ mdast: readmeMdast })
