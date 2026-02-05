@@ -1,0 +1,23 @@
+{
+  "name": "arche.gallery",
+  "version": "0.0.0",
+  "description": "Documentation for Arche",
+  "author": "Richard Tong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github:richytong/arche.gallery"
+  },
+  "homepage": "https://github.com/richytong/arche.gallery",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "dependencies": {
+    "cronist": "^0.3.0",
+    "jquery": "^3.7.1",
+    "jsdom": "^26.1.0",
+    "minimatch": "^10.0.3",
+    "presidium": "latest",
+    "sharp": "^0.34.5"
+  }
+}

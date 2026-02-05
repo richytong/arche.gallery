@@ -1,0 +1,82 @@
+#!/usr/bin/env node
+
+require('rubico/global')
+const cronist = require('cronist')
+const fs = require('fs')
+const FileSystem = require('./internal/FileSystem')
+const walkPathForJSFilePaths = require('./internal/walkPathForJSFilePaths')
+const { inspect } = require('util')
+
+const readFileUtf8 = path => fs.promises.readFile(path, { encoding: 'utf8' })
+
+const createMdastFile = async function (source, dest, options = {}) {
+  await pipe(source, [
+    readFileUtf8,
+    cronist.parseMarkdown,
+    data => fs.promises.writeFile(dest, `
+export default ${inspect(data, {
+  depth: Infinity,
+  maxArrayLength: null,
+  maxStringLength: Infinity,
+})}
+  `.trim()),
+  ])
+}
+
+const createCronistFile = async function (source, dest, options = {}) {
+  const { requiredKeys, ignoreDirs } = options
+  await pipe(source, [
+    curry.arity(2, walkPathForJSFilePaths, __, { ignoreDirs }),
+
+    flatMap(async fileName => pipe(fileName, [
+      readFileUtf8,
+      cronist,
+      filter(data => data.name && data.docs && Object.keys(data.mdast).length > 1),
+      switchCase([
+        data => data.length > 0,
+        ([classDocsData, ...methodsDocsData]) => [{
+          ...classDocsData,
+          methods: methodsDocsData,
+        }],
+        data => data,
+      ]),
+      map(assign({ fileName })),
+    ])),
+
+    data => fs.promises.writeFile(dest, `
+export default ${inspect(data, {
+  depth: Infinity,
+  maxArrayLength: null,
+  maxStringLength: Infinity,
+})}
+  `.trim()),
+  ])
+}
+
+// createMdast() -> Promise<>
+const createMdast = async function () {
+  const ArcheVersion = require('../Arche/package').version
+  const ArcheMajorVersion = ArcheVersion.split('.')[0]
+
+  console.log(`Creating mdast/Arche-v${ArcheMajorVersion}-readme.js`)
+  await createMdastFile(
+    `${__dirname}/../Arche/README.md`,
+    `${__dirname}/public/mdast/Arche-v${ArcheMajorVersion}-readme.js`,
+  )
+
+  console.log(`Creating cronist/Arche-v${ArcheMajorVersion}.js`)
+  await createCronistFile(
+    `${__dirname}/../Arche`,
+    `${__dirname}/public/cronist/Arche-v${ArcheMajorVersion}.js`,
+    {
+      requiredKeys: ['name', 'docs'],
+      ignoreDirs: ['node_modules', 'archive'],
+    },
+  )
+}
+
+if (require.main == module) {
+  createMdast()
+}
+
+module.exports = createMdast

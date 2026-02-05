@@ -1,0 +1,388 @@
+html {
+  /*
+  font-family:
+    -apple-system, system-ui, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, 'Helvetica Neue', 
+    Ubuntu, Arial, sans-serif;
+    */
+}
+
+* {
+  color: #000;
+  font-family: Inter, sans-serif;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter/Inter_24pt-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter/Inter_24pt-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter/Inter_24pt-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+a > code {
+  color: blue;
+}
+
+code {
+  background-color: #f6f8fa;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont,
+             'Segoe UI', Roboto, 'Helvetica Neue',
+             Ubuntu, Arial, sans-serif;
+  padding: 3px 6px;
+}
+
+.code-viewer * {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont,
+             'Segoe UI', Roboto, 'Helvetica Neue',
+             Ubuntu, Arial, sans-serif;
+}
+
+#layout {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+@media only screen and (max-width: 768px) {
+  #layout {
+  }
+}
+#layout main {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 5px 2%;
+  padding-bottom: 25px;
+  width: 94%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 5px auto;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 768px) {
+  #layout main {
+    width: 96%;
+  }
+}
+#layout > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
+  height: 50px;
+}
+#layout > nav > .right-links {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 2%;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  #layout > nav > .right-links {
+    padding-top: 0px;
+  }
+}
+
+#layout > nav > .home {
+  display: flex;
+  align-items: center;
+}
+#layout > nav > .home select {
+  position: relative;
+  top: 3px;
+  border: none;
+  outline: none;
+  padding: 0px 5px;
+  background-color: transparent;
+  color: #1f2328;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 31px;
+}
+
+#layout > nav > .home > .links {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  padding-top: 5px;
+  font-size: 31px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  #layout > nav > .home > .links {
+    display: none;
+  }
+}
+
+#layout > nav > .home > .links {
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-link.active {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+#layout > footer {
+  padding: 15px 30px;
+}
+
+#home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1f2328;
+  margin-left: 20px;
+  /*
+  margin-right: 8vw;
+  */
+}
+#home-link .text1 {
+  margin-top: 8px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1em;
+}
+#home-link > img {
+  width: 150px;
+  margin: 0px 15px;
+}
+@media only screen and (max-width: 768px) {
+  #home-link {
+  }
+  #home-link .text1 {
+  }
+  #home-link > img {
+    width: 100px;
+  }
+}
+
+#hamburger-menu {
+  display: none;
+}
+#hamburger-menu.active {
+  display: block;
+}
+
+#hamburger-menu-icon {
+  position: relative;
+  top: 2px;
+  width: 50px;
+  height: 50px;
+  overflow-y: hidden;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+}
+#hamburger-menu-icon svg {
+  transition: opacity 0.25s;
+  opacity: 1;
+  left: 0;
+}
+#hamburger-menu-icon.active svg {
+  opacity: 0.5;
+}
+
+#hamburger-menu {
+}
+#hamburger-menu nav {
+  width: 70%;
+  padding-right: 5%;
+  padding-left: 2%;
+  background-color: #fff;
+  margin: 5px 3%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+#hamburger-menu nav > .nav-link {
+  display: block;
+  font-size: 28px;
+  padding: 5px 3%;
+}
+#hamburger-menu nav > hr {
+  position: relative;
+  left: -3%;
+  margin: 0;
+  height: 1px;
+  background-color: #e4e4e4;
+  border: none;
+}
+#hamburger-menu nav > .nav-link.active {
+  text-decoration: none;
+}
+
+#hamburger-menu .docs-nav nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#hamburger-menu .docs-nav nav section {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+#hamburger-menu .docs-nav nav h4 {
+  font-size: 1.5rem;
+  padding: 3px 0px;
+}
+#hamburger-menu .docs-nav nav .docs-nav-item {
+  font-size: 1.2rem;
+  padding: 2px 0px;
+  overflow-x: scroll;
+}
+#hamburger-menu .docs-nav nav .docs-nav-item.method {
+  padding-left: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.slider > .panels {
+  transform: translate(0%);
+  transition: transform .25s;
+}
+.slider > .panels > .panel {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+article .image {
+  display: inline
+}
+
+article a {
+  text-decoration: none;
+}
+
+#docs {
+  display: flex;
+}
+
+#docs .viewer > a {
+  text-decoration: none;
+}
+
+#docs .sidebar {
+  padding-top: 10px;
+  border-right: 1px solid #e4e4e4;
+  width: 20%;
+  padding-right: 2%;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 768px) {
+  #docs .sidebar {
+    display: none;
+  }
+}
+
+#docs .sidebar nav section {
+  margin-bottom: 10px;
+}
+#docs .sidebar nav h4 {
+  font-size: 18px;
+  padding: 3px 0px;
+}
+#docs .sidebar nav .docs-nav-item {
+  padding: 2px 0px;
+  overflow-x: scroll;
+}
+#docs .sidebar nav .docs-nav-item.method {
+  padding-left: 20px;
+}
+#docs .sidebar nav .docs-nav-item a {
+}
+
+#docs .viewer {
+  width: 75%;
+  padding-left: 2%;
+}
+@media only screen and (max-width: 768px) {
+  #docs .viewer {
+    width: 100%;
+  }
+}
+
+#docs .viewer h1 {
+  font-size: 42px;
+  margin: 12px 0px;
+  color: #000;
+  overflow-x: scroll;
+  width: fit-content;
+}
+@media only screen and (max-width: 768px) {
+  #docs .viewer h1 {
+    font-size: 2rem;
+  }
+}
+
+#docs .viewer .docs .methods {
+  margin-bottom: 10px;
+}
+
+#docs-search-bar input {
+  background: url('/assets/magnifying-glass-docs-search-d4d4d4.svg') no-repeat 98% 5px;
+  background-size: 15px;
+  padding: 5px 3%;
+  width: calc(94% - 5px);
+  padding-right: 15px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.docs-nav-item a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  overflow-x: scroll;
+}
+
+.docs .method > a {
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  width: fit-content;
+}
+
+.docs article a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.docs .method a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#docs-nav {
+}
+#docs-nav .methods {
+  margin-bottom: 10px;
+}
