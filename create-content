@@ -32,6 +32,11 @@ const createCronistFile = async function (source, dest, options = {}) {
       readFileUtf8,
       cronist,
       filter(data => data.name && data.docs && Object.keys(data.mdast).length > 1),
+      forEach(data => {
+        if (data.constructor === '') {
+          data.constructor = true
+        }
+      }),
       switchCase([
         data => data.length > 0,
         ([classDocsData, ...methodsDocsData]) => [{

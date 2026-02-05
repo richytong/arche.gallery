@@ -1396,7 +1396,7 @@ export default [
       },
       {
         name: 'Arche',
-        constructor: [ [Function: Object], '' ],
+        constructor: true,
         docs: '```coffeescript [specscript]\n' +
           'type DocumentElementChildren = string|Array<string|Element>\n' +
           '\n' +

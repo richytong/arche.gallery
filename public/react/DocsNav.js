@@ -5,6 +5,7 @@ import ClassNames from './ClassNames.js'
 import usePath from './usePath.js'
 import useIsHamburgerMenuActive from './useIsHamburgerMenuActive.js'
 import useCronistMap from './useCronistMap.js'
+import ArcheV1ClassNames from './ArcheV1ClassNames.js'
 import ArcheClassExcludedMethods from './ArcheClassExcludedMethods.js'
 import DocsNavClassItem from './DocsNavClassItem.js'
 import DocsNavClassMethodItem from './DocsNavClassMethodItem.js'
@@ -64,8 +65,7 @@ const DocsNav = ReactElement(props => {
 
     docsSearchQuery == '' ? [
       Section([
-        // TODO
-        [].map(className => Div({ key: className }, [
+        ArcheV1ClassNames.map(className => Div({ key: className }, [
           DocsNavClassItem({
             name: className,
             setDocsViewerClassName,
