@@ -75,6 +75,10 @@ code {
   font-weight: 500;
 }
 
+.code-runner iframe {
+  margin-bottom: 30px;
+}
+
 #layout {
   background-color: #F3FFD4;
   width: 100%;

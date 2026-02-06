@@ -93,6 +93,13 @@ const renderIntoNewHTMLDoc = el => {
     head.appendChild(script)
   }
 
+  {
+    const script = document.createElement('script')
+    script.crossorigin = true
+    script.src = 'https://unpkg.com/styled-components@6.1.19/dist/styled-components.min.js'
+    head.appendChild(script)
+  }
+
   body.appendChild(el)
   html.appendChild(head)
   html.appendChild(body)
