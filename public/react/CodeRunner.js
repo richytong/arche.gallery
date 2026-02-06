@@ -182,6 +182,17 @@ const CodeRunner = ReactElement(({
     }
   }, [outputAreaSrc])
 
+  const createOutput = pipe([
+    all({
+      code: () => codeMirrors.get(codeAreaRef).getValue(),
+      imports: always(imports),
+    }),
+    transformCodeToIFrameSrc,
+    iframeSrc => {
+      setOutputAreaSrc(iframeSrc)
+    },
+  ])
+
   return Div({ class: 'code-runner' }, [
     Div({ ref: codeAreaRef }),
     Div({ style: { height: '.5em' } }),
@@ -203,16 +214,7 @@ const CodeRunner = ReactElement(({
           boxShadow: '1px 1px grey',
         },
 
-        onClick: pipe([
-          all({
-            code: () => codeMirrors.get(codeAreaRef).getValue(),
-            imports: always(imports),
-          }),
-          transformCodeToIFrameSrc,
-          iframeSrc => {
-            setOutputAreaSrc(iframeSrc)
-          },
-        ]),
+        onClick: createOutput,
       }, ['run']),
 
       Span({
