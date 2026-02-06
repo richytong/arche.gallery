@@ -112,7 +112,6 @@
   background-color: #f7f7f7;
   border-radius: 1em;
   padding: 15px 10px;
-  pointer-events: none;
 }
 
 .cm-s-default .cm-header {color: blue;}

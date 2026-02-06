@@ -66,6 +66,11 @@ code {
   font-weight: 500;
 }
 
+.code-runner * {
+  font-family: SourceCodePro;
+  font-weight: 500;
+}
+
 #layout {
   background-color: #F3FFD4;
   width: 100%;

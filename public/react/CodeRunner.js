@@ -143,6 +143,7 @@ const CodeRunner = ReactElement(({
       lineWrapping,
       lineNumbers,
       theme,
+      inputStyle: 'contenteditable',
     })
     codeMirrors.set(codeAreaRef, cm)
     return () => {
@@ -171,7 +172,6 @@ const CodeRunner = ReactElement(({
         return
       }
 
-      console.log('Received', event.data)
       if (iframe) {
         iframe.style.height = event.data.height + 'px'
       }
@@ -202,6 +202,7 @@ const CodeRunner = ReactElement(({
           outline: 'none',
           boxShadow: '1px 1px grey',
         },
+
         onClick: pipe([
           all({
             code: () => codeMirrors.get(codeAreaRef).getValue(),
@@ -213,6 +214,7 @@ const CodeRunner = ReactElement(({
           },
         ]),
       }, ['run']),
+
       Span({
         style: {
           visibility: outputAreaSrc ? 'visible' : 'hidden',
@@ -224,6 +226,7 @@ const CodeRunner = ReactElement(({
           bottom: '-0.65em',
         },
       }, [' >']),
+
       Iframe({
         sandbox: 'allow-same-origin allow-scripts',
         ref: iframeRef,
