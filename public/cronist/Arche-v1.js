@@ -329,7 +329,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           "const myA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
           "document.getElementById('#container').appendChild(myA)\n" +
           '```',
@@ -681,18 +680,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  "const myA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
+                value: "const myA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
                   "document.getElementById('#container').appendChild(myA)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -723,8 +721,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myP = P()\n' +
+          "const myP = P('Text')\n" +
           "document.getElementById('#container').appendChild(myP)\n" +
           '```',
         mdast: {
@@ -1075,18 +1072,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myP = P()\n' +
+                value: "const myP = P('Text')\n" +
                   "document.getElementById('#container').appendChild(myP)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -1117,8 +1113,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myB = B()\n' +
+          "const myB = B('Text')\n" +
           "document.getElementById('#container').appendChild(myB)\n" +
           '```',
         mdast: {
@@ -1469,18 +1464,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myB = B()\n' +
+                value: "const myB = B('Text')\n" +
                   "document.getElementById('#container').appendChild(myB)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -1511,8 +1505,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myQ = Q()\n' +
+          "const myQ = Q('Text')\n" +
           "document.getElementById('#container').appendChild(myQ)\n" +
           '```',
         mdast: {
@@ -1863,18 +1856,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myQ = Q()\n' +
+                value: "const myQ = Q('Text')\n" +
                   "document.getElementById('#container').appendChild(myQ)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -1905,8 +1897,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myI = I()\n' +
+          "const myI = I('Text')\n" +
           "document.getElementById('#container').appendChild(myI)\n" +
           '```',
         mdast: {
@@ -2257,18 +2248,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myI = I()\n' +
+                value: "const myI = I('Text')\n" +
                   "document.getElementById('#container').appendChild(myI)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -2299,8 +2289,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myS = S()\n' +
+          "const myS = S('Text')\n" +
           "document.getElementById('#container').appendChild(myS)\n" +
           '```',
         mdast: {
@@ -2651,18 +2640,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myS = S()\n' +
+                value: "const myS = S('Text')\n" +
                   "document.getElementById('#container').appendChild(myS)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -2693,8 +2681,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myU = U()\n' +
+          "const myU = U('Text')\n" +
           "document.getElementById('#container').appendChild(myU)\n" +
           '```',
         mdast: {
@@ -3045,18 +3032,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myU = U()\n' +
+                value: "const myU = U('Text')\n" +
                   "document.getElementById('#container').appendChild(myU)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -3087,8 +3073,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myUl = Ul()\n' +
+          "const myUl = Ul([Li('Item1'), Li('Item2')])\n" +
           "document.getElementById('#container').appendChild(myUl)\n" +
           '```',
         mdast: {
@@ -3439,18 +3424,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myUl = Ul()\n' +
+                value: "const myUl = Ul([Li('Item1'), Li('Item2')])\n" +
                   "document.getElementById('#container').appendChild(myUl)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -3481,8 +3465,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myOl = Ol()\n' +
+          "const myOl = Ol([Li('Item1'), Li('Item2')])\n" +
           "document.getElementById('#container').appendChild(myOl)\n" +
           '```',
         mdast: {
@@ -3833,18 +3816,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myOl = Ol()\n' +
+                value: "const myOl = Ol([Li('Item1'), Li('Item2')])\n" +
                   "document.getElementById('#container').appendChild(myOl)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -3875,8 +3857,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myLi = Li()\n' +
+          "const myLi = Li('Item1')\n" +
           "document.getElementById('#container').appendChild(myLi)\n" +
           '```',
         mdast: {
@@ -4227,18 +4208,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myLi = Li()\n' +
+                value: "const myLi = Li('Item1')\n" +
                   "document.getElementById('#container').appendChild(myLi)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -4269,8 +4249,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myH1 = H1()\n' +
+          "const myH1 = H1('Heading')\n" +
           "document.getElementById('#container').appendChild(myH1)\n" +
           '```',
         mdast: {
@@ -4621,18 +4600,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myH1 = H1()\n' +
+                value: "const myH1 = H1('Heading')\n" +
                   "document.getElementById('#container').appendChild(myH1)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -4663,8 +4641,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myH2 = H2()\n' +
+          "const myH2 = H2('Heading')\n" +
           "document.getElementById('#container').appendChild(myH2)\n" +
           '```',
         mdast: {
@@ -5015,18 +4992,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myH2 = H2()\n' +
+                value: "const myH2 = H2('Heading')\n" +
                   "document.getElementById('#container').appendChild(myH2)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -5057,8 +5033,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myH3 = H3()\n' +
+          "const myH3 = H3('Heading')\n" +
           "document.getElementById('#container').appendChild(myH3)\n" +
           '```',
         mdast: {
@@ -5409,18 +5384,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myH3 = H3()\n' +
+                value: "const myH3 = H3('Heading')\n" +
                   "document.getElementById('#container').appendChild(myH3)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -5451,8 +5425,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myH4 = H4()\n' +
+          "const myH4 = H4('Heading')\n" +
           "document.getElementById('#container').appendChild(myH4)\n" +
           '```',
         mdast: {
@@ -5803,18 +5776,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myH4 = H4()\n' +
+                value: "const myH4 = H4('Heading')\n" +
                   "document.getElementById('#container').appendChild(myH4)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -5845,8 +5817,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myH5 = H5()\n' +
+          "const myH5 = H5('Heading')\n" +
           "document.getElementById('#container').appendChild(myH5)\n" +
           '```',
         mdast: {
@@ -6197,18 +6168,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myH5 = H5()\n' +
+                value: "const myH5 = H5('Heading')\n" +
                   "document.getElementById('#container').appendChild(myH5)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -6239,8 +6209,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myH6 = H6()\n' +
+          "const myH6 = H6('Heading')\n" +
           "document.getElementById('#container').appendChild(myH6)\n" +
           '```',
         mdast: {
@@ -6591,18 +6560,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myH6 = H6()\n' +
+                value: "const myH6 = H6('Heading')\n" +
                   "document.getElementById('#container').appendChild(myH6)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -6633,7 +6601,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myHr = Hr()\n' +
           "document.getElementById('#container').appendChild(myHr)\n" +
           '```',
@@ -6985,18 +6952,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myHr = Hr()\n' +
+                value: 'const myHr = Hr()\n' +
                   "document.getElementById('#container').appendChild(myHr)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -7027,7 +6993,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myBr = Br()\n' +
           "document.getElementById('#container').appendChild(myBr)\n" +
           '```',
@@ -7379,18 +7344,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myBr = Br()\n' +
+                value: 'const myBr = Br()\n' +
                   "document.getElementById('#container').appendChild(myBr)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -7421,8 +7385,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myScript = Script()\n' +
+          "const myScript = Script({ src: 'https://example.com/script.js', crossorigin: true })\n" +
           "document.getElementById('#container').appendChild(myScript)\n" +
           '```',
         mdast: {
@@ -7773,18 +7736,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myScript = Script()\n' +
+                value: "const myScript = Script({ src: 'https://example.com/script.js', crossorigin: true })\n" +
                   "document.getElementById('#container').appendChild(myScript)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -7815,8 +7777,12 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myStyle = Style()\n' +
+          'const myStyle = Style(`\n' +
+          'body {\n' +
+          '  background-color: pink;\n' +
+          '  color: #000;\n' +
+          '}\n' +
+          '`)\n' +
           "document.getElementById('#container').appendChild(myStyle)\n" +
           '```',
         mdast: {
@@ -8167,18 +8133,22 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myStyle = Style()\n' +
+                value: 'const myStyle = Style(`\n' +
+                  'body {\n' +
+                  '  background-color: pink;\n' +
+                  '  color: #000;\n' +
+                  '}\n' +
+                  '`)\n' +
                   "document.getElementById('#container').appendChild(myStyle)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -8209,7 +8179,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myHtml = Html()\n' +
           "document.getElementById('#container').appendChild(myHtml)\n" +
           '```',
@@ -8561,18 +8530,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myHtml = Html()\n' +
+                value: 'const myHtml = Html()\n' +
                   "document.getElementById('#container').appendChild(myHtml)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -8603,7 +8571,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myMain = Main()\n' +
           "document.getElementById('#container').appendChild(myMain)\n" +
           '```',
@@ -8955,18 +8922,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myMain = Main()\n' +
+                value: 'const myMain = Main()\n' +
                   "document.getElementById('#container').appendChild(myMain)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -8997,7 +8963,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myBody = Body()\n' +
           "document.getElementById('#container').appendChild(myBody)\n" +
           '```',
@@ -9349,18 +9314,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myBody = Body()\n' +
+                value: 'const myBody = Body()\n' +
                   "document.getElementById('#container').appendChild(myBody)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -9391,7 +9355,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myHeader = Header()\n' +
           "document.getElementById('#container').appendChild(myHeader)\n" +
           '```',
@@ -9743,18 +9706,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myHeader = Header()\n' +
+                value: 'const myHeader = Header()\n' +
                   "document.getElementById('#container').appendChild(myHeader)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -9785,7 +9747,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myNav = Nav()\n' +
           "document.getElementById('#container').appendChild(myNav)\n" +
           '```',
@@ -10137,18 +10098,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myNav = Nav()\n' +
+                value: 'const myNav = Nav()\n' +
                   "document.getElementById('#container').appendChild(myNav)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -10179,7 +10139,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const mySection = Section()\n' +
           "document.getElementById('#container').appendChild(mySection)\n" +
           '```',
@@ -10531,18 +10490,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const mySection = Section()\n' +
+                value: 'const mySection = Section()\n' +
                   "document.getElementById('#container').appendChild(mySection)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -10573,7 +10531,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myArticle = Article()\n' +
           "document.getElementById('#container').appendChild(myArticle)\n" +
           '```',
@@ -10925,18 +10882,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myArticle = Article()\n' +
+                value: 'const myArticle = Article()\n' +
                   "document.getElementById('#container').appendChild(myArticle)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -10967,7 +10923,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myFooter = Footer()\n' +
           "document.getElementById('#container').appendChild(myFooter)\n" +
           '```',
@@ -11319,18 +11274,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myFooter = Footer()\n' +
+                value: 'const myFooter = Footer()\n' +
                   "document.getElementById('#container').appendChild(myFooter)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -11361,8 +11315,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const mySpan = Span()\n' +
+          "const mySpan = Span('Text')\n" +
           "document.getElementById('#container').appendChild(mySpan)\n" +
           '```',
         mdast: {
@@ -11713,18 +11666,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const mySpan = Span()\n' +
+                value: "const mySpan = Span('Text')\n" +
                   "document.getElementById('#container').appendChild(mySpan)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -11755,8 +11707,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myDiv = Div()\n' +
+          "const myDiv = Div([P('Text1'), P('Text2'))])\n" +
           "document.getElementById('#container').appendChild(myDiv)\n" +
           '```',
         mdast: {
@@ -12107,18 +12058,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myDiv = Div()\n' +
+                value: "const myDiv = Div([P('Text1'), P('Text2'))])\n" +
                   "document.getElementById('#container').appendChild(myDiv)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -12149,8 +12099,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myImg = Img()\n' +
+          "const myImg = Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' })\n" +
           "document.getElementById('#container').appendChild(myImg)\n" +
           '```',
         mdast: {
@@ -12501,18 +12450,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myImg = Img()\n' +
+                value: "const myImg = Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' })\n" +
                   "document.getElementById('#container').appendChild(myImg)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -12543,7 +12491,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myVideo = Video()\n' +
           "document.getElementById('#container').appendChild(myVideo)\n" +
           '```',
@@ -12895,18 +12842,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myVideo = Video()\n' +
+                value: 'const myVideo = Video()\n' +
                   "document.getElementById('#container').appendChild(myVideo)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -12937,7 +12883,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myPicture = Picture()\n' +
           "document.getElementById('#container').appendChild(myPicture)\n" +
           '```',
@@ -13289,18 +13234,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myPicture = Picture()\n' +
+                value: 'const myPicture = Picture()\n' +
                   "document.getElementById('#container').appendChild(myPicture)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -13331,7 +13275,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const mySource = Source()\n' +
           "document.getElementById('#container').appendChild(mySource)\n" +
           '```',
@@ -13683,18 +13626,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const mySource = Source()\n' +
+                value: 'const mySource = Source()\n' +
                   "document.getElementById('#container').appendChild(mySource)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -13725,7 +13667,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myForm = Form()\n' +
           "document.getElementById('#container').appendChild(myForm)\n" +
           '```',
@@ -14077,18 +14018,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myForm = Form()\n' +
+                value: 'const myForm = Form()\n' +
                   "document.getElementById('#container').appendChild(myForm)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -14119,7 +14059,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myFieldset = Fieldset()\n' +
           "document.getElementById('#container').appendChild(myFieldset)\n" +
           '```',
@@ -14471,18 +14410,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myFieldset = Fieldset()\n' +
+                value: 'const myFieldset = Fieldset()\n' +
                   "document.getElementById('#container').appendChild(myFieldset)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -14513,7 +14451,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myInput = Input()\n' +
           "document.getElementById('#container').appendChild(myInput)\n" +
           '```',
@@ -14865,18 +14802,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myInput = Input()\n' +
+                value: 'const myInput = Input()\n' +
                   "document.getElementById('#container').appendChild(myInput)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -14907,7 +14843,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myLabel = Label()\n' +
           "document.getElementById('#container').appendChild(myLabel)\n" +
           '```',
@@ -15259,18 +15194,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myLabel = Label()\n' +
+                value: 'const myLabel = Label()\n' +
                   "document.getElementById('#container').appendChild(myLabel)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -15301,7 +15235,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myTextarea = Textarea()\n' +
           "document.getElementById('#container').appendChild(myTextarea)\n" +
           '```',
@@ -15653,18 +15586,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myTextarea = Textarea()\n' +
+                value: 'const myTextarea = Textarea()\n' +
                   "document.getElementById('#container').appendChild(myTextarea)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -15695,7 +15627,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const mySelect = Select()\n' +
           "document.getElementById('#container').appendChild(mySelect)\n" +
           '```',
@@ -16047,18 +15978,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const mySelect = Select()\n' +
+                value: 'const mySelect = Select()\n' +
                   "document.getElementById('#container').appendChild(mySelect)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -16089,7 +16019,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myOption = Option()\n' +
           "document.getElementById('#container').appendChild(myOption)\n" +
           '```',
@@ -16441,18 +16370,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myOption = Option()\n' +
+                value: 'const myOption = Option()\n' +
                   "document.getElementById('#container').appendChild(myOption)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -16483,7 +16411,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myButton = Button()\n' +
           "document.getElementById('#container').appendChild(myButton)\n" +
           '```',
@@ -16835,18 +16762,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myButton = Button()\n' +
+                value: 'const myButton = Button()\n' +
                   "document.getElementById('#container').appendChild(myButton)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -16877,7 +16803,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myIframe = Iframe()\n' +
           "document.getElementById('#container').appendChild(myIframe)\n" +
           '```',
@@ -17229,18 +17154,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myIframe = Iframe()\n' +
+                value: 'const myIframe = Iframe()\n' +
                   "document.getElementById('#container').appendChild(myIframe)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -17271,7 +17195,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myBlockquote = Blockquote()\n' +
           "document.getElementById('#container').appendChild(myBlockquote)\n" +
           '```',
@@ -17623,18 +17546,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myBlockquote = Blockquote()\n' +
+                value: 'const myBlockquote = Blockquote()\n' +
                   "document.getElementById('#container').appendChild(myBlockquote)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -17665,8 +17587,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myCode = Code()\n' +
+          "const myCode = Code('code')\n" +
           "document.getElementById('#container').appendChild(myCode)\n" +
           '```',
         mdast: {
@@ -18017,18 +17938,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myCode = Code()\n' +
+                value: "const myCode = Code('code')\n" +
                   "document.getElementById('#container').appendChild(myCode)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -18059,8 +17979,7 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const myPre = Pre()\n' +
+          "const myPre = Pre('code')\n" +
           "document.getElementById('#container').appendChild(myPre)\n" +
           '```',
         mdast: {
@@ -18411,18 +18330,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myPre = Pre()\n' +
+                value: "const myPre = Pre('code')\n" +
                   "document.getElementById('#container').appendChild(myPre)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -18453,7 +18371,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myPolygon = Polygon()\n' +
           "document.getElementById('#container').appendChild(myPolygon)\n" +
           '```',
@@ -18805,18 +18722,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myPolygon = Polygon()\n' +
+                value: 'const myPolygon = Polygon()\n' +
                   "document.getElementById('#container').appendChild(myPolygon)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -18847,7 +18763,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const mySvg = Svg()\n' +
           "document.getElementById('#container').appendChild(mySvg)\n" +
           '```',
@@ -19199,18 +19114,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const mySvg = Svg()\n' +
+                value: 'const mySvg = Svg()\n' +
                   "document.getElementById('#container').appendChild(mySvg)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -19241,7 +19155,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myPath = Path()\n' +
           "document.getElementById('#container').appendChild(myPath)\n" +
           '```',
@@ -19593,18 +19506,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myPath = Path()\n' +
+                value: 'const myPath = Path()\n' +
                   "document.getElementById('#container').appendChild(myPath)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -19635,7 +19547,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myRect = Rect()\n' +
           "document.getElementById('#container').appendChild(myRect)\n" +
           '```',
@@ -19987,18 +19898,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myRect = Rect()\n' +
+                value: 'const myRect = Rect()\n' +
                   "document.getElementById('#container').appendChild(myRect)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -20029,7 +19939,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myMask = Mask()\n' +
           "document.getElementById('#container').appendChild(myMask)\n" +
           '```',
@@ -20381,18 +20290,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myMask = Mask()\n' +
+                value: 'const myMask = Mask()\n' +
                   "document.getElementById('#container').appendChild(myMask)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -20423,7 +20331,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myDl = Dl()\n' +
           "document.getElementById('#container').appendChild(myDl)\n" +
           '```',
@@ -20775,18 +20682,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myDl = Dl()\n' +
+                value: 'const myDl = Dl()\n' +
                   "document.getElementById('#container').appendChild(myDl)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -20817,7 +20723,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myDt = Dt()\n' +
           "document.getElementById('#container').appendChild(myDt)\n" +
           '```',
@@ -21169,18 +21074,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myDt = Dt()\n' +
+                value: 'const myDt = Dt()\n' +
                   "document.getElementById('#container').appendChild(myDt)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -21211,7 +21115,6 @@ export default [
           '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
           '\n' +
           '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
           'const myDd = Dd()\n' +
           "document.getElementById('#container').appendChild(myDd)\n" +
           '```',
@@ -21563,412 +21466,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const myDd = Dd()\n' +
+                value: 'const myDd = Dd()\n' +
                   "document.getElementById('#container').appendChild(myDd)",
                 position: {
                   start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
+                  end: { line: 26, column: 4, offset: 1149 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
-            }
-          }
-        },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
-      },
-      {
-        name: '{ELEMENT_NAME}',
-        docs: '```coffeescript [specscript]\n' +
-          'type DocumentElementChildren = string|Array<string|Element>\n' +
-          '\n' +
-          'type TypedDocumentElement =\n' +
-          '  (props object, children DocumentElementChildren)=>(element Element)\n' +
-          '  |(children DocumentElementChildren)=>(element Element)\n' +
-          '  |(props object)=>(element Element)\n' +
-          '\n' +
-          'type DocumentElement = (elementType string)=>TypedDocumentElement\n' +
-          '\n' +
-          '{ELEMENT_NAME} -> TypedDocumentElement\n' +
-          '```\n' +
-          '\n' +
-          'The {ELEMENT_NAME} constructor.\n' +
-          '\n' +
-          'Arguments:\n' +
-          '  * `props` - an object of element properties. These are equivalent to [html attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes).\n' +
-          '  * `children` - a string or array of strings and/or [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element). Represents nesting elements in HTML.\n' +
-          '\n' +
-          'Return:\n' +
-          '  * `element` - [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) - a basic [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) element.\n' +
-          '\n' +
-          '```javascript\n' +
-          'const DocumentElement = Arche(document)\n' +
-          'const my{ELEMENT_NAME} = {ELEMENT_NAME}({EXAMPLE_ARGUMENTS_1})\n' +
-          "document.getElementById('#container').appendChild(my{ELEMENT_NAME})\n" +
-          '```',
-        mdast: {
-          name: {
-            type: 'root',
-            children: [
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: '{ELEMENT_NAME}',
-                    position: {
-                      start: { line: 1, column: 1, offset: 0 },
-                      end: { line: 1, column: 31, offset: 30 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 1, column: 1, offset: 0 },
-                  end: { line: 1, column: 31, offset: 30 }
-                }
-              }
-            ],
-            position: {
-              start: { line: 1, column: 1, offset: 0 },
-              end: { line: 1, column: 31, offset: 30 }
-            }
-          },
-          docs: {
-            type: 'root',
-            children: [
-              {
-                type: 'code',
-                lang: 'coffeescript',
-                meta: '[specscript]',
-                value: 'type DocumentElementChildren = string|Array<string|Element>\n' +
-                  '\n' +
-                  'type TypedDocumentElement =\n' +
-                  '  (props object, children DocumentElementChildren)=>(element Element)\n' +
-                  '  |(children DocumentElementChildren)=>(element Element)\n' +
-                  '  |(props object)=>(element Element)\n' +
-                  '\n' +
-                  'type DocumentElement = (elementType string)=>TypedDocumentElement\n' +
-                  '\n' +
-                  '{ELEMENT_NAME} -> TypedDocumentElement',
-                position: {
-                  start: { line: 1, column: 1, offset: 0 },
-                  end: { line: 12, column: 4, offset: 408 }
-                }
-              },
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: 'The {ELEMENT_NAME} constructor.',
-                    position: {
-                      start: { line: 14, column: 1, offset: 410 },
-                      end: { line: 14, column: 48, offset: 457 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 14, column: 1, offset: 410 },
-                  end: { line: 14, column: 48, offset: 457 }
-                }
-              },
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: 'Arguments:',
-                    position: {
-                      start: { line: 16, column: 1, offset: 459 },
-                      end: { line: 16, column: 11, offset: 469 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 16, column: 1, offset: 459 },
-                  end: { line: 16, column: 11, offset: 469 }
-                }
-              },
-              {
-                type: 'list',
-                ordered: false,
-                start: null,
-                spread: false,
-                children: [
-                  {
-                    type: 'listItem',
-                    spread: false,
-                    checked: null,
-                    children: [
-                      {
-                        type: 'paragraph',
-                        children: [
-                          {
-                            type: 'inlineCode',
-                            value: 'props',
-                            position: {
-                              start: { line: 17, column: 5, offset: 474 },
-                              end: { line: 17, column: 12, offset: 481 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - an object of element properties. These are equivalent to ',
-                            position: {
-                              start: { line: 17, column: 12, offset: 481 },
-                              end: { line: 17, column: 72, offset: 541 }
-                            }
-                          },
-                          {
-                            type: 'link',
-                            title: null,
-                            url: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes',
-                            children: [
-                              {
-                                type: 'text',
-                                value: 'html attributes',
-                                position: {
-                                  start: { line: 17, column: 73, offset: 542 },
-                                  end: { line: 17, column: 88, offset: 557 }
-                                }
-                              }
-                            ],
-                            position: {
-                              start: { line: 17, column: 72, offset: 541 },
-                              end: { line: 17, column: 161, offset: 630 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: '.',
-                            position: {
-                              start: { line: 17, column: 161, offset: 630 },
-                              end: { line: 17, column: 162, offset: 631 }
-                            }
-                          }
-                        ],
-                        position: {
-                          start: { line: 17, column: 5, offset: 474 },
-                          end: { line: 17, column: 162, offset: 631 }
-                        }
-                      }
-                    ],
-                    position: {
-                      start: { line: 17, column: 3, offset: 472 },
-                      end: { line: 17, column: 162, offset: 631 }
-                    }
-                  },
-                  {
-                    type: 'listItem',
-                    spread: false,
-                    checked: null,
-                    children: [
-                      {
-                        type: 'paragraph',
-                        children: [
-                          {
-                            type: 'inlineCode',
-                            value: 'children',
-                            position: {
-                              start: { line: 18, column: 5, offset: 636 },
-                              end: { line: 18, column: 15, offset: 646 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - a string or array of strings and/or ',
-                            position: {
-                              start: { line: 18, column: 15, offset: 646 },
-                              end: { line: 18, column: 54, offset: 685 }
-                            }
-                          },
-                          {
-                            type: 'link',
-                            title: null,
-                            url: 'https://developer.mozilla.org/en-US/docs/Web/API/Element',
-                            children: [
-                              {
-                                type: 'text',
-                                value: 'elements',
-                                position: {
-                                  start: { line: 18, column: 55, offset: 686 },
-                                  end: { line: 18, column: 63, offset: 694 }
-                                }
-                              }
-                            ],
-                            position: {
-                              start: { line: 18, column: 54, offset: 685 },
-                              end: { line: 18, column: 122, offset: 753 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: '. Represents nesting elements in HTML.',
-                            position: {
-                              start: { line: 18, column: 122, offset: 753 },
-                              end: { line: 18, column: 160, offset: 791 }
-                            }
-                          }
-                        ],
-                        position: {
-                          start: { line: 18, column: 5, offset: 636 },
-                          end: { line: 18, column: 160, offset: 791 }
-                        }
-                      }
-                    ],
-                    position: {
-                      start: { line: 18, column: 3, offset: 634 },
-                      end: { line: 18, column: 160, offset: 791 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 17, column: 3, offset: 472 },
-                  end: { line: 18, column: 160, offset: 791 }
-                }
-              },
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: 'Return:',
-                    position: {
-                      start: { line: 20, column: 1, offset: 793 },
-                      end: { line: 20, column: 8, offset: 800 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 20, column: 1, offset: 793 },
-                  end: { line: 20, column: 8, offset: 800 }
-                }
-              },
-              {
-                type: 'list',
-                ordered: false,
-                start: null,
-                spread: false,
-                children: [
-                  {
-                    type: 'listItem',
-                    spread: false,
-                    checked: null,
-                    children: [
-                      {
-                        type: 'paragraph',
-                        children: [
-                          {
-                            type: 'inlineCode',
-                            value: 'element',
-                            position: {
-                              start: { line: 21, column: 5, offset: 805 },
-                              end: { line: 21, column: 14, offset: 814 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - ',
-                            position: {
-                              start: { line: 21, column: 14, offset: 814 },
-                              end: { line: 21, column: 17, offset: 817 }
-                            }
-                          },
-                          {
-                            type: 'link',
-                            title: null,
-                            url: 'https://developer.mozilla.org/en-US/docs/Web/API/Element',
-                            children: [
-                              {
-                                type: 'inlineCode',
-                                value: 'Element',
-                                position: {
-                                  start: { line: 21, column: 18, offset: 818 },
-                                  end: { line: 21, column: 27, offset: 827 }
-                                }
-                              }
-                            ],
-                            position: {
-                              start: { line: 21, column: 17, offset: 817 },
-                              end: { line: 21, column: 86, offset: 886 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - a basic ',
-                            position: {
-                              start: { line: 21, column: 86, offset: 886 },
-                              end: { line: 21, column: 97, offset: 897 }
-                            }
-                          },
-                          {
-                            type: 'link',
-                            title: null,
-                            url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model',
-                            children: [
-                              {
-                                type: 'text',
-                                value: 'DOM',
-                                position: {
-                                  start: { line: 21, column: 98, offset: 898 },
-                                  end: {
-                                    line: 21,
-                                    column: 101,
-                                    offset: 901
-                                  }
-                                }
-                              }
-                            ],
-                            position: {
-                              start: { line: 21, column: 97, offset: 897 },
-                              end: { line: 21, column: 174, offset: 974 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' element.',
-                            position: {
-                              start: { line: 21, column: 174, offset: 974 },
-                              end: { line: 21, column: 183, offset: 983 }
-                            }
-                          }
-                        ],
-                        position: {
-                          start: { line: 21, column: 5, offset: 805 },
-                          end: { line: 21, column: 183, offset: 983 }
-                        }
-                      }
-                    ],
-                    position: {
-                      start: { line: 21, column: 3, offset: 803 },
-                      end: { line: 21, column: 183, offset: 983 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 21, column: 3, offset: 803 },
-                  end: { line: 21, column: 183, offset: 983 }
-                }
-              },
-              {
-                type: 'code',
-                lang: 'javascript',
-                meta: null,
-                value: 'const DocumentElement = Arche(document)\n' +
-                  'const my{ELEMENT_NAME} = {ELEMENT_NAME}({EXAMPLE_ARGUMENTS_1})\n' +
-                  "document.getElementById('#container').appendChild(my{ELEMENT_NAME})",
-                position: {
-                  start: { line: 23, column: 1, offset: 985 },
-                  end: { line: 27, column: 4, offset: 1189 }
-                }
-              }
-            ],
-            position: {
-              start: { line: 1, column: 1, offset: 0 },
-              end: { line: 27, column: 4, offset: 1189 }
+              end: { line: 26, column: 4, offset: 1149 }
             }
           }
         },
@@ -22360,8 +21868,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactA = A()\n' +
+          "const myReactA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
           "ReactDOM.render(myReactA, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -22659,18 +22166,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactA = A()\n' +
+                value: "const myReactA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
                   "ReactDOM.render(myReactA, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -22717,8 +22223,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactP = P()\n' +
+          "const myReactP = P('Text')\n" +
           "ReactDOM.render(myReactP, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -23016,18 +22521,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactP = P()\n' +
+                value: "const myReactP = P('Text')\n" +
                   "ReactDOM.render(myReactP, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -23074,8 +22578,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactB = B()\n' +
+          "const myReactB = B('Text')\n" +
           "ReactDOM.render(myReactB, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -23373,18 +22876,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactB = B()\n' +
+                value: "const myReactB = B('Text')\n" +
                   "ReactDOM.render(myReactB, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -23431,8 +22933,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactQ = Q()\n' +
+          "const myReactQ = Q('Text')\n" +
           "ReactDOM.render(myReactQ, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -23730,18 +23231,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactQ = Q()\n' +
+                value: "const myReactQ = Q('Text')\n" +
                   "ReactDOM.render(myReactQ, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -23788,8 +23288,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactI = I()\n' +
+          "const myReactI = I('Text')\n" +
           "ReactDOM.render(myReactI, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -24087,18 +23586,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactI = I()\n' +
+                value: "const myReactI = I('Text')\n" +
                   "ReactDOM.render(myReactI, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -24145,8 +23643,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactS = S()\n' +
+          "const myReactS = S('Text')\n" +
           "ReactDOM.render(myReactS, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -24444,18 +23941,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactS = S()\n' +
+                value: "const myReactS = S('Text')\n" +
                   "ReactDOM.render(myReactS, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -24502,8 +23998,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactU = U()\n' +
+          "const myReactU = U('Text')\n" +
           "ReactDOM.render(myReactU, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -24801,18 +24296,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactU = U()\n' +
+                value: "const myReactU = U('Text')\n" +
                   "ReactDOM.render(myReactU, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -24859,8 +24353,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactUl = Ul()\n' +
+          "const myReactUl = Ul([Li('Item1'), Li('Item2')])\n" +
           "ReactDOM.render(myReactUl, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -25158,18 +24651,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactUl = Ul()\n' +
+                value: "const myReactUl = Ul([Li('Item1'), Li('Item2')])\n" +
                   "ReactDOM.render(myReactUl, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -25216,8 +24708,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactOl = Ol()\n' +
+          "const myReactOl = Ol([Li('Item1'), Li('Item2')])\n" +
           "ReactDOM.render(myReactOl, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -25515,18 +25006,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactOl = Ol()\n' +
+                value: "const myReactOl = Ol([Li('Item1'), Li('Item2')])\n" +
                   "ReactDOM.render(myReactOl, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -25573,8 +25063,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactLi = Li()\n' +
+          "const myReactLi = Li('Item1')\n" +
           "ReactDOM.render(myReactLi, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -25872,18 +25361,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactLi = Li()\n' +
+                value: "const myReactLi = Li('Item1')\n" +
                   "ReactDOM.render(myReactLi, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -25930,8 +25418,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactH1 = H1()\n' +
+          "const myReactH1 = H1('Heading')\n" +
           "ReactDOM.render(myReactH1, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -26229,18 +25716,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactH1 = H1()\n' +
+                value: "const myReactH1 = H1('Heading')\n" +
                   "ReactDOM.render(myReactH1, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -26287,8 +25773,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactH2 = H2()\n' +
+          "const myReactH2 = H2('Heading')\n" +
           "ReactDOM.render(myReactH2, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -26586,18 +26071,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactH2 = H2()\n' +
+                value: "const myReactH2 = H2('Heading')\n" +
                   "ReactDOM.render(myReactH2, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -26644,8 +26128,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactH3 = H3()\n' +
+          "const myReactH3 = H3('Heading')\n" +
           "ReactDOM.render(myReactH3, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -26943,18 +26426,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactH3 = H3()\n' +
+                value: "const myReactH3 = H3('Heading')\n" +
                   "ReactDOM.render(myReactH3, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -27001,8 +26483,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactH4 = H4()\n' +
+          "const myReactH4 = H4('Heading')\n" +
           "ReactDOM.render(myReactH4, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -27300,18 +26781,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactH4 = H4()\n' +
+                value: "const myReactH4 = H4('Heading')\n" +
                   "ReactDOM.render(myReactH4, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -27358,8 +26838,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactH5 = H5()\n' +
+          "const myReactH5 = H5('Heading')\n" +
           "ReactDOM.render(myReactH5, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -27657,18 +27136,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactH5 = H5()\n' +
+                value: "const myReactH5 = H5('Heading')\n" +
                   "ReactDOM.render(myReactH5, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -27715,8 +27193,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactH6 = H6()\n' +
+          "const myReactH6 = H6('Heading')\n" +
           "ReactDOM.render(myReactH6, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -28014,18 +27491,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactH6 = H6()\n' +
+                value: "const myReactH6 = H6('Heading')\n" +
                   "ReactDOM.render(myReactH6, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -28072,7 +27548,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactHr = Hr()\n' +
           "ReactDOM.render(myReactHr, document.getElementById('react-root'))\n" +
           '```',
@@ -28371,18 +27846,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactHr = Hr()\n' +
+                value: 'const myReactHr = Hr()\n' +
                   "ReactDOM.render(myReactHr, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -28429,7 +27903,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactBr = Br()\n' +
           "ReactDOM.render(myReactBr, document.getElementById('react-root'))\n" +
           '```',
@@ -28728,18 +28201,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactBr = Br()\n' +
+                value: 'const myReactBr = Br()\n' +
                   "ReactDOM.render(myReactBr, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -28786,8 +28258,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactScript = Script()\n' +
+          "const myReactScript = Script({ src: 'https://example.com/script.js', crossorigin: true })\n" +
           "ReactDOM.render(myReactScript, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -29085,18 +28556,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactScript = Script()\n' +
+                value: "const myReactScript = Script({ src: 'https://example.com/script.js', crossorigin: true })\n" +
                   "ReactDOM.render(myReactScript, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -29143,8 +28613,12 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactStyle = Style()\n' +
+          'const myReactStyle = Style(`\n' +
+          'body {\n' +
+          '  background-color: pink;\n' +
+          '  color: #000;\n' +
+          '}\n' +
+          '`)\n' +
           "ReactDOM.render(myReactStyle, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -29442,18 +28916,22 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactStyle = Style()\n' +
+                value: 'const myReactStyle = Style(`\n' +
+                  'body {\n' +
+                  '  background-color: pink;\n' +
+                  '  color: #000;\n' +
+                  '}\n' +
+                  '`)\n' +
                   "ReactDOM.render(myReactStyle, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -29500,7 +28978,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactHtml = Html()\n' +
           "ReactDOM.render(myReactHtml, document.getElementById('react-root'))\n" +
           '```',
@@ -29799,18 +29276,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactHtml = Html()\n' +
+                value: 'const myReactHtml = Html()\n' +
                   "ReactDOM.render(myReactHtml, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -29857,7 +29333,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactMain = Main()\n' +
           "ReactDOM.render(myReactMain, document.getElementById('react-root'))\n" +
           '```',
@@ -30156,18 +29631,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactMain = Main()\n' +
+                value: 'const myReactMain = Main()\n' +
                   "ReactDOM.render(myReactMain, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -30214,7 +29688,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactBody = Body()\n' +
           "ReactDOM.render(myReactBody, document.getElementById('react-root'))\n" +
           '```',
@@ -30513,18 +29986,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactBody = Body()\n' +
+                value: 'const myReactBody = Body()\n' +
                   "ReactDOM.render(myReactBody, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -30571,7 +30043,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactHeader = Header()\n' +
           "ReactDOM.render(myReactHeader, document.getElementById('react-root'))\n" +
           '```',
@@ -30870,18 +30341,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactHeader = Header()\n' +
+                value: 'const myReactHeader = Header()\n' +
                   "ReactDOM.render(myReactHeader, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -30928,7 +30398,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactNav = Nav()\n' +
           "ReactDOM.render(myReactNav, document.getElementById('react-root'))\n" +
           '```',
@@ -31227,18 +30696,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactNav = Nav()\n' +
+                value: 'const myReactNav = Nav()\n' +
                   "ReactDOM.render(myReactNav, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -31285,7 +30753,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactSection = Section()\n' +
           "ReactDOM.render(myReactSection, document.getElementById('react-root'))\n" +
           '```',
@@ -31584,18 +31051,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactSection = Section()\n' +
+                value: 'const myReactSection = Section()\n' +
                   "ReactDOM.render(myReactSection, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -31642,7 +31108,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactArticle = Article()\n' +
           "ReactDOM.render(myReactArticle, document.getElementById('react-root'))\n" +
           '```',
@@ -31941,18 +31406,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactArticle = Article()\n' +
+                value: 'const myReactArticle = Article()\n' +
                   "ReactDOM.render(myReactArticle, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -31999,7 +31463,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactFooter = Footer()\n' +
           "ReactDOM.render(myReactFooter, document.getElementById('react-root'))\n" +
           '```',
@@ -32298,18 +31761,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactFooter = Footer()\n' +
+                value: 'const myReactFooter = Footer()\n' +
                   "ReactDOM.render(myReactFooter, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -32356,8 +31818,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactSpan = Span()\n' +
+          "const myReactSpan = Span('Text')\n" +
           "ReactDOM.render(myReactSpan, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -32655,18 +32116,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactSpan = Span()\n' +
+                value: "const myReactSpan = Span('Text')\n" +
                   "ReactDOM.render(myReactSpan, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -32713,8 +32173,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactDiv = Div()\n' +
+          "const myReactDiv = Div([P('Text1'), P('Text2'))])\n" +
           "ReactDOM.render(myReactDiv, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -33012,18 +32471,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactDiv = Div()\n' +
+                value: "const myReactDiv = Div([P('Text1'), P('Text2'))])\n" +
                   "ReactDOM.render(myReactDiv, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -33070,8 +32528,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactImg = Img()\n' +
+          "const myReactImg = Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' })\n" +
           "ReactDOM.render(myReactImg, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -33369,18 +32826,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactImg = Img()\n' +
+                value: "const myReactImg = Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' })\n" +
                   "ReactDOM.render(myReactImg, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -33427,7 +32883,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactVideo = Video()\n' +
           "ReactDOM.render(myReactVideo, document.getElementById('react-root'))\n" +
           '```',
@@ -33726,18 +33181,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactVideo = Video()\n' +
+                value: 'const myReactVideo = Video()\n' +
                   "ReactDOM.render(myReactVideo, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -33784,7 +33238,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactPicture = Picture()\n' +
           "ReactDOM.render(myReactPicture, document.getElementById('react-root'))\n" +
           '```',
@@ -34083,18 +33536,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactPicture = Picture()\n' +
+                value: 'const myReactPicture = Picture()\n' +
                   "ReactDOM.render(myReactPicture, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -34141,7 +33593,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactSource = Source()\n' +
           "ReactDOM.render(myReactSource, document.getElementById('react-root'))\n" +
           '```',
@@ -34440,18 +33891,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactSource = Source()\n' +
+                value: 'const myReactSource = Source()\n' +
                   "ReactDOM.render(myReactSource, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -34498,7 +33948,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactForm = Form()\n' +
           "ReactDOM.render(myReactForm, document.getElementById('react-root'))\n" +
           '```',
@@ -34797,18 +34246,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactForm = Form()\n' +
+                value: 'const myReactForm = Form()\n' +
                   "ReactDOM.render(myReactForm, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -34855,7 +34303,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactFieldset = Fieldset()\n' +
           "ReactDOM.render(myReactFieldset, document.getElementById('react-root'))\n" +
           '```',
@@ -35154,18 +34601,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactFieldset = Fieldset()\n' +
+                value: 'const myReactFieldset = Fieldset()\n' +
                   "ReactDOM.render(myReactFieldset, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -35212,7 +34658,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactInput = Input()\n' +
           "ReactDOM.render(myReactInput, document.getElementById('react-root'))\n" +
           '```',
@@ -35511,18 +34956,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactInput = Input()\n' +
+                value: 'const myReactInput = Input()\n' +
                   "ReactDOM.render(myReactInput, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -35569,7 +35013,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactLabel = Label()\n' +
           "ReactDOM.render(myReactLabel, document.getElementById('react-root'))\n" +
           '```',
@@ -35868,18 +35311,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactLabel = Label()\n' +
+                value: 'const myReactLabel = Label()\n' +
                   "ReactDOM.render(myReactLabel, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -35926,7 +35368,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactTextarea = Textarea()\n' +
           "ReactDOM.render(myReactTextarea, document.getElementById('react-root'))\n" +
           '```',
@@ -36225,18 +35666,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactTextarea = Textarea()\n' +
+                value: 'const myReactTextarea = Textarea()\n' +
                   "ReactDOM.render(myReactTextarea, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -36283,7 +35723,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactSelect = Select()\n' +
           "ReactDOM.render(myReactSelect, document.getElementById('react-root'))\n" +
           '```',
@@ -36582,18 +36021,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactSelect = Select()\n' +
+                value: 'const myReactSelect = Select()\n' +
                   "ReactDOM.render(myReactSelect, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -36640,7 +36078,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactOption = Option()\n' +
           "ReactDOM.render(myReactOption, document.getElementById('react-root'))\n" +
           '```',
@@ -36939,18 +36376,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactOption = Option()\n' +
+                value: 'const myReactOption = Option()\n' +
                   "ReactDOM.render(myReactOption, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -36997,8 +36433,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactButton = Button()\n' +
+          'const myReactButton = Button({ onClick() {} })\n' +
           "ReactDOM.render(myReactButton, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -37296,18 +36731,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactButton = Button()\n' +
+                value: 'const myReactButton = Button({ onClick() {} })\n' +
                   "ReactDOM.render(myReactButton, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -37354,7 +36788,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactIframe = Iframe()\n' +
           "ReactDOM.render(myReactIframe, document.getElementById('react-root'))\n" +
           '```',
@@ -37653,18 +37086,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactIframe = Iframe()\n' +
+                value: 'const myReactIframe = Iframe()\n' +
                   "ReactDOM.render(myReactIframe, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -37711,7 +37143,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactBlockquote = Blockquote()\n' +
           "ReactDOM.render(myReactBlockquote, document.getElementById('react-root'))\n" +
           '```',
@@ -38010,18 +37441,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactBlockquote = Blockquote()\n' +
+                value: 'const myReactBlockquote = Blockquote()\n' +
                   "ReactDOM.render(myReactBlockquote, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -38068,8 +37498,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactCode = Code()\n' +
+          "const myReactCode = Code('code')\n" +
           "ReactDOM.render(myReactCode, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -38367,18 +37796,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactCode = Code()\n' +
+                value: "const myReactCode = Code('code')\n" +
                   "ReactDOM.render(myReactCode, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -38425,8 +37853,7 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReactPre = Pre()\n' +
+          "const myReactPre = Pre('code')\n" +
           "ReactDOM.render(myReactPre, document.getElementById('react-root'))\n" +
           '```',
         mdast: {
@@ -38724,18 +38151,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactPre = Pre()\n' +
+                value: "const myReactPre = Pre('code')\n" +
                   "ReactDOM.render(myReactPre, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -38782,7 +38208,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactPolygon = Polygon()\n' +
           "ReactDOM.render(myReactPolygon, document.getElementById('react-root'))\n" +
           '```',
@@ -39081,18 +38506,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactPolygon = Polygon()\n' +
+                value: 'const myReactPolygon = Polygon()\n' +
                   "ReactDOM.render(myReactPolygon, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -39139,7 +38563,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactSvg = Svg()\n' +
           "ReactDOM.render(myReactSvg, document.getElementById('react-root'))\n" +
           '```',
@@ -39438,18 +38861,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactSvg = Svg()\n' +
+                value: 'const myReactSvg = Svg()\n' +
                   "ReactDOM.render(myReactSvg, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -39496,7 +38918,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactPath = Path()\n' +
           "ReactDOM.render(myReactPath, document.getElementById('react-root'))\n" +
           '```',
@@ -39795,18 +39216,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactPath = Path()\n' +
+                value: 'const myReactPath = Path()\n' +
                   "ReactDOM.render(myReactPath, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -39853,7 +39273,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactRect = Rect()\n' +
           "ReactDOM.render(myReactRect, document.getElementById('react-root'))\n" +
           '```',
@@ -40152,18 +39571,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactRect = Rect()\n' +
+                value: 'const myReactRect = Rect()\n' +
                   "ReactDOM.render(myReactRect, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -40210,7 +39628,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactMask = Mask()\n' +
           "ReactDOM.render(myReactMask, document.getElementById('react-root'))\n" +
           '```',
@@ -40509,18 +39926,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactMask = Mask()\n' +
+                value: 'const myReactMask = Mask()\n' +
                   "ReactDOM.render(myReactMask, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -40567,7 +39983,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactDl = Dl()\n' +
           "ReactDOM.render(myReactDl, document.getElementById('react-root'))\n" +
           '```',
@@ -40866,18 +40281,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactDl = Dl()\n' +
+                value: 'const myReactDl = Dl()\n' +
                   "ReactDOM.render(myReactDl, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -40924,7 +40338,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactDt = Dt()\n' +
           "ReactDOM.render(myReactDt, document.getElementById('react-root'))\n" +
           '```',
@@ -41223,18 +40636,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactDt = Dt()\n' +
+                value: 'const myReactDt = Dt()\n' +
                   "ReactDOM.render(myReactDt, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -41281,7 +40693,6 @@ export default [
           '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
           '\n' +
           '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
           'const myReactDd = Dd()\n' +
           "ReactDOM.render(myReactDd, document.getElementById('react-root'))\n" +
           '```',
@@ -41580,375 +40991,17 @@ export default [
                 type: 'code',
                 lang: 'javascript',
                 meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReactDd = Dd()\n' +
+                value: 'const myReactDd = Dd()\n' +
                   "ReactDOM.render(myReactDd, document.getElementById('react-root'))",
                 position: {
                   start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
+                  end: { line: 42, column: 4, offset: 1338 }
                 }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
-            }
-          }
-        },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
-      },
-      {
-        name: '{ELEMENT_NAME}',
-        docs: '```coffeescript [specscript]\n' +
-          'type React = {\n' +
-          '  Element: {\n' +
-          '    $$typeof: Symbol,\n' +
-          '    props: Object,\n' +
-          '    type: any,\n' +
-          '  },\n' +
-          '  createElement: (\n' +
-          '    elementType string,\n' +
-          '    props object,\n' +
-          '    children string|Array<React.Element|string>\n' +
-          '\n' +
-          '  )=>(reactElement React.Element),\n' +
-          '}\n' +
-          '\n' +
-          'type ReactElementChildren = string|Array<React.Element>\n' +
-          '\n' +
-          'type TypedReactElement =\n' +
-          '  (props object, children ReactElementChildren)=>(reactElement React.Element)\n' +
-          '  |(children ReactElementChildren)=>(reactElement React.Element)\n' +
-          '  |(props object)=>(reactElement React.Element)\n' +
-          '\n' +
-          'type ReactElement =\n' +
-          '  ReactFunctionComponent=>(reactElement React.Element)\n' +
-          '  |(elementType string)=>TypedReactElement\n' +
-          '\n' +
-          '{ELEMENT_NAME} -> TypedReactElement\n' +
-          '```\n' +
-          '\n' +
-          'The {ELEMENT_NAME} constructor.\n' +
-          '\n' +
-          'Arguments:\n' +
-          '  * `props` - an object of React element properties. These are equivalent to [React props](https://react.dev/learn/passing-props-to-a-component).\n' +
-          '  * `children` - a string or array of strings and/or React elements. Represents nesting elements in HTML.\n' +
-          '\n' +
-          'Return:\n' +
-          '  * `reactElement` - a basic React element, `reactElement` is recognized by React and used to render the final React application.\n' +
-          '\n' +
-          '```javascript\n' +
-          'const ReactElement = Arche(React)\n' +
-          'const myReact{ELEMENT_NAME} = {ELEMENT_NAME}({EXAMPLE_ARGUMENTS_1})\n' +
-          "ReactDOM.render(myReact{ELEMENT_NAME}, document.getElementById('react-root'))\n" +
-          '```',
-        mdast: {
-          name: {
-            type: 'root',
-            children: [
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: '{ELEMENT_NAME}',
-                    position: {
-                      start: { line: 1, column: 1, offset: 0 },
-                      end: { line: 1, column: 28, offset: 27 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 1, column: 1, offset: 0 },
-                  end: { line: 1, column: 28, offset: 27 }
-                }
-              }
-            ],
-            position: {
-              start: { line: 1, column: 1, offset: 0 },
-              end: { line: 1, column: 28, offset: 27 }
-            }
-          },
-          docs: {
-            type: 'root',
-            children: [
-              {
-                type: 'code',
-                lang: 'coffeescript',
-                meta: '[specscript]',
-                value: 'type React = {\n' +
-                  '  Element: {\n' +
-                  '    $$typeof: Symbol,\n' +
-                  '    props: Object,\n' +
-                  '    type: any,\n' +
-                  '  },\n' +
-                  '  createElement: (\n' +
-                  '    elementType string,\n' +
-                  '    props object,\n' +
-                  '    children string|Array<React.Element|string>\n' +
-                  '\n' +
-                  '  )=>(reactElement React.Element),\n' +
-                  '}\n' +
-                  '\n' +
-                  'type ReactElementChildren = string|Array<React.Element>\n' +
-                  '\n' +
-                  'type TypedReactElement =\n' +
-                  '  (props object, children ReactElementChildren)=>(reactElement React.Element)\n' +
-                  '  |(children ReactElementChildren)=>(reactElement React.Element)\n' +
-                  '  |(props object)=>(reactElement React.Element)\n' +
-                  '\n' +
-                  'type ReactElement =\n' +
-                  '  ReactFunctionComponent=>(reactElement React.Element)\n' +
-                  '  |(elementType string)=>TypedReactElement\n' +
-                  '\n' +
-                  '{ELEMENT_NAME} -> TypedReactElement',
-                position: {
-                  start: { line: 1, column: 1, offset: 0 },
-                  end: { line: 28, column: 4, offset: 711 }
-                }
-              },
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: 'The {ELEMENT_NAME} constructor.',
-                    position: {
-                      start: { line: 30, column: 1, offset: 713 },
-                      end: { line: 30, column: 45, offset: 757 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 30, column: 1, offset: 713 },
-                  end: { line: 30, column: 45, offset: 757 }
-                }
-              },
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: 'Arguments:',
-                    position: {
-                      start: { line: 32, column: 1, offset: 759 },
-                      end: { line: 32, column: 11, offset: 769 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 32, column: 1, offset: 759 },
-                  end: { line: 32, column: 11, offset: 769 }
-                }
-              },
-              {
-                type: 'list',
-                ordered: false,
-                start: null,
-                spread: false,
-                children: [
-                  {
-                    type: 'listItem',
-                    spread: false,
-                    checked: null,
-                    children: [
-                      {
-                        type: 'paragraph',
-                        children: [
-                          {
-                            type: 'inlineCode',
-                            value: 'props',
-                            position: {
-                              start: { line: 33, column: 5, offset: 774 },
-                              end: { line: 33, column: 12, offset: 781 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - an object of React element properties. These are equivalent to ',
-                            position: {
-                              start: { line: 33, column: 12, offset: 781 },
-                              end: { line: 33, column: 78, offset: 847 }
-                            }
-                          },
-                          {
-                            type: 'link',
-                            title: null,
-                            url: 'https://react.dev/learn/passing-props-to-a-component',
-                            children: [
-                              {
-                                type: 'text',
-                                value: 'React props',
-                                position: {
-                                  start: { line: 33, column: 79, offset: 848 },
-                                  end: { line: 33, column: 90, offset: 859 }
-                                }
-                              }
-                            ],
-                            position: {
-                              start: { line: 33, column: 78, offset: 847 },
-                              end: { line: 33, column: 145, offset: 914 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: '.',
-                            position: {
-                              start: { line: 33, column: 145, offset: 914 },
-                              end: { line: 33, column: 146, offset: 915 }
-                            }
-                          }
-                        ],
-                        position: {
-                          start: { line: 33, column: 5, offset: 774 },
-                          end: { line: 33, column: 146, offset: 915 }
-                        }
-                      }
-                    ],
-                    position: {
-                      start: { line: 33, column: 3, offset: 772 },
-                      end: { line: 33, column: 146, offset: 915 }
-                    }
-                  },
-                  {
-                    type: 'listItem',
-                    spread: false,
-                    checked: null,
-                    children: [
-                      {
-                        type: 'paragraph',
-                        children: [
-                          {
-                            type: 'inlineCode',
-                            value: 'children',
-                            position: {
-                              start: { line: 34, column: 5, offset: 920 },
-                              end: { line: 34, column: 15, offset: 930 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - a string or array of strings and/or React elements. Represents nesting elements in HTML.',
-                            position: {
-                              start: { line: 34, column: 15, offset: 930 },
-                              end: { line: 34, column: 106, offset: 1021 }
-                            }
-                          }
-                        ],
-                        position: {
-                          start: { line: 34, column: 5, offset: 920 },
-                          end: { line: 34, column: 106, offset: 1021 }
-                        }
-                      }
-                    ],
-                    position: {
-                      start: { line: 34, column: 3, offset: 918 },
-                      end: { line: 34, column: 106, offset: 1021 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 33, column: 3, offset: 772 },
-                  end: { line: 34, column: 106, offset: 1021 }
-                }
-              },
-              {
-                type: 'paragraph',
-                children: [
-                  {
-                    type: 'text',
-                    value: 'Return:',
-                    position: {
-                      start: { line: 36, column: 1, offset: 1023 },
-                      end: { line: 36, column: 8, offset: 1030 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 36, column: 1, offset: 1023 },
-                  end: { line: 36, column: 8, offset: 1030 }
-                }
-              },
-              {
-                type: 'list',
-                ordered: false,
-                start: null,
-                spread: false,
-                children: [
-                  {
-                    type: 'listItem',
-                    spread: false,
-                    checked: null,
-                    children: [
-                      {
-                        type: 'paragraph',
-                        children: [
-                          {
-                            type: 'inlineCode',
-                            value: 'reactElement',
-                            position: {
-                              start: { line: 37, column: 5, offset: 1035 },
-                              end: { line: 37, column: 19, offset: 1049 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' - a basic React element, ',
-                            position: {
-                              start: { line: 37, column: 19, offset: 1049 },
-                              end: { line: 37, column: 45, offset: 1075 }
-                            }
-                          },
-                          {
-                            type: 'inlineCode',
-                            value: 'reactElement',
-                            position: {
-                              start: { line: 37, column: 45, offset: 1075 },
-                              end: { line: 37, column: 59, offset: 1089 }
-                            }
-                          },
-                          {
-                            type: 'text',
-                            value: ' is recognized by React and used to render the final React application.',
-                            position: {
-                              start: { line: 37, column: 59, offset: 1089 },
-                              end: { line: 37, column: 130, offset: 1160 }
-                            }
-                          }
-                        ],
-                        position: {
-                          start: { line: 37, column: 5, offset: 1035 },
-                          end: { line: 37, column: 130, offset: 1160 }
-                        }
-                      }
-                    ],
-                    position: {
-                      start: { line: 37, column: 3, offset: 1033 },
-                      end: { line: 37, column: 130, offset: 1160 }
-                    }
-                  }
-                ],
-                position: {
-                  start: { line: 37, column: 3, offset: 1033 },
-                  end: { line: 37, column: 130, offset: 1160 }
-                }
-              },
-              {
-                type: 'code',
-                lang: 'javascript',
-                meta: null,
-                value: 'const ReactElement = Arche(React)\n' +
-                  'const myReact{ELEMENT_NAME} = {ELEMENT_NAME}({EXAMPLE_ARGUMENTS_1})\n' +
-                  "ReactDOM.render(myReact{ELEMENT_NAME}, document.getElementById('react-root'))",
-                position: {
-                  start: { line: 39, column: 1, offset: 1162 },
-                  end: { line: 43, column: 4, offset: 1372 }
-                }
-              }
-            ],
-            position: {
-              start: { line: 1, column: 1, offset: 0 },
-              end: { line: 43, column: 4, offset: 1372 }
+              end: { line: 42, column: 4, offset: 1338 }
             }
           }
         },
@@ -42008,8 +41061,8 @@ export default [
       'The Arche class. Simplified DOM interface / React in pure JavaScript.\n' +
       '\n' +
       'Arguments:\n' +
-      '  * `document` - [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) - represents any web page loaded in the browser.\n' +
-      '  * `React` - the [`React`](https://react.dev/) library.\n' +
+      '  * `document` - [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document) - represents any web page loaded in the browser.\n' +
+      '  * `React` - the [React](https://react.dev/) library.\n' +
       '  * `options`\n' +
       '    * `styled` - the [styled-components](https://styled-components.com/) library.\n' +
       '\n' +
@@ -42017,18 +41070,18 @@ export default [
       '  * `DocumentElement` - a simplified interface for the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)\n' +
       '  * `ReactElement` - a pure JavaScript interface for React.\n' +
       '\n' +
-      '```javascript\n' +
+      '```javascript [playground]\n' +
       '{\n' +
       '  const DocumentElement = Arche(document)\n' +
       "  const H1 = DocumentElement('h1')\n" +
-      "  const myH1Element = H1('Title')\n" +
-      "  document.getElementById('#container').appendChild(myH1Element)\n" +
+      "  const myH1Element = H1('DOM Title')\n" +
+      "  document.getElementById('dom-container').appendChild(myH1Element)\n" +
       '}\n' +
       '\n' +
       '{\n' +
       '  const ReactElement = Arche(React)\n' +
-      "  const H1 = ReactElement('he')\n" +
-      "  const myH1ReactElement = H1('Title')\n" +
+      "  const H1 = ReactElement('h1')\n" +
+      "  const myH1ReactElement = H1('React Title')\n" +
       "  ReactDOM.render(myH1ReactElement, document.getElementById('react-root'))\n" +
       '}\n' +
       '```',
@@ -42192,37 +41245,37 @@ export default [
                         url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document',
                         children: [
                           {
-                            type: 'inlineCode',
+                            type: 'text',
                             value: 'Document',
                             position: {
                               start: { line: 50, column: 19, offset: 1437 },
-                              end: { line: 50, column: 29, offset: 1447 }
+                              end: { line: 50, column: 27, offset: 1445 }
                             }
                           }
                         ],
                         position: {
                           start: { line: 50, column: 18, offset: 1436 },
-                          end: { line: 50, column: 89, offset: 1507 }
+                          end: { line: 50, column: 87, offset: 1505 }
                         }
                       },
                       {
                         type: 'text',
                         value: ' - represents any web page loaded in the browser.',
                         position: {
-                          start: { line: 50, column: 89, offset: 1507 },
-                          end: { line: 50, column: 138, offset: 1556 }
+                          start: { line: 50, column: 87, offset: 1505 },
+                          end: { line: 50, column: 136, offset: 1554 }
                         }
                       }
                     ],
                     position: {
                       start: { line: 50, column: 5, offset: 1423 },
-                      end: { line: 50, column: 138, offset: 1556 }
+                      end: { line: 50, column: 136, offset: 1554 }
                     }
                   }
                 ],
                 position: {
                   start: { line: 50, column: 3, offset: 1421 },
-                  end: { line: 50, column: 138, offset: 1556 }
+                  end: { line: 50, column: 136, offset: 1554 }
                 }
               },
               {
@@ -42237,16 +41290,16 @@ export default [
                         type: 'inlineCode',
                         value: 'React',
                         position: {
-                          start: { line: 51, column: 5, offset: 1561 },
-                          end: { line: 51, column: 12, offset: 1568 }
+                          start: { line: 51, column: 5, offset: 1559 },
+                          end: { line: 51, column: 12, offset: 1566 }
                         }
                       },
                       {
                         type: 'text',
                         value: ' - the ',
                         position: {
-                          start: { line: 51, column: 12, offset: 1568 },
-                          end: { line: 51, column: 19, offset: 1575 }
+                          start: { line: 51, column: 12, offset: 1566 },
+                          end: { line: 51, column: 19, offset: 1573 }
                         }
                       },
                       {
@@ -42255,37 +41308,37 @@ export default [
                         url: 'https://react.dev/',
                         children: [
                           {
-                            type: 'inlineCode',
+                            type: 'text',
                             value: 'React',
                             position: {
-                              start: { line: 51, column: 20, offset: 1576 },
-                              end: { line: 51, column: 27, offset: 1583 }
+                              start: { line: 51, column: 20, offset: 1574 },
+                              end: { line: 51, column: 25, offset: 1579 }
                             }
                           }
                         ],
                         position: {
-                          start: { line: 51, column: 19, offset: 1575 },
-                          end: { line: 51, column: 48, offset: 1604 }
+                          start: { line: 51, column: 19, offset: 1573 },
+                          end: { line: 51, column: 46, offset: 1600 }
                         }
                       },
                       {
                         type: 'text',
                         value: ' library.',
                         position: {
-                          start: { line: 51, column: 48, offset: 1604 },
-                          end: { line: 51, column: 57, offset: 1613 }
+                          start: { line: 51, column: 46, offset: 1600 },
+                          end: { line: 51, column: 55, offset: 1609 }
                         }
                       }
                     ],
                     position: {
-                      start: { line: 51, column: 5, offset: 1561 },
-                      end: { line: 51, column: 57, offset: 1613 }
+                      start: { line: 51, column: 5, offset: 1559 },
+                      end: { line: 51, column: 55, offset: 1609 }
                     }
                   }
                 ],
                 position: {
-                  start: { line: 51, column: 3, offset: 1559 },
-                  end: { line: 51, column: 57, offset: 1613 }
+                  start: { line: 51, column: 3, offset: 1557 },
+                  end: { line: 51, column: 55, offset: 1609 }
                 }
               },
               {
@@ -42300,14 +41353,14 @@ export default [
                         type: 'inlineCode',
                         value: 'options',
                         position: {
-                          start: { line: 52, column: 5, offset: 1618 },
-                          end: { line: 52, column: 14, offset: 1627 }
+                          start: { line: 52, column: 5, offset: 1614 },
+                          end: { line: 52, column: 14, offset: 1623 }
                         }
                       }
                     ],
                     position: {
-                      start: { line: 52, column: 5, offset: 1618 },
-                      end: { line: 52, column: 14, offset: 1627 }
+                      start: { line: 52, column: 5, offset: 1614 },
+                      end: { line: 52, column: 14, offset: 1623 }
                     }
                   },
                   {
@@ -42328,11 +41381,11 @@ export default [
                                 type: 'inlineCode',
                                 value: 'styled',
                                 position: {
-                                  start: { line: 53, column: 7, offset: 1634 },
+                                  start: { line: 53, column: 7, offset: 1630 },
                                   end: {
                                     line: 53,
                                     column: 15,
-                                    offset: 1642
+                                    offset: 1638
                                   }
                                 }
                               },
@@ -42343,12 +41396,12 @@ export default [
                                   start: {
                                     line: 53,
                                     column: 15,
-                                    offset: 1642
+                                    offset: 1638
                                   },
                                   end: {
                                     line: 53,
                                     column: 22,
-                                    offset: 1649
+                                    offset: 1645
                                   }
                                 }
                               },
@@ -42364,12 +41417,12 @@ export default [
                                       start: {
                                         line: 53,
                                         column: 23,
-                                        offset: 1650
+                                        offset: 1646
                                       },
                                       end: {
                                         line: 53,
                                         column: 40,
-                                        offset: 1667
+                                        offset: 1663
                                       }
                                     }
                                   }
@@ -42378,12 +41431,12 @@ export default [
                                   start: {
                                     line: 53,
                                     column: 22,
-                                    offset: 1649
+                                    offset: 1645
                                   },
                                   end: {
                                     line: 53,
                                     column: 73,
-                                    offset: 1700
+                                    offset: 1696
                                   }
                                 }
                               },
@@ -42394,43 +41447,43 @@ export default [
                                   start: {
                                     line: 53,
                                     column: 73,
-                                    offset: 1700
+                                    offset: 1696
                                   },
                                   end: {
                                     line: 53,
                                     column: 82,
-                                    offset: 1709
+                                    offset: 1705
                                   }
                                 }
                               }
                             ],
                             position: {
-                              start: { line: 53, column: 7, offset: 1634 },
-                              end: { line: 53, column: 82, offset: 1709 }
+                              start: { line: 53, column: 7, offset: 1630 },
+                              end: { line: 53, column: 82, offset: 1705 }
                             }
                           }
                         ],
                         position: {
-                          start: { line: 53, column: 5, offset: 1632 },
-                          end: { line: 53, column: 82, offset: 1709 }
+                          start: { line: 53, column: 5, offset: 1628 },
+                          end: { line: 53, column: 82, offset: 1705 }
                         }
                       }
                     ],
                     position: {
-                      start: { line: 53, column: 5, offset: 1632 },
-                      end: { line: 53, column: 82, offset: 1709 }
+                      start: { line: 53, column: 5, offset: 1628 },
+                      end: { line: 53, column: 82, offset: 1705 }
                     }
                   }
                 ],
                 position: {
-                  start: { line: 52, column: 3, offset: 1616 },
-                  end: { line: 53, column: 82, offset: 1709 }
+                  start: { line: 52, column: 3, offset: 1612 },
+                  end: { line: 53, column: 82, offset: 1705 }
                 }
               }
             ],
             position: {
               start: { line: 50, column: 3, offset: 1421 },
-              end: { line: 53, column: 82, offset: 1709 }
+              end: { line: 53, column: 82, offset: 1705 }
             }
           },
           {
@@ -42440,14 +41493,14 @@ export default [
                 type: 'text',
                 value: 'Return:',
                 position: {
-                  start: { line: 55, column: 1, offset: 1711 },
-                  end: { line: 55, column: 8, offset: 1718 }
+                  start: { line: 55, column: 1, offset: 1707 },
+                  end: { line: 55, column: 8, offset: 1714 }
                 }
               }
             ],
             position: {
-              start: { line: 55, column: 1, offset: 1711 },
-              end: { line: 55, column: 8, offset: 1718 }
+              start: { line: 55, column: 1, offset: 1707 },
+              end: { line: 55, column: 8, offset: 1714 }
             }
           },
           {
@@ -42468,16 +41521,16 @@ export default [
                         type: 'inlineCode',
                         value: 'DocumentElement',
                         position: {
-                          start: { line: 56, column: 5, offset: 1723 },
-                          end: { line: 56, column: 22, offset: 1740 }
+                          start: { line: 56, column: 5, offset: 1719 },
+                          end: { line: 56, column: 22, offset: 1736 }
                         }
                       },
                       {
                         type: 'text',
                         value: ' - a simplified interface for the ',
                         position: {
-                          start: { line: 56, column: 22, offset: 1740 },
-                          end: { line: 56, column: 56, offset: 1774 }
+                          start: { line: 56, column: 22, offset: 1736 },
+                          end: { line: 56, column: 56, offset: 1770 }
                         }
                       },
                       {
@@ -42489,26 +41542,26 @@ export default [
                             type: 'text',
                             value: 'DOM',
                             position: {
-                              start: { line: 56, column: 57, offset: 1775 },
-                              end: { line: 56, column: 60, offset: 1778 }
+                              start: { line: 56, column: 57, offset: 1771 },
+                              end: { line: 56, column: 60, offset: 1774 }
                             }
                           }
                         ],
                         position: {
-                          start: { line: 56, column: 56, offset: 1774 },
-                          end: { line: 56, column: 133, offset: 1851 }
+                          start: { line: 56, column: 56, offset: 1770 },
+                          end: { line: 56, column: 133, offset: 1847 }
                         }
                       }
                     ],
                     position: {
-                      start: { line: 56, column: 5, offset: 1723 },
-                      end: { line: 56, column: 133, offset: 1851 }
+                      start: { line: 56, column: 5, offset: 1719 },
+                      end: { line: 56, column: 133, offset: 1847 }
                     }
                   }
                 ],
                 position: {
-                  start: { line: 56, column: 3, offset: 1721 },
-                  end: { line: 56, column: 133, offset: 1851 }
+                  start: { line: 56, column: 3, offset: 1717 },
+                  end: { line: 56, column: 133, offset: 1847 }
                 }
               },
               {
@@ -42523,62 +41576,62 @@ export default [
                         type: 'inlineCode',
                         value: 'ReactElement',
                         position: {
-                          start: { line: 57, column: 5, offset: 1856 },
-                          end: { line: 57, column: 19, offset: 1870 }
+                          start: { line: 57, column: 5, offset: 1852 },
+                          end: { line: 57, column: 19, offset: 1866 }
                         }
                       },
                       {
                         type: 'text',
                         value: ' - a pure JavaScript interface for React.',
                         position: {
-                          start: { line: 57, column: 19, offset: 1870 },
-                          end: { line: 57, column: 60, offset: 1911 }
+                          start: { line: 57, column: 19, offset: 1866 },
+                          end: { line: 57, column: 60, offset: 1907 }
                         }
                       }
                     ],
                     position: {
-                      start: { line: 57, column: 5, offset: 1856 },
-                      end: { line: 57, column: 60, offset: 1911 }
+                      start: { line: 57, column: 5, offset: 1852 },
+                      end: { line: 57, column: 60, offset: 1907 }
                     }
                   }
                 ],
                 position: {
-                  start: { line: 57, column: 3, offset: 1854 },
-                  end: { line: 57, column: 60, offset: 1911 }
+                  start: { line: 57, column: 3, offset: 1850 },
+                  end: { line: 57, column: 60, offset: 1907 }
                 }
               }
             ],
             position: {
-              start: { line: 56, column: 3, offset: 1721 },
-              end: { line: 57, column: 60, offset: 1911 }
+              start: { line: 56, column: 3, offset: 1717 },
+              end: { line: 57, column: 60, offset: 1907 }
             }
           },
           {
             type: 'code',
             lang: 'javascript',
-            meta: null,
+            meta: '[playground]',
             value: '{\n' +
               '  const DocumentElement = Arche(document)\n' +
               "  const H1 = DocumentElement('h1')\n" +
-              "  const myH1Element = H1('Title')\n" +
-              "  document.getElementById('#container').appendChild(myH1Element)\n" +
+              "  const myH1Element = H1('DOM Title')\n" +
+              "  document.getElementById('dom-container').appendChild(myH1Element)\n" +
               '}\n' +
               '\n' +
               '{\n' +
               '  const ReactElement = Arche(React)\n' +
-              "  const H1 = ReactElement('he')\n" +
-              "  const myH1ReactElement = H1('Title')\n" +
+              "  const H1 = ReactElement('h1')\n" +
+              "  const myH1ReactElement = H1('React Title')\n" +
               "  ReactDOM.render(myH1ReactElement, document.getElementById('react-root'))\n" +
               '}',
             position: {
-              start: { line: 59, column: 1, offset: 1913 },
-              end: { line: 73, column: 4, offset: 2297 }
+              start: { line: 59, column: 1, offset: 1909 },
+              end: { line: 73, column: 4, offset: 2319 }
             }
           }
         ],
         position: {
           start: { line: 1, column: 1, offset: 0 },
-          end: { line: 73, column: 4, offset: 2297 }
+          end: { line: 73, column: 4, offset: 2319 }
         }
       }
     },

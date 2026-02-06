@@ -54,15 +54,14 @@ const createCronistFile = async function (source, dest, options = {}) {
                   exampleArguments1Map.get(`DocumentElement.${methodName}`) ?? ''
                 return text
                   .replace(/{ELEMENT_NAME}/g, methodName)
+                  .replace(/{LOWER_ELEMENT_NAME}/g, methodName.toLowerCase())
                   .replace(/{EXAMPLE_ARGUMENTS_1}/g, exampleArguments)
               },
               JSON.parse,
             ])
             yield methodData
           }
-        }
-
-        if (data.name == 'ReactElement.{ELEMENT_NAME}') {
+        } else if (data.name == 'ReactElement.{ELEMENT_NAME}') {
           for (const methodName in CreatorElement) {
             if (methodName == 'creator') {
               continue
@@ -74,15 +73,16 @@ const createCronistFile = async function (source, dest, options = {}) {
                   exampleArguments1Map.get(`ReactElement.${methodName}`) ?? ''
                 return text
                   .replace(/{ELEMENT_NAME}/g, methodName)
+                  .replace(/{LOWER_ELEMENT_NAME}/g, methodName.toLowerCase())
                   .replace(/{EXAMPLE_ARGUMENTS_1}/g, exampleArguments)
               },
               JSON.parse,
             ])
             yield methodData
           }
+        } else {
+          yield data
         }
-
-        yield data
       }),
 
       map(assign({ fileName })),

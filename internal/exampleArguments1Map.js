@@ -1,27 +1,79 @@
 const m = new Map()
 
-m.set('DocumentElement.A', `{ href: 'http://example.com/' }, 'My Anchor'`)
+m.set('DocumentElement.A', '{ href: \'http://example.com/\' }, \'My Anchor\'')
+m.set('ReactElement.A', '{ href: \'http://example.com/\' }, \'My Anchor\'')
+
+m.set('DocumentElement.P', '\'Text\'')
+m.set('ReactElement.P', '\'Text\'')
+
+m.set('DocumentElement.B', '\'Text\'')
+m.set('ReactElement.B', '\'Text\'')
+
+m.set('DocumentElement.Q', '\'Text\'')
+m.set('ReactElement.Q', '\'Text\'')
+
+m.set('DocumentElement.I', '\'Text\'')
+m.set('ReactElement.I', '\'Text\'')
+
+m.set('DocumentElement.S', '\'Text\'')
+m.set('ReactElement.S', '\'Text\'')
+
+m.set('DocumentElement.U', '\'Text\'')
+m.set('ReactElement.U', '\'Text\'')
+
+m.set('DocumentElement.Ul', '[Li(\'Item1\'), Li(\'Item2\')]')
+m.set('ReactElement.Ul', '[Li(\'Item1\'), Li(\'Item2\')]')
+
+m.set('DocumentElement.Ol', '[Li(\'Item1\'), Li(\'Item2\')]')
+m.set('ReactElement.Ol', '[Li(\'Item1\'), Li(\'Item2\')]')
+
+m.set('DocumentElement.Li', '\'Item1\'')
+m.set('ReactElement.Li', '\'Item1\'')
+
+m.set('DocumentElement.H1', '\'Heading\'')
+m.set('ReactElement.H1', '\'Heading\'')
+
+m.set('DocumentElement.H2', '\'Heading\'')
+m.set('ReactElement.H2', '\'Heading\'')
+
+m.set('DocumentElement.H3', '\'Heading\'')
+m.set('ReactElement.H3', '\'Heading\'')
+
+m.set('DocumentElement.H4', '\'Heading\'')
+m.set('ReactElement.H4', '\'Heading\'')
+
+m.set('DocumentElement.H5', '\'Heading\'')
+m.set('ReactElement.H5', '\'Heading\'')
+
+m.set('DocumentElement.H6', '\'Heading\'')
+m.set('ReactElement.H6', '\'Heading\'')
+
+m.set('DocumentElement.Script', '{ src: \'https://example.com/script.js\', crossorigin: true }')
+m.set('ReactElement.Script', '{ src: \'https://example.com/script.js\', crossorigin: true }')
+
+m.set('DocumentElement.Style', '\`\\nbody {\\n  background-color: pink;\\n  color: #000;\\n}\\n\`')
+m.set('ReactElement.Style', '\`\\nbody {\\n  background-color: pink;\\n  color: #000;\\n}\\n\`')
+
+m.set('DocumentElement.Span', '\'Text\'')
+m.set('ReactElement.Span', '\'Text\'')
+
+m.set('DocumentElement.Div', '[P(\'Text1\'), P(\'Text2\'))]')
+m.set('ReactElement.Div', '[P(\'Text1\'), P(\'Text2\'))]')
+
+m.set('DocumentElement.Img', '{ src: \'https://placehold.co/300x300\', alt: \'placeholder\' }')
+m.set('ReactElement.Img', '{ src: \'https://placehold.co/300x300\', alt: \'placeholder\' }')
+
+// TODO
+// m.set('DocumentElement.Button', '{ onClick() {} }')
+m.set('ReactElement.Button', '{ onClick() {} }')
+
+m.set('DocumentElement.Code', '\'code\'')
+m.set('ReactElement.Code', '\'code\'')
+
+m.set('DocumentElement.Pre', '\'code\'')
+m.set('ReactElement.Pre', '\'code\'')
 
   /*
-  CreatorElement.A = CreatorElement('a')
-  CreatorElement.P = CreatorElement('p')
-  CreatorElement.B = CreatorElement('b')
-  CreatorElement.Q = CreatorElement('q')
-  CreatorElement.I = CreatorElement('i')
-  CreatorElement.S = CreatorElement('s')
-  CreatorElement.U = CreatorElement('u')
-  CreatorElement.Ul = CreatorElement('ul')
-  CreatorElement.Ol = CreatorElement('ol')
-  CreatorElement.Li = CreatorElement('li')
-
-  CreatorElement.H1 = CreatorElement('h1')
-  CreatorElement.H2 = CreatorElement('h2')
-  CreatorElement.H3 = CreatorElement('h3')
-  CreatorElement.H4 = CreatorElement('h4')
-  CreatorElement.H5 = CreatorElement('h5')
-  CreatorElement.H6 = CreatorElement('h6')
-  CreatorElement.Hr = CreatorElement('hr')
-  CreatorElement.Br = CreatorElement('br')
 
   CreatorElement.Script = CreatorElement('script')
   CreatorElement.Style = CreatorElement('style')
