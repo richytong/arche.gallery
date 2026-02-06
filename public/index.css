@@ -95,7 +95,7 @@ code {
   justify-content: space-between;
   width: 100%;
 }
-#layout > nav * {
+#layout > nav {
   color: #888888;
 }
 #layout > nav > .right-links {
@@ -161,14 +161,12 @@ code {
 }
 
 .nav-link {
-  color: #000;
+  color: #888;
   font-weight: 600;
   text-decoration: none;
 }
 .nav-link.active {
-  color: #000;
-  text-decoration: underline;
-  text-decoration-color: #000;
+  color: #A1F479;
 }
 
 #layout > footer {
