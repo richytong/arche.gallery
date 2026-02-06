@@ -7,12 +7,12 @@ const HamburgerMenuIcon = ReactElement(() => {
     viewBox: '0 0 50 100',
   }, [
     Path({
-      // fill: '#65799b',
       fill: 'transparent',
       d: 'M0 0h50v100H0z',
     }),
     Path({
-      fill: '#333',
+      id: 'hamburger-menu-color',
+      fill: '#888',
       d: 'M14 15h22v4H14zm0 8h22v4H14zm0 8h22v4H14z',
     }),
     Path({

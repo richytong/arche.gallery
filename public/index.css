@@ -54,6 +54,10 @@ a > code {
   color: blue;
 }
 
+input {
+  color: #888;
+}
+
 code {
   background-color: #f6f8fa;
   font-family: SourceCodePro;
@@ -251,8 +255,11 @@ code {
   opacity: 1;
   left: 0;
 }
-#hamburger-menu-icon.active svg {
-  opacity: 0.5;
+#hamburger-menu-icon svg #hamburger-menu-color {
+  transition: fill 0.2s;
+}
+#hamburger-menu-icon.active svg #hamburger-menu-color {
+  fill: #A1F479;
 }
 
 #hamburger-menu {
@@ -411,6 +418,7 @@ article a {
   font-weight: 600;
   font-size: 16px;
   overflow-x: scroll;
+  color: #7FB665;
 }
 
 .docs .method > a {
