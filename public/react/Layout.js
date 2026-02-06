@@ -60,7 +60,7 @@ const Layout = ReactElement(props => {
         ]),
 
         Div({ class: 'links' }, [
-          // NavLink({ href: '/docs' }, 'Docs'),
+          NavLink({ href: '/docs' }, '/docs'),
           // A({ href: '/blog' }, 'Blog'),
         ]),
       ]),
@@ -68,7 +68,6 @@ const Layout = ReactElement(props => {
       // Span({ class: 'nav-spacer' }),
 
 
-      /*
       Div({ class: 'right-links' }, [
         mediaQuery.matches ? [
           Button({
@@ -83,7 +82,6 @@ const Layout = ReactElement(props => {
           ]),
         ] : []
       ]),
-    */
     ]),
 
     Div({ class: 'nav-text' }, [
