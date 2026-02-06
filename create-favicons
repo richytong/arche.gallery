@@ -10,6 +10,6 @@ setImmediate(async function () {
   const sizes = [16, 32]
 
   for (const size of sizes) {
-    await createFavicon(`${__dirname}/public/assets/favicon.png`, size)
+    await createFavicon(`${__dirname}/public/assets/ArcheLogo.svg`, size)
   }
 })
