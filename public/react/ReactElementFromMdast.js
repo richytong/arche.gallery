@@ -1,4 +1,5 @@
 import CodeViewer from './CodeViewer.js'
+import CodeRunner from './CodeRunner.js'
 
 const isArray = Array.isArray
 
@@ -165,6 +166,14 @@ const ReactElementFromMdast = ReactElement(props => {
               theme: 'coffeescript',
             }),
           ])
+        case '[playground]':
+          const [code, imports] = codeSpliceImports(mdast.value)
+          return CodeRunner({
+            code,
+            mode: mdast.lang,
+            theme: 'default',
+            imports,
+          })
         case '[node]':
           return CodeViewer({
             code: mdast.value,

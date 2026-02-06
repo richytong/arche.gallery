@@ -15,7 +15,7 @@ module.exports = {
     ScriptTag('https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js', {
       crossorigin: true,
     }),
-    ScriptTag('https://unpkg.com/arche@0.3.11/index.js', {
+    ScriptTag('https://unpkg.com/arche@1.0.0/index.js', {
       crossorigin: true,
     }),
     ScriptTag('/global.js'),

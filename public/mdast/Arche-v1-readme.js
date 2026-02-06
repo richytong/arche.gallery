@@ -161,43 +161,40 @@ export default {
     {
       type: 'code',
       lang: 'javascript',
-      meta: null,
-      value: 'const DocumentElement = Arche(document)\n' +
-        'const { Div, H1, P } = DocumentElement\n' +
+      meta: '[playground]',
+      value: '{\n' +
+        '  const DocumentElement = Arche(document)\n' +
+        '  const { Div, H1, P } = DocumentElement\n' +
         '\n' +
-        "const myElement = Div({ id: 'my-element' }, [\n" +
-        "  H1('I am a heading'),\n" +
-        "  P('paragraph'),\n" +
-        "  P('lorem ipsum'),\n" +
-        '])\n' +
+        "  const myElement = Div({ id: 'my-element' }, [\n" +
+        "    H1('Heading'),\n" +
+        "    P('paragraph'),\n" +
+        "    P('lorem ipsum'),\n" +
+        '  ])\n' +
         '\n' +
-        "document.getElementById('#my-container').appendChild(myElement)\n" +
-        '// <div id="my-container">\n' +
-        '//   <div id="my-element">\n' +
-        '//     <h1>I am a heading</h1>\n' +
-        '//     <p>paragraph</p>\n' +
-        '//     <p>lorem ipsum</p>\n' +
-        '//   </div>\n' +
-        '// </div>\n' +
+        "  document.getElementById('dom-container').appendChild(myElement)\n" +
+        '}\n' +
         '\n' +
-        'const ReactElement = Arche(React)\n' +
-        'const { Div, H1, P, Button, Img } = ReactElement\n' +
+        '{\n' +
+        '  const ReactElement = Arche(React)\n' +
+        '  const { Div, H1, P, Button, Img } = ReactElement\n' +
         '\n' +
-        'const UserCard = ReactElement(({\n' +
-        '  firstName, lastName, age,\n' +
-        '}) => Div([\n' +
-        '  H1(`${firstName} ${lastName}`),\n' +
-        "  Img({ src: 'https://via.placeholder.com/150x150', alt: 'placeholder' }),\n" +
-        "  P({ style: { color: 'lightgrey' } }, `age: ${age}`),\n" +
-        ']))\n' +
+        '  const UserCard = ReactElement(({\n' +
+        '    firstName, lastName, age,\n' +
+        '  }) => Div([\n' +
+        '    H1(`${firstName} ${lastName}`),\n' +
+        "    Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' }),\n" +
+        "    P({ style: { color: 'lightgrey' } }, `age: ${age}`),\n" +
+        '  ]))\n' +
         '\n' +
-        'ReactDOM.render(\n' +
-        "  UserCard({ firstName: 'Example', lastName: 'Name', age: 32 }),\n" +
-        "  document.getElementById('react-root')\n" +
-        ')',
+        '  ReactDOM.render(\n' +
+        "    UserCard({ firstName: 'Example', lastName: 'Name', age: 32 }),\n" +
+        "    document.getElementById('react-root')\n" +
+        '  )\n' +
+        '}',
       position: {
         start: { line: 11, column: 1, offset: 717 },
-        end: { line: 45, column: 4, offset: 1598 }
+        end: { line: 42, column: 4, offset: 1490 }
       }
     },
     {
@@ -208,14 +205,14 @@ export default {
           type: 'text',
           value: 'Installation',
           position: {
-            start: { line: 47, column: 4, offset: 1603 },
-            end: { line: 47, column: 16, offset: 1615 }
+            start: { line: 44, column: 4, offset: 1495 },
+            end: { line: 44, column: 16, offset: 1507 }
           }
         }
       ],
       position: {
-        start: { line: 47, column: 1, offset: 1600 },
-        end: { line: 47, column: 16, offset: 1615 }
+        start: { line: 44, column: 1, offset: 1492 },
+        end: { line: 44, column: 16, offset: 1507 }
       }
     },
     {
@@ -225,22 +222,22 @@ export default {
           type: 'text',
           value: 'with ',
           position: {
-            start: { line: 48, column: 1, offset: 1616 },
-            end: { line: 48, column: 6, offset: 1621 }
+            start: { line: 45, column: 1, offset: 1508 },
+            end: { line: 45, column: 6, offset: 1513 }
           }
         },
         {
           type: 'inlineCode',
           value: 'npm',
           position: {
-            start: { line: 48, column: 6, offset: 1621 },
-            end: { line: 48, column: 11, offset: 1626 }
+            start: { line: 45, column: 6, offset: 1513 },
+            end: { line: 45, column: 11, offset: 1518 }
           }
         }
       ],
       position: {
-        start: { line: 48, column: 1, offset: 1616 },
-        end: { line: 48, column: 11, offset: 1626 }
+        start: { line: 45, column: 1, offset: 1508 },
+        end: { line: 45, column: 11, offset: 1518 }
       }
     },
     {
@@ -249,8 +246,8 @@ export default {
       meta: null,
       value: 'npm i arche',
       position: {
-        start: { line: 50, column: 1, offset: 1628 },
-        end: { line: 52, column: 4, offset: 1651 }
+        start: { line: 47, column: 1, offset: 1520 },
+        end: { line: 49, column: 4, offset: 1543 }
       }
     },
     {
@@ -260,22 +257,22 @@ export default {
           type: 'text',
           value: 'with browser script, sets ',
           position: {
-            start: { line: 54, column: 1, offset: 1653 },
-            end: { line: 54, column: 27, offset: 1679 }
+            start: { line: 51, column: 1, offset: 1545 },
+            end: { line: 51, column: 27, offset: 1571 }
           }
         },
         {
           type: 'inlineCode',
           value: 'window.Arche',
           position: {
-            start: { line: 54, column: 27, offset: 1679 },
-            end: { line: 54, column: 41, offset: 1693 }
+            start: { line: 51, column: 27, offset: 1571 },
+            end: { line: 51, column: 41, offset: 1585 }
           }
         }
       ],
       position: {
-        start: { line: 54, column: 1, offset: 1653 },
-        end: { line: 54, column: 41, offset: 1693 }
+        start: { line: 51, column: 1, offset: 1545 },
+        end: { line: 51, column: 41, offset: 1585 }
       }
     },
     {
@@ -284,8 +281,8 @@ export default {
       meta: null,
       value: '<script src="https://unpkg.com/arche"></script>',
       position: {
-        start: { line: 56, column: 1, offset: 1695 },
-        end: { line: 58, column: 4, offset: 1754 }
+        start: { line: 53, column: 1, offset: 1587 },
+        end: { line: 55, column: 4, offset: 1646 }
       }
     },
     {
@@ -295,8 +292,8 @@ export default {
           type: 'text',
           value: 'with ',
           position: {
-            start: { line: 60, column: 1, offset: 1756 },
-            end: { line: 60, column: 6, offset: 1761 }
+            start: { line: 57, column: 1, offset: 1648 },
+            end: { line: 57, column: 6, offset: 1653 }
           }
         },
         {
@@ -308,20 +305,20 @@ export default {
               type: 'text',
               value: 'ES Modules',
               position: {
-                start: { line: 60, column: 7, offset: 1762 },
-                end: { line: 60, column: 17, offset: 1772 }
+                start: { line: 57, column: 7, offset: 1654 },
+                end: { line: 57, column: 17, offset: 1664 }
               }
             }
           ],
           position: {
-            start: { line: 60, column: 6, offset: 1761 },
-            end: { line: 60, column: 89, offset: 1844 }
+            start: { line: 57, column: 6, offset: 1653 },
+            end: { line: 57, column: 89, offset: 1736 }
           }
         }
       ],
       position: {
-        start: { line: 60, column: 1, offset: 1756 },
-        end: { line: 60, column: 89, offset: 1844 }
+        start: { line: 57, column: 1, offset: 1648 },
+        end: { line: 57, column: 89, offset: 1736 }
       }
     },
     {
@@ -330,8 +327,8 @@ export default {
       meta: null,
       value: "import Arche from 'https://unpkg.com/arche/es.js'",
       position: {
-        start: { line: 61, column: 1, offset: 1845 },
-        end: { line: 63, column: 4, offset: 1912 }
+        start: { line: 58, column: 1, offset: 1737 },
+        end: { line: 60, column: 4, offset: 1804 }
       }
     },
     {
@@ -341,30 +338,30 @@ export default {
           type: 'text',
           value: 'Set ',
           position: {
-            start: { line: 65, column: 1, offset: 1914 },
-            end: { line: 65, column: 5, offset: 1918 }
+            start: { line: 62, column: 1, offset: 1806 },
+            end: { line: 62, column: 5, offset: 1810 }
           }
         },
         {
           type: 'inlineCode',
           value: 'DocumentElement',
           position: {
-            start: { line: 65, column: 5, offset: 1918 },
-            end: { line: 65, column: 22, offset: 1935 }
+            start: { line: 62, column: 5, offset: 1810 },
+            end: { line: 62, column: 22, offset: 1827 }
           }
         },
         {
           type: 'text',
           value: ' globally for a better developer experience.',
           position: {
-            start: { line: 65, column: 22, offset: 1935 },
-            end: { line: 65, column: 66, offset: 1979 }
+            start: { line: 62, column: 22, offset: 1827 },
+            end: { line: 62, column: 66, offset: 1871 }
           }
         }
       ],
       position: {
-        start: { line: 65, column: 1, offset: 1914 },
-        end: { line: 65, column: 66, offset: 1979 }
+        start: { line: 62, column: 1, offset: 1806 },
+        end: { line: 62, column: 66, offset: 1871 }
       }
     },
     {
@@ -385,8 +382,8 @@ export default {
         "window.Svg = DocumentElement('svg')\n" +
         "window.Path = DocumentElement('path')",
       position: {
-        start: { line: 67, column: 1, offset: 1981 },
-        end: { line: 81, column: 4, offset: 2325 }
+        start: { line: 64, column: 1, offset: 1873 },
+        end: { line: 78, column: 4, offset: 2217 }
       }
     },
     {
@@ -397,14 +394,14 @@ export default {
           type: 'text',
           value: 'Syntax',
           position: {
-            start: { line: 83, column: 4, offset: 2330 },
-            end: { line: 83, column: 10, offset: 2336 }
+            start: { line: 80, column: 4, offset: 2222 },
+            end: { line: 80, column: 10, offset: 2228 }
           }
         }
       ],
       position: {
-        start: { line: 83, column: 1, offset: 2327 },
-        end: { line: 83, column: 10, offset: 2336 }
+        start: { line: 80, column: 1, offset: 2219 },
+        end: { line: 80, column: 10, offset: 2228 }
       }
     },
     {
@@ -472,8 +469,8 @@ export default {
         'TypedDocumentElement(props object, children Array<Element|string>) -> element Element\n' +
         'TypedDocumentElement(children Array<Element|string>) -> element Element',
       position: {
-        start: { line: 84, column: 1, offset: 2337 },
-        end: { line: 145, column: 4, offset: 4730 }
+        start: { line: 81, column: 1, offset: 2229 },
+        end: { line: 142, column: 4, offset: 4622 }
       }
     },
     {
@@ -484,14 +481,14 @@ export default {
           type: 'text',
           value: 'Using React',
           position: {
-            start: { line: 147, column: 4, offset: 4735 },
-            end: { line: 147, column: 15, offset: 4746 }
+            start: { line: 144, column: 4, offset: 4627 },
+            end: { line: 144, column: 15, offset: 4638 }
           }
         }
       ],
       position: {
-        start: { line: 147, column: 1, offset: 4732 },
-        end: { line: 147, column: 15, offset: 4746 }
+        start: { line: 144, column: 1, offset: 4624 },
+        end: { line: 144, column: 15, offset: 4638 }
       }
     },
     {
@@ -501,8 +498,8 @@ export default {
           type: 'text',
           value: 'To use Arche with ',
           position: {
-            start: { line: 148, column: 1, offset: 4747 },
-            end: { line: 148, column: 19, offset: 4765 }
+            start: { line: 145, column: 1, offset: 4639 },
+            end: { line: 145, column: 19, offset: 4657 }
           }
         },
         {
@@ -514,28 +511,28 @@ export default {
               type: 'text',
               value: 'React',
               position: {
-                start: { line: 148, column: 20, offset: 4766 },
-                end: { line: 148, column: 25, offset: 4771 }
+                start: { line: 145, column: 20, offset: 4658 },
+                end: { line: 145, column: 25, offset: 4663 }
               }
             }
           ],
           position: {
-            start: { line: 148, column: 19, offset: 4765 },
-            end: { line: 148, column: 46, offset: 4792 }
+            start: { line: 145, column: 19, offset: 4657 },
+            end: { line: 145, column: 46, offset: 4684 }
           }
         },
         {
           type: 'text',
           value: ', simply provide the React library.',
           position: {
-            start: { line: 148, column: 46, offset: 4792 },
-            end: { line: 148, column: 81, offset: 4827 }
+            start: { line: 145, column: 46, offset: 4684 },
+            end: { line: 145, column: 81, offset: 4719 }
           }
         }
       ],
       position: {
-        start: { line: 148, column: 1, offset: 4747 },
-        end: { line: 148, column: 81, offset: 4827 }
+        start: { line: 145, column: 1, offset: 4639 },
+        end: { line: 145, column: 81, offset: 4719 }
       }
     },
     {
@@ -544,8 +541,8 @@ export default {
       meta: null,
       value: 'const ReactElement = Arche(React)',
       position: {
-        start: { line: 150, column: 1, offset: 4829 },
-        end: { line: 152, column: 4, offset: 4880 }
+        start: { line: 147, column: 1, offset: 4721 },
+        end: { line: 149, column: 4, offset: 4772 }
       }
     },
     {
@@ -555,14 +552,14 @@ export default {
           type: 'text',
           value: 'Create dynamic components with props.',
           position: {
-            start: { line: 154, column: 1, offset: 4882 },
-            end: { line: 154, column: 38, offset: 4919 }
+            start: { line: 151, column: 1, offset: 4774 },
+            end: { line: 151, column: 38, offset: 4811 }
           }
         }
       ],
       position: {
-        start: { line: 154, column: 1, offset: 4882 },
-        end: { line: 154, column: 38, offset: 4919 }
+        start: { line: 151, column: 1, offset: 4774 },
+        end: { line: 151, column: 38, offset: 4811 }
       }
     },
     {
@@ -588,8 +585,8 @@ export default {
         '//   <p style="color: lightgrey">age: 32</p>\n' +
         '// </div>',
       position: {
-        start: { line: 156, column: 1, offset: 4921 },
-        end: { line: 175, column: 4, offset: 5497 }
+        start: { line: 153, column: 1, offset: 4813 },
+        end: { line: 172, column: 4, offset: 5389 }
       }
     },
     {
@@ -599,8 +596,8 @@ export default {
           type: 'text',
           value: 'Complete interoperability with React hooks (converted from ',
           position: {
-            start: { line: 177, column: 1, offset: 5499 },
-            end: { line: 177, column: 60, offset: 5558 }
+            start: { line: 174, column: 1, offset: 5391 },
+            end: { line: 174, column: 60, offset: 5450 }
           }
         },
         {
@@ -612,28 +609,28 @@ export default {
               type: 'text',
               value: 'this example',
               position: {
-                start: { line: 177, column: 61, offset: 5559 },
-                end: { line: 177, column: 73, offset: 5571 }
+                start: { line: 174, column: 61, offset: 5451 },
+                end: { line: 174, column: 73, offset: 5463 }
               }
             }
           ],
           position: {
-            start: { line: 177, column: 60, offset: 5558 },
-            end: { line: 177, column: 117, offset: 5615 }
+            start: { line: 174, column: 60, offset: 5450 },
+            end: { line: 174, column: 117, offset: 5507 }
           }
         },
         {
           type: 'text',
           value: ').',
           position: {
-            start: { line: 177, column: 117, offset: 5615 },
-            end: { line: 177, column: 119, offset: 5617 }
+            start: { line: 174, column: 117, offset: 5507 },
+            end: { line: 174, column: 119, offset: 5509 }
           }
         }
       ],
       position: {
-        start: { line: 177, column: 1, offset: 5499 },
-        end: { line: 177, column: 119, offset: 5617 }
+        start: { line: 174, column: 1, offset: 5391 },
+        end: { line: 174, column: 119, offset: 5509 }
       }
     },
     {
@@ -663,8 +660,8 @@ export default {
         '//   <button onclick="setCount(count + 1)">Click me</button>\n' +
         '// </div>',
       position: {
-        start: { line: 179, column: 1, offset: 5619 },
-        end: { line: 202, column: 4, offset: 6101 }
+        start: { line: 176, column: 1, offset: 5511 },
+        end: { line: 199, column: 4, offset: 5993 }
       }
     },
     {
@@ -674,30 +671,30 @@ export default {
           type: 'text',
           value: 'Set ',
           position: {
-            start: { line: 204, column: 1, offset: 6103 },
-            end: { line: 204, column: 5, offset: 6107 }
+            start: { line: 201, column: 1, offset: 5995 },
+            end: { line: 201, column: 5, offset: 5999 }
           }
         },
         {
           type: 'inlineCode',
           value: 'ReactElement',
           position: {
-            start: { line: 204, column: 5, offset: 6107 },
-            end: { line: 204, column: 19, offset: 6121 }
+            start: { line: 201, column: 5, offset: 5999 },
+            end: { line: 201, column: 19, offset: 6013 }
           }
         },
         {
           type: 'text',
           value: ' globally for a better developer experience.',
           position: {
-            start: { line: 204, column: 19, offset: 6121 },
-            end: { line: 204, column: 63, offset: 6165 }
+            start: { line: 201, column: 19, offset: 6013 },
+            end: { line: 201, column: 63, offset: 6057 }
           }
         }
       ],
       position: {
-        start: { line: 204, column: 1, offset: 6103 },
-        end: { line: 204, column: 63, offset: 6165 }
+        start: { line: 201, column: 1, offset: 5995 },
+        end: { line: 201, column: 63, offset: 6057 }
       }
     },
     {
@@ -718,8 +715,8 @@ export default {
         "window.Svg = ReactElement('svg')\n" +
         "window.Path = ReactElement('path')",
       position: {
-        start: { line: 206, column: 1, offset: 6167 },
-        end: { line: 220, column: 4, offset: 6492 }
+        start: { line: 203, column: 1, offset: 6059 },
+        end: { line: 217, column: 4, offset: 6384 }
       }
     },
     {
@@ -730,14 +727,14 @@ export default {
           type: 'text',
           value: 'Syntax with React',
           position: {
-            start: { line: 222, column: 4, offset: 6497 },
-            end: { line: 222, column: 21, offset: 6514 }
+            start: { line: 219, column: 4, offset: 6389 },
+            end: { line: 219, column: 21, offset: 6406 }
           }
         }
       ],
       position: {
-        start: { line: 222, column: 1, offset: 6494 },
-        end: { line: 222, column: 21, offset: 6514 }
+        start: { line: 219, column: 1, offset: 6386 },
+        end: { line: 219, column: 21, offset: 6406 }
       }
     },
     {
@@ -817,8 +814,8 @@ export default {
         '\n' +
         'TypedReactElement(children Array<React.Element|string>) -> reactElement React.Element',
       position: {
-        start: { line: 224, column: 1, offset: 6516 },
-        end: { line: 297, column: 4, offset: 8862 }
+        start: { line: 221, column: 1, offset: 6408 },
+        end: { line: 294, column: 4, offset: 8754 }
       }
     },
     {
@@ -829,14 +826,14 @@ export default {
           type: 'text',
           value: 'Using React Context',
           position: {
-            start: { line: 299, column: 4, offset: 8867 },
-            end: { line: 299, column: 23, offset: 8886 }
+            start: { line: 296, column: 4, offset: 8759 },
+            end: { line: 296, column: 23, offset: 8778 }
           }
         }
       ],
       position: {
-        start: { line: 299, column: 1, offset: 8864 },
-        end: { line: 299, column: 23, offset: 8886 }
+        start: { line: 296, column: 1, offset: 8756 },
+        end: { line: 296, column: 23, offset: 8778 }
       }
     },
     {
@@ -846,62 +843,62 @@ export default {
           type: 'text',
           value: 'To use React Context with Arche, wrap ',
           position: {
-            start: { line: 300, column: 1, offset: 8887 },
-            end: { line: 300, column: 39, offset: 8925 }
+            start: { line: 297, column: 1, offset: 8779 },
+            end: { line: 297, column: 39, offset: 8817 }
           }
         },
         {
           type: 'inlineCode',
           value: 'YourContext.Provider',
           position: {
-            start: { line: 300, column: 39, offset: 8925 },
-            end: { line: 300, column: 61, offset: 8947 }
+            start: { line: 297, column: 39, offset: 8817 },
+            end: { line: 297, column: 61, offset: 8839 }
           }
         },
         {
           type: 'text',
           value: ' with ',
           position: {
-            start: { line: 300, column: 61, offset: 8947 },
-            end: { line: 300, column: 67, offset: 8953 }
+            start: { line: 297, column: 61, offset: 8839 },
+            end: { line: 297, column: 67, offset: 8845 }
           }
         },
         {
           type: 'inlineCode',
           value: 'ReactElement',
           position: {
-            start: { line: 300, column: 67, offset: 8953 },
-            end: { line: 300, column: 81, offset: 8967 }
+            start: { line: 297, column: 67, offset: 8845 },
+            end: { line: 297, column: 81, offset: 8859 }
           }
         },
         {
           type: 'text',
           value: ' and supply ',
           position: {
-            start: { line: 300, column: 81, offset: 8967 },
-            end: { line: 300, column: 93, offset: 8979 }
+            start: { line: 297, column: 81, offset: 8859 },
+            end: { line: 297, column: 93, offset: 8871 }
           }
         },
         {
           type: 'inlineCode',
           value: 'value',
           position: {
-            start: { line: 300, column: 93, offset: 8979 },
-            end: { line: 300, column: 100, offset: 8986 }
+            start: { line: 297, column: 93, offset: 8871 },
+            end: { line: 297, column: 100, offset: 8878 }
           }
         },
         {
           type: 'text',
           value: ' as a prop, specifying children in the next argument.',
           position: {
-            start: { line: 300, column: 100, offset: 8986 },
-            end: { line: 300, column: 153, offset: 9039 }
+            start: { line: 297, column: 100, offset: 8878 },
+            end: { line: 297, column: 153, offset: 8931 }
           }
         }
       ],
       position: {
-        start: { line: 300, column: 1, offset: 8887 },
-        end: { line: 300, column: 153, offset: 9039 }
+        start: { line: 297, column: 1, offset: 8779 },
+        end: { line: 297, column: 153, offset: 8931 }
       }
     },
     {
@@ -911,14 +908,14 @@ export default {
           type: 'text',
           value: 'JSX example:',
           position: {
-            start: { line: 302, column: 1, offset: 9041 },
-            end: { line: 302, column: 13, offset: 9053 }
+            start: { line: 299, column: 1, offset: 8933 },
+            end: { line: 299, column: 13, offset: 8945 }
           }
         }
       ],
       position: {
-        start: { line: 302, column: 1, offset: 9041 },
-        end: { line: 302, column: 13, offset: 9053 }
+        start: { line: 299, column: 1, offset: 8933 },
+        end: { line: 299, column: 13, offset: 8945 }
       }
     },
     {
@@ -939,8 +936,8 @@ export default {
         '  )\n' +
         '}',
       position: {
-        start: { line: 303, column: 1, offset: 9054 },
-        end: { line: 317, column: 4, offset: 9328 }
+        start: { line: 300, column: 1, offset: 8946 },
+        end: { line: 314, column: 4, offset: 9220 }
       }
     },
     {
@@ -950,14 +947,14 @@ export default {
           type: 'text',
           value: 'Translates to the following with Arche:',
           position: {
-            start: { line: 319, column: 1, offset: 9330 },
-            end: { line: 319, column: 40, offset: 9369 }
+            start: { line: 316, column: 1, offset: 9222 },
+            end: { line: 316, column: 40, offset: 9261 }
           }
         }
       ],
       position: {
-        start: { line: 319, column: 1, offset: 9330 },
-        end: { line: 319, column: 40, offset: 9369 }
+        start: { line: 316, column: 1, offset: 9222 },
+        end: { line: 316, column: 40, offset: 9261 }
       }
     },
     {
@@ -972,8 +969,8 @@ export default {
         '  }, [ThemeSwitcher(), Article()])\n' +
         '})',
       position: {
-        start: { line: 320, column: 1, offset: 9370 },
-        end: { line: 328, column: 4, offset: 9616 }
+        start: { line: 317, column: 1, offset: 9262 },
+        end: { line: 325, column: 4, offset: 9508 }
       }
     },
     {
@@ -984,14 +981,14 @@ export default {
           type: 'text',
           value: 'Using styled',
           position: {
-            start: { line: 330, column: 4, offset: 9621 },
-            end: { line: 330, column: 16, offset: 9633 }
+            start: { line: 327, column: 4, offset: 9513 },
+            end: { line: 327, column: 16, offset: 9525 }
           }
         }
       ],
       position: {
-        start: { line: 330, column: 1, offset: 9618 },
-        end: { line: 330, column: 16, offset: 9633 }
+        start: { line: 327, column: 1, offset: 9510 },
+        end: { line: 327, column: 16, offset: 9525 }
       }
     },
     {
@@ -1001,24 +998,24 @@ export default {
           type: 'text',
           value: 'Arche accepts a ',
           position: {
-            start: { line: 331, column: 1, offset: 9634 },
-            end: { line: 331, column: 17, offset: 9650 }
+            start: { line: 328, column: 1, offset: 9526 },
+            end: { line: 328, column: 17, offset: 9542 }
           }
         },
         {
           type: 'inlineCode',
           value: 'styled',
           position: {
-            start: { line: 331, column: 17, offset: 9650 },
-            end: { line: 331, column: 25, offset: 9658 }
+            start: { line: 328, column: 17, offset: 9542 },
+            end: { line: 328, column: 25, offset: 9550 }
           }
         },
         {
           type: 'text',
           value: ' option from css-in-js libraries like ',
           position: {
-            start: { line: 331, column: 25, offset: 9658 },
-            end: { line: 331, column: 63, offset: 9696 }
+            start: { line: 328, column: 25, offset: 9550 },
+            end: { line: 328, column: 63, offset: 9588 }
           }
         },
         {
@@ -1030,76 +1027,76 @@ export default {
               type: 'text',
               value: 'Styled Components',
               position: {
-                start: { line: 331, column: 64, offset: 9697 },
-                end: { line: 331, column: 81, offset: 9714 }
+                start: { line: 328, column: 64, offset: 9589 },
+                end: { line: 328, column: 81, offset: 9606 }
               }
             }
           ],
           position: {
-            start: { line: 331, column: 63, offset: 9696 },
-            end: { line: 331, column: 114, offset: 9747 }
+            start: { line: 328, column: 63, offset: 9588 },
+            end: { line: 328, column: 114, offset: 9639 }
           }
         },
         {
           type: 'text',
           value: ' to enable a ',
           position: {
-            start: { line: 331, column: 114, offset: 9747 },
-            end: { line: 331, column: 127, offset: 9760 }
+            start: { line: 328, column: 114, offset: 9639 },
+            end: { line: 328, column: 127, offset: 9652 }
           }
         },
         {
           type: 'inlineCode',
           value: 'css',
           position: {
-            start: { line: 331, column: 127, offset: 9760 },
-            end: { line: 331, column: 132, offset: 9765 }
+            start: { line: 328, column: 127, offset: 9652 },
+            end: { line: 328, column: 132, offset: 9657 }
           }
         },
         {
           type: 'text',
           value: ' prop on ',
           position: {
-            start: { line: 331, column: 132, offset: 9765 },
-            end: { line: 331, column: 141, offset: 9774 }
+            start: { line: 328, column: 132, offset: 9657 },
+            end: { line: 328, column: 141, offset: 9666 }
           }
         },
         {
           type: 'inlineCode',
           value: 'ReactElement',
           position: {
-            start: { line: 331, column: 141, offset: 9774 },
-            end: { line: 331, column: 155, offset: 9788 }
+            start: { line: 328, column: 141, offset: 9666 },
+            end: { line: 328, column: 155, offset: 9680 }
           }
         },
         {
           type: 'text',
           value: ' and ',
           position: {
-            start: { line: 331, column: 155, offset: 9788 },
-            end: { line: 331, column: 160, offset: 9793 }
+            start: { line: 328, column: 155, offset: 9680 },
+            end: { line: 328, column: 160, offset: 9685 }
           }
         },
         {
           type: 'inlineCode',
           value: 'TypedReactElement',
           position: {
-            start: { line: 331, column: 160, offset: 9793 },
-            end: { line: 331, column: 179, offset: 9812 }
+            start: { line: 328, column: 160, offset: 9685 },
+            end: { line: 328, column: 179, offset: 9704 }
           }
         },
         {
           type: 'text',
           value: '.',
           position: {
-            start: { line: 331, column: 179, offset: 9812 },
-            end: { line: 331, column: 180, offset: 9813 }
+            start: { line: 328, column: 179, offset: 9704 },
+            end: { line: 328, column: 180, offset: 9705 }
           }
         }
       ],
       position: {
-        start: { line: 331, column: 1, offset: 9634 },
-        end: { line: 331, column: 180, offset: 9813 }
+        start: { line: 328, column: 1, offset: 9526 },
+        end: { line: 328, column: 180, offset: 9705 }
       }
     },
     {
@@ -1108,8 +1105,8 @@ export default {
       meta: null,
       value: '// global.js\nconst ReactElement = Arche(React, { styled })',
       position: {
-        start: { line: 333, column: 1, offset: 9815 },
-        end: { line: 336, column: 4, offset: 9891 }
+        start: { line: 330, column: 1, offset: 9707 },
+        end: { line: 333, column: 4, offset: 9783 }
       }
     },
     {
@@ -1119,30 +1116,30 @@ export default {
           type: 'text',
           value: 'Elements can now specify a ',
           position: {
-            start: { line: 338, column: 1, offset: 9893 },
-            end: { line: 338, column: 28, offset: 9920 }
+            start: { line: 335, column: 1, offset: 9785 },
+            end: { line: 335, column: 28, offset: 9812 }
           }
         },
         {
           type: 'inlineCode',
           value: 'css',
           position: {
-            start: { line: 338, column: 28, offset: 9920 },
-            end: { line: 338, column: 33, offset: 9925 }
+            start: { line: 335, column: 28, offset: 9812 },
+            end: { line: 335, column: 33, offset: 9817 }
           }
         },
         {
           type: 'text',
           value: ' prop to use css-in-js.',
           position: {
-            start: { line: 338, column: 33, offset: 9925 },
-            end: { line: 338, column: 56, offset: 9948 }
+            start: { line: 335, column: 33, offset: 9817 },
+            end: { line: 335, column: 56, offset: 9840 }
           }
         }
       ],
       position: {
-        start: { line: 338, column: 1, offset: 9893 },
-        end: { line: 338, column: 56, offset: 9948 }
+        start: { line: 335, column: 1, offset: 9785 },
+        end: { line: 335, column: 56, offset: 9840 }
       }
     },
     {
@@ -1159,8 +1156,8 @@ export default {
         '  })\n' +
         '})',
       position: {
-        start: { line: 340, column: 1, offset: 9950 },
-        end: { line: 350, column: 4, offset: 10120 }
+        start: { line: 337, column: 1, offset: 9842 },
+        end: { line: 347, column: 4, offset: 10012 }
       }
     },
     {
@@ -1171,14 +1168,14 @@ export default {
           type: 'text',
           value: 'Syntax with styled',
           position: {
-            start: { line: 352, column: 4, offset: 10125 },
-            end: { line: 352, column: 22, offset: 10143 }
+            start: { line: 349, column: 4, offset: 10017 },
+            end: { line: 349, column: 22, offset: 10035 }
           }
         }
       ],
       position: {
-        start: { line: 352, column: 1, offset: 10122 },
-        end: { line: 352, column: 22, offset: 10143 }
+        start: { line: 349, column: 1, offset: 10014 },
+        end: { line: 349, column: 22, offset: 10035 }
       }
     },
     {
@@ -1287,8 +1284,8 @@ export default {
         '\n' +
         'TypedReactElement(children Array<React.Element|string>) -> reactElement React.Element',
       position: {
-        start: { line: 353, column: 1, offset: 10144 },
-        end: { line: 455, column: 4, offset: 13239 }
+        start: { line: 350, column: 1, offset: 10036 },
+        end: { line: 452, column: 4, offset: 13131 }
       }
     },
     {
@@ -1299,14 +1296,14 @@ export default {
           type: 'text',
           value: 'Contributing',
           position: {
-            start: { line: 457, column: 3, offset: 13243 },
-            end: { line: 457, column: 15, offset: 13255 }
+            start: { line: 454, column: 3, offset: 13135 },
+            end: { line: 454, column: 15, offset: 13147 }
           }
         }
       ],
       position: {
-        start: { line: 457, column: 1, offset: 13241 },
-        end: { line: 457, column: 15, offset: 13255 }
+        start: { line: 454, column: 1, offset: 13133 },
+        end: { line: 454, column: 15, offset: 13147 }
       }
     },
     {
@@ -1316,14 +1313,14 @@ export default {
           type: 'text',
           value: 'Your feedback and contributions are welcome. If you have a suggestion, please raise an issue. Prior to that, please search through the issues first in case your suggestion has been made already. If you decide to work on an issue, please create a pull request.',
           position: {
-            start: { line: 458, column: 1, offset: 13256 },
-            end: { line: 458, column: 260, offset: 13515 }
+            start: { line: 455, column: 1, offset: 13148 },
+            end: { line: 455, column: 260, offset: 13407 }
           }
         }
       ],
       position: {
-        start: { line: 458, column: 1, offset: 13256 },
-        end: { line: 458, column: 260, offset: 13515 }
+        start: { line: 455, column: 1, offset: 13148 },
+        end: { line: 455, column: 260, offset: 13407 }
       }
     },
     {
@@ -1333,8 +1330,8 @@ export default {
           type: 'text',
           value: 'Pull requests should provide some basic context and link the relevant issue. Here is an ',
           position: {
-            start: { line: 460, column: 1, offset: 13517 },
-            end: { line: 460, column: 89, offset: 13605 }
+            start: { line: 457, column: 1, offset: 13409 },
+            end: { line: 457, column: 89, offset: 13497 }
           }
         },
         {
@@ -1346,22 +1343,22 @@ export default {
               type: 'text',
               value: 'example pull request',
               position: {
-                start: { line: 460, column: 90, offset: 13606 },
-                end: { line: 460, column: 110, offset: 13626 }
+                start: { line: 457, column: 90, offset: 13498 },
+                end: { line: 457, column: 110, offset: 13518 }
               }
             }
           ],
           position: {
-            start: { line: 460, column: 89, offset: 13605 },
-            end: { line: 460, column: 160, offset: 13676 }
+            start: { line: 457, column: 89, offset: 13497 },
+            end: { line: 457, column: 160, offset: 13568 }
           }
         },
         {
           type: 'text',
           value: '. If you are interested in contributing, the ',
           position: {
-            start: { line: 460, column: 160, offset: 13676 },
-            end: { line: 460, column: 205, offset: 13721 }
+            start: { line: 457, column: 160, offset: 13568 },
+            end: { line: 457, column: 205, offset: 13613 }
           }
         },
         {
@@ -1373,28 +1370,28 @@ export default {
               type: 'text',
               value: 'help wanted',
               position: {
-                start: { line: 460, column: 206, offset: 13722 },
-                end: { line: 460, column: 217, offset: 13733 }
+                start: { line: 457, column: 206, offset: 13614 },
+                end: { line: 457, column: 217, offset: 13625 }
               }
             }
           ],
           position: {
-            start: { line: 460, column: 205, offset: 13721 },
-            end: { line: 460, column: 310, offset: 13826 }
+            start: { line: 457, column: 205, offset: 13613 },
+            end: { line: 457, column: 310, offset: 13718 }
           }
         },
         {
           type: 'text',
           value: ' tag is a good place to start.',
           position: {
-            start: { line: 460, column: 310, offset: 13826 },
-            end: { line: 460, column: 340, offset: 13856 }
+            start: { line: 457, column: 310, offset: 13718 },
+            end: { line: 457, column: 340, offset: 13748 }
           }
         }
       ],
       position: {
-        start: { line: 460, column: 1, offset: 13517 },
-        end: { line: 460, column: 340, offset: 13856 }
+        start: { line: 457, column: 1, offset: 13409 },
+        end: { line: 457, column: 340, offset: 13748 }
       }
     },
     {
@@ -1404,8 +1401,8 @@ export default {
           type: 'text',
           value: 'For more information please see ',
           position: {
-            start: { line: 462, column: 1, offset: 13858 },
-            end: { line: 462, column: 33, offset: 13890 }
+            start: { line: 459, column: 1, offset: 13750 },
+            end: { line: 459, column: 33, offset: 13782 }
           }
         },
         {
@@ -1417,20 +1414,20 @@ export default {
               type: 'text',
               value: 'CONTRIBUTING.md',
               position: {
-                start: { line: 462, column: 34, offset: 13891 },
-                end: { line: 462, column: 49, offset: 13906 }
+                start: { line: 459, column: 34, offset: 13783 },
+                end: { line: 459, column: 49, offset: 13798 }
               }
             }
           ],
           position: {
-            start: { line: 462, column: 33, offset: 13890 },
-            end: { line: 462, column: 68, offset: 13925 }
+            start: { line: 459, column: 33, offset: 13782 },
+            end: { line: 459, column: 68, offset: 13817 }
           }
         }
       ],
       position: {
-        start: { line: 462, column: 1, offset: 13858 },
-        end: { line: 462, column: 68, offset: 13925 }
+        start: { line: 459, column: 1, offset: 13750 },
+        end: { line: 459, column: 68, offset: 13817 }
       }
     },
     {
@@ -1441,14 +1438,14 @@ export default {
           type: 'text',
           value: 'License',
           position: {
-            start: { line: 464, column: 3, offset: 13929 },
-            end: { line: 464, column: 10, offset: 13936 }
+            start: { line: 461, column: 3, offset: 13821 },
+            end: { line: 461, column: 10, offset: 13828 }
           }
         }
       ],
       position: {
-        start: { line: 464, column: 1, offset: 13927 },
-        end: { line: 464, column: 10, offset: 13936 }
+        start: { line: 461, column: 1, offset: 13819 },
+        end: { line: 461, column: 10, offset: 13828 }
       }
     },
     {
@@ -1458,8 +1455,8 @@ export default {
           type: 'text',
           value: 'Arche is ',
           position: {
-            start: { line: 465, column: 1, offset: 13937 },
-            end: { line: 465, column: 10, offset: 13946 }
+            start: { line: 462, column: 1, offset: 13829 },
+            end: { line: 462, column: 10, offset: 13838 }
           }
         },
         {
@@ -1471,28 +1468,28 @@ export default {
               type: 'text',
               value: 'MIT Licensed',
               position: {
-                start: { line: 465, column: 11, offset: 13947 },
-                end: { line: 465, column: 23, offset: 13959 }
+                start: { line: 462, column: 11, offset: 13839 },
+                end: { line: 462, column: 23, offset: 13851 }
               }
             }
           ],
           position: {
-            start: { line: 465, column: 10, offset: 13946 },
-            end: { line: 465, column: 85, offset: 14021 }
+            start: { line: 462, column: 10, offset: 13838 },
+            end: { line: 462, column: 85, offset: 13913 }
           }
         },
         {
           type: 'text',
           value: '.',
           position: {
-            start: { line: 465, column: 85, offset: 14021 },
-            end: { line: 465, column: 86, offset: 14022 }
+            start: { line: 462, column: 85, offset: 13913 },
+            end: { line: 462, column: 86, offset: 13914 }
           }
         }
       ],
       position: {
-        start: { line: 465, column: 1, offset: 13937 },
-        end: { line: 465, column: 86, offset: 14022 }
+        start: { line: 462, column: 1, offset: 13829 },
+        end: { line: 462, column: 86, offset: 13914 }
       }
     },
     {
@@ -1503,14 +1500,14 @@ export default {
           type: 'text',
           value: 'Support',
           position: {
-            start: { line: 467, column: 3, offset: 14026 },
-            end: { line: 467, column: 10, offset: 14033 }
+            start: { line: 464, column: 3, offset: 13918 },
+            end: { line: 464, column: 10, offset: 13925 }
           }
         }
       ],
       position: {
-        start: { line: 467, column: 1, offset: 14024 },
-        end: { line: 467, column: 10, offset: 14033 }
+        start: { line: 464, column: 1, offset: 13916 },
+        end: { line: 464, column: 10, offset: 13925 }
       }
     },
     {
@@ -1531,20 +1528,20 @@ export default {
                   type: 'text',
                   value: 'minimum Node.js version: 14',
                   position: {
-                    start: { line: 468, column: 4, offset: 14037 },
-                    end: { line: 468, column: 31, offset: 14064 }
+                    start: { line: 465, column: 4, offset: 13929 },
+                    end: { line: 465, column: 31, offset: 13956 }
                   }
                 }
               ],
               position: {
-                start: { line: 468, column: 4, offset: 14037 },
-                end: { line: 468, column: 31, offset: 14064 }
+                start: { line: 465, column: 4, offset: 13929 },
+                end: { line: 465, column: 31, offset: 13956 }
               }
             }
           ],
           position: {
-            start: { line: 468, column: 2, offset: 14035 },
-            end: { line: 468, column: 31, offset: 14064 }
+            start: { line: 465, column: 2, offset: 13927 },
+            end: { line: 465, column: 31, offset: 13956 }
           }
         },
         {
@@ -1559,20 +1556,20 @@ export default {
                   type: 'text',
                   value: 'minimum Chrome version: 63',
                   position: {
-                    start: { line: 469, column: 4, offset: 14068 },
-                    end: { line: 469, column: 30, offset: 14094 }
+                    start: { line: 466, column: 4, offset: 13960 },
+                    end: { line: 466, column: 30, offset: 13986 }
                   }
                 }
               ],
               position: {
-                start: { line: 469, column: 4, offset: 14068 },
-                end: { line: 469, column: 30, offset: 14094 }
+                start: { line: 466, column: 4, offset: 13960 },
+                end: { line: 466, column: 30, offset: 13986 }
               }
             }
           ],
           position: {
-            start: { line: 469, column: 2, offset: 14066 },
-            end: { line: 469, column: 30, offset: 14094 }
+            start: { line: 466, column: 2, offset: 13958 },
+            end: { line: 466, column: 30, offset: 13986 }
           }
         },
         {
@@ -1587,20 +1584,20 @@ export default {
                   type: 'text',
                   value: 'minimum Firefox version: 57',
                   position: {
-                    start: { line: 470, column: 4, offset: 14098 },
-                    end: { line: 470, column: 31, offset: 14125 }
+                    start: { line: 467, column: 4, offset: 13990 },
+                    end: { line: 467, column: 31, offset: 14017 }
                   }
                 }
               ],
               position: {
-                start: { line: 470, column: 4, offset: 14098 },
-                end: { line: 470, column: 31, offset: 14125 }
+                start: { line: 467, column: 4, offset: 13990 },
+                end: { line: 467, column: 31, offset: 14017 }
               }
             }
           ],
           position: {
-            start: { line: 470, column: 2, offset: 14096 },
-            end: { line: 470, column: 31, offset: 14125 }
+            start: { line: 467, column: 2, offset: 13988 },
+            end: { line: 467, column: 31, offset: 14017 }
           }
         },
         {
@@ -1615,20 +1612,20 @@ export default {
                   type: 'text',
                   value: 'minimum Edge version: 79',
                   position: {
-                    start: { line: 471, column: 4, offset: 14129 },
-                    end: { line: 471, column: 28, offset: 14153 }
+                    start: { line: 468, column: 4, offset: 14021 },
+                    end: { line: 468, column: 28, offset: 14045 }
                   }
                 }
               ],
               position: {
-                start: { line: 471, column: 4, offset: 14129 },
-                end: { line: 471, column: 28, offset: 14153 }
+                start: { line: 468, column: 4, offset: 14021 },
+                end: { line: 468, column: 28, offset: 14045 }
               }
             }
           ],
           position: {
-            start: { line: 471, column: 2, offset: 14127 },
-            end: { line: 471, column: 28, offset: 14153 }
+            start: { line: 468, column: 2, offset: 14019 },
+            end: { line: 468, column: 28, offset: 14045 }
           }
         },
         {
@@ -1643,31 +1640,31 @@ export default {
                   type: 'text',
                   value: 'minimum Safari version: 11.1',
                   position: {
-                    start: { line: 472, column: 4, offset: 14157 },
-                    end: { line: 472, column: 32, offset: 14185 }
+                    start: { line: 469, column: 4, offset: 14049 },
+                    end: { line: 469, column: 32, offset: 14077 }
                   }
                 }
               ],
               position: {
-                start: { line: 472, column: 4, offset: 14157 },
-                end: { line: 472, column: 32, offset: 14185 }
+                start: { line: 469, column: 4, offset: 14049 },
+                end: { line: 469, column: 32, offset: 14077 }
               }
             }
           ],
           position: {
-            start: { line: 472, column: 2, offset: 14155 },
-            end: { line: 472, column: 32, offset: 14185 }
+            start: { line: 469, column: 2, offset: 14047 },
+            end: { line: 469, column: 32, offset: 14077 }
           }
         }
       ],
       position: {
-        start: { line: 468, column: 2, offset: 14035 },
-        end: { line: 472, column: 32, offset: 14185 }
+        start: { line: 465, column: 2, offset: 13927 },
+        end: { line: 469, column: 32, offset: 14077 }
       }
     }
   ],
   position: {
     start: { line: 1, column: 1, offset: 0 },
-    end: { line: 473, column: 1, offset: 14186 }
+    end: { line: 470, column: 1, offset: 14078 }
   }
 }
