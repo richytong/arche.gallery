@@ -5,6 +5,7 @@ const cronist = require('cronist')
 const fs = require('fs')
 const FileSystem = require('./internal/FileSystem')
 const walkPathForJSFilePaths = require('./internal/walkPathForJSFilePaths')
+const exampleArguments1Map = require('./internal/exampleArguments1Map.js')
 const { inspect } = require('util')
 
 const readFileUtf8 = path => fs.promises.readFile(path, { encoding: 'utf8' })
@@ -24,29 +25,99 @@ export default ${inspect(data, {
 }
 
 const createCronistFile = async function (source, dest, options = {}) {
-  const { requiredKeys, ignoreDirs } = options
+  const { requiredKeys, ignoreDirs, Arche } = options
+
+  const creator = { createElement() {} }
+  const CreatorElement = Arche(creator)
+
   await pipe(source, [
     curry.arity(2, walkPathForJSFilePaths, __, { ignoreDirs }),
 
     flatMap(async fileName => pipe(fileName, [
       readFileUtf8,
       cronist,
+
       filter(data => data.name && data.docs && Object.keys(data.mdast).length > 1),
-      forEach(data => {
-        if (data.constructor === '') {
-          data.constructor = true
+
+      // map(omit(['docs'])),
+
+      flatMap(function* (data) {
+        if (data.name == 'DocumentElement.{ELEMENT_NAME}') {
+          for (const methodName in CreatorElement) {
+            if (methodName == 'creator') {
+              continue
+            }
+            const methodData = pipe(data, [
+              JSON.stringify,
+              text => {
+                const exampleArguments =
+                  exampleArguments1Map.get(`DocumentElement.${methodName}`) ?? ''
+                return text
+                  .replace(/{ELEMENT_NAME}/g, methodName)
+                  .replace(/{EXAMPLE_ARGUMENTS_1}/g, exampleArguments)
+              },
+              JSON.parse,
+            ])
+            yield methodData
+          }
         }
+
+        if (data.name == 'ReactElement.{ELEMENT_NAME}') {
+          for (const methodName in CreatorElement) {
+            if (methodName == 'creator') {
+              continue
+            }
+            const methodData = pipe(data, [
+              JSON.stringify,
+              text => {
+                const exampleArguments =
+                  exampleArguments1Map.get(`ReactElement.${methodName}`) ?? ''
+                return text
+                  .replace(/{ELEMENT_NAME}/g, methodName)
+                  .replace(/{EXAMPLE_ARGUMENTS_1}/g, exampleArguments)
+              },
+              JSON.parse,
+            ])
+            yield methodData
+          }
+        }
+
+        yield data
       }),
-      switchCase([
-        data => data.length > 0,
-        ([classDocsData, ...methodsDocsData]) => [{
-          ...classDocsData,
-          methods: methodsDocsData,
-        }],
-        data => data,
-      ]),
+
       map(assign({ fileName })),
     ])),
+
+    data => {
+      data.find(item => item.name == 'Arche').methods = []
+
+      data.find(item => item.name == 'DocumentElement').methods =
+        transform(data, compose([
+          Transducer.filter(item => item.name.startsWith('DocumentElement.')),
+          Transducer.map(item => pipe(item, [
+            JSON.stringify,
+            text => text.replace(/DocumentElement\./g, ''),
+            JSON.parse,
+          ])),
+        ]), [])
+
+      data.find(item => item.name == 'ReactElement').methods =
+        transform(data, compose([
+          Transducer.filter(item => item.name.startsWith('ReactElement.')),
+          Transducer.map(item => pipe(item, [
+            JSON.stringify,
+            text => text.replace(/ReactElement\./g, ''),
+            JSON.parse,
+          ])),
+        ]), [])
+
+      return data
+    },
+
+    filter(item => (
+      !item.name.startsWith('DocumentElement.')
+      && !item.name.startsWith('ReactElement.')
+    )),
 
     data => fs.promises.writeFile(dest, `
 export default ${inspect(data, {
@@ -60,6 +131,7 @@ export default ${inspect(data, {
 
 // createMdast() -> Promise<>
 const createMdast = async function () {
+  const Arche = require('../Arche')
   const ArcheVersion = require('../Arche/package').version
   const ArcheMajorVersion = ArcheVersion.split('.')[0]
 
@@ -76,6 +148,7 @@ const createMdast = async function () {
     {
       requiredKeys: ['name', 'docs'],
       ignoreDirs: ['node_modules', 'archive'],
+      Arche,
     },
   )
 }

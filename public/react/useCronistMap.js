@@ -1,6 +1,7 @@
 import useGlobalState from './useGlobalState.js'
 import useArcheVersion from './useArcheVersion.js'
 import defaultCronistArche from '../cronist/Arche-v1.js'
+import DefaultArche from 'https://unpkg.com/arche@1/es.js'
 
 function createCronistMap(cronistObject, version) {
   const {
@@ -19,6 +20,7 @@ function createCronistMap(cronistObject, version) {
 
 const initial = createCronistMap({
   cronistArche: defaultCronistArche,
+  Arche: DefaultArche,
 }, defaultArcheVersion.toLowerCase())
 
 /**

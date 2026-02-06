@@ -57,6 +57,8 @@ const codeSpliceImports = function (code) {
 const ReactElementFromMdast = ReactElement(props => {
   const { mdast } = props
 
+  console.log('ReactElementFromMdast', mdast)
+
   switch (mdast.type) {
     case 'yaml': {
       return []
