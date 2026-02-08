@@ -6,6 +6,7 @@ import ReactElementFromMdast from './ReactElementFromMdast.js'
 import usePath from './usePath.js'
 import useCronistMap from './useCronistMap.js'
 import ArcheClassExludedMethods from './ArcheClassExcludedMethods.js'
+import useMediaQuery from './useMediaQuery.js'
 
 /**
  * @name DocsHome
@@ -36,14 +37,17 @@ const DocsHome = ReactElement(props => {
     }
   }, [path])
 
+  const [mediaQuery] = useMediaQuery('(max-width: 768px)')
+
   useEffect(function scrollToAnchor() {
     const anchor = new URL(location.href).hash
     if (anchor.length > 0) {
       setTimeout(() => {
-        window.scrollTo(0, document.getElementById(anchor.slice(1)).offsetTop + 300)
+        const offset = mediaQuery.matches ? 200 : 300
+        window.scrollTo(0, document.getElementById(anchor.slice(1)).offsetTop + offset)
       }, 10)
     }
-  }, [])
+  }, [mediaQuery])
 
   const docsData = cronistMap.get(docsViewerClassName)
   const excludedMethods = ArcheClassExludedMethods.get(docsViewerClassName) ?? []

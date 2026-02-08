@@ -2,6 +2,7 @@ import Home from './Home.js'
 import DocsHome from './DocsHome.js'
 import NotFoundHome from './NotFoundHome.js'
 import usePath from './usePath.js'
+import useMediaQuery from './useMediaQuery.js'
 
 /**
  * @name Root
@@ -20,9 +21,11 @@ const Root = ReactElement(() => {
     })
 
     return () => {
-      removeEventListener(listener)
+      removeEventListener('popstate', listener)
     }
   }, [])
+
+  const [mediaQuery] = useMediaQuery('(max-width: 768px)')
 
   useEffect(() => {
     const listener = document.body.addEventListener('click', event => {
@@ -32,7 +35,8 @@ const Root = ReactElement(() => {
       }
       if (anchorTarget?.tagName == 'A') {
         const anchor = new URL(anchorTarget.href).hash
-        const desiredScrollY = anchorTarget.offsetTop + 300
+        const offset = mediaQuery.matches ? 200 : 300
+        const desiredScrollY = anchorTarget.offsetTop + offset
         if (window.scrollY == desiredScrollY) {
           event.preventDefault()
         } else if (anchor.length > 0) {
@@ -44,9 +48,9 @@ const Root = ReactElement(() => {
     })
 
     return () => {
-      removeEventListener(listener)
+      document.body.removeEventListener('click', listener)
     }
-  }, [])
+  }, [mediaQuery])
 
   if (path == '/') {
     return Home()
