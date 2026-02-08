@@ -331,7 +331,10 @@ export default [
           '```javascript\n' +
           "const myA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
           "document.getElementById('#container').appendChild(myA)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -686,11 +689,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -723,7 +798,10 @@ export default [
           '```javascript\n' +
           "const myP = P('Text')\n" +
           "document.getElementById('#container').appendChild(myP)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -1078,11 +1156,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -1115,7 +1265,10 @@ export default [
           '```javascript\n' +
           "const myB = B('Text')\n" +
           "document.getElementById('#container').appendChild(myB)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -1470,11 +1623,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -1507,7 +1732,10 @@ export default [
           '```javascript\n' +
           "const myQ = Q('Text')\n" +
           "document.getElementById('#container').appendChild(myQ)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -1862,11 +2090,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -1899,7 +2199,10 @@ export default [
           '```javascript\n' +
           "const myI = I('Text')\n" +
           "document.getElementById('#container').appendChild(myI)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -2254,11 +2557,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -2291,7 +2666,10 @@ export default [
           '```javascript\n' +
           "const myS = S('Text')\n" +
           "document.getElementById('#container').appendChild(myS)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -2646,11 +3024,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -2683,7 +3133,10 @@ export default [
           '```javascript\n' +
           "const myU = U('Text')\n" +
           "document.getElementById('#container').appendChild(myU)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -3038,11 +3491,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -3075,7 +3600,10 @@ export default [
           '```javascript\n' +
           "const myUl = Ul([Li('Item1'), Li('Item2')])\n" +
           "document.getElementById('#container').appendChild(myUl)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -3430,11 +3958,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -3467,7 +4067,10 @@ export default [
           '```javascript\n' +
           "const myOl = Ol([Li('Item1'), Li('Item2')])\n" +
           "document.getElementById('#container').appendChild(myOl)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -3822,11 +4425,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -3859,7 +4534,10 @@ export default [
           '```javascript\n' +
           "const myLi = Li('Item1')\n" +
           "document.getElementById('#container').appendChild(myLi)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -4214,11 +4892,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -4251,7 +5001,10 @@ export default [
           '```javascript\n' +
           "const myH1 = H1('Heading')\n" +
           "document.getElementById('#container').appendChild(myH1)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -4606,11 +5359,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -4643,7 +5468,10 @@ export default [
           '```javascript\n' +
           "const myH2 = H2('Heading')\n" +
           "document.getElementById('#container').appendChild(myH2)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -4998,11 +5826,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -5035,7 +5935,10 @@ export default [
           '```javascript\n' +
           "const myH3 = H3('Heading')\n" +
           "document.getElementById('#container').appendChild(myH3)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -5390,11 +6293,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -5427,7 +6402,10 @@ export default [
           '```javascript\n' +
           "const myH4 = H4('Heading')\n" +
           "document.getElementById('#container').appendChild(myH4)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -5782,11 +6760,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -5819,7 +6869,10 @@ export default [
           '```javascript\n' +
           "const myH5 = H5('Heading')\n" +
           "document.getElementById('#container').appendChild(myH5)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -6174,11 +7227,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -6211,7 +7336,10 @@ export default [
           '```javascript\n' +
           "const myH6 = H6('Heading')\n" +
           "document.getElementById('#container').appendChild(myH6)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -6566,11 +7694,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -6603,7 +7803,10 @@ export default [
           '```javascript\n' +
           'const myHr = Hr()\n' +
           "document.getElementById('#container').appendChild(myHr)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -6958,11 +8161,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -6995,7 +8270,10 @@ export default [
           '```javascript\n' +
           'const myBr = Br()\n' +
           "document.getElementById('#container').appendChild(myBr)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -7350,11 +8628,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -7387,7 +8737,10 @@ export default [
           '```javascript\n' +
           "const myScript = Script({ src: 'https://example.com/script.js', crossorigin: true })\n" +
           "document.getElementById('#container').appendChild(myScript)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -7742,11 +9095,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -7784,7 +9209,10 @@ export default [
           '}\n' +
           '`)\n' +
           "document.getElementById('#container').appendChild(myStyle)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -8144,11 +9572,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -8181,7 +9681,10 @@ export default [
           '```javascript\n' +
           'const myHtml = Html()\n' +
           "document.getElementById('#container').appendChild(myHtml)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -8536,11 +10039,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -8573,7 +10148,10 @@ export default [
           '```javascript\n' +
           'const myMain = Main()\n' +
           "document.getElementById('#container').appendChild(myMain)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -8928,11 +10506,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -8965,7 +10615,10 @@ export default [
           '```javascript\n' +
           'const myBody = Body()\n' +
           "document.getElementById('#container').appendChild(myBody)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -9320,11 +10973,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -9357,7 +11082,10 @@ export default [
           '```javascript\n' +
           'const myHeader = Header()\n' +
           "document.getElementById('#container').appendChild(myHeader)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -9712,11 +11440,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -9749,7 +11549,10 @@ export default [
           '```javascript\n' +
           'const myNav = Nav()\n' +
           "document.getElementById('#container').appendChild(myNav)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -10104,11 +11907,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -10141,7 +12016,10 @@ export default [
           '```javascript\n' +
           'const mySection = Section()\n' +
           "document.getElementById('#container').appendChild(mySection)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -10496,11 +12374,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -10533,7 +12483,10 @@ export default [
           '```javascript\n' +
           'const myArticle = Article()\n' +
           "document.getElementById('#container').appendChild(myArticle)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -10888,11 +12841,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -10925,7 +12950,10 @@ export default [
           '```javascript\n' +
           'const myFooter = Footer()\n' +
           "document.getElementById('#container').appendChild(myFooter)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -11280,11 +13308,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -11317,7 +13417,10 @@ export default [
           '```javascript\n' +
           "const mySpan = Span('Text')\n" +
           "document.getElementById('#container').appendChild(mySpan)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -11672,11 +13775,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -11709,7 +13884,10 @@ export default [
           '```javascript\n' +
           "const myDiv = Div([P('Text1'), P('Text2'))])\n" +
           "document.getElementById('#container').appendChild(myDiv)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -12064,11 +14242,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -12101,7 +14351,10 @@ export default [
           '```javascript\n' +
           "const myImg = Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' })\n" +
           "document.getElementById('#container').appendChild(myImg)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -12456,11 +14709,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -12493,7 +14818,10 @@ export default [
           '```javascript\n' +
           'const myVideo = Video()\n' +
           "document.getElementById('#container').appendChild(myVideo)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -12848,11 +15176,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -12885,7 +15285,10 @@ export default [
           '```javascript\n' +
           'const myPicture = Picture()\n' +
           "document.getElementById('#container').appendChild(myPicture)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -13240,11 +15643,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -13277,7 +15752,10 @@ export default [
           '```javascript\n' +
           'const mySource = Source()\n' +
           "document.getElementById('#container').appendChild(mySource)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -13632,11 +16110,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -13669,7 +16219,10 @@ export default [
           '```javascript\n' +
           'const myForm = Form()\n' +
           "document.getElementById('#container').appendChild(myForm)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -14024,11 +16577,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -14061,7 +16686,10 @@ export default [
           '```javascript\n' +
           'const myFieldset = Fieldset()\n' +
           "document.getElementById('#container').appendChild(myFieldset)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -14416,11 +17044,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -14453,7 +17153,10 @@ export default [
           '```javascript\n' +
           'const myInput = Input()\n' +
           "document.getElementById('#container').appendChild(myInput)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -14808,11 +17511,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -14845,7 +17620,10 @@ export default [
           '```javascript\n' +
           'const myLabel = Label()\n' +
           "document.getElementById('#container').appendChild(myLabel)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -15200,11 +17978,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -15237,7 +18087,10 @@ export default [
           '```javascript\n' +
           'const myTextarea = Textarea()\n' +
           "document.getElementById('#container').appendChild(myTextarea)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -15592,11 +18445,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -15629,7 +18554,10 @@ export default [
           '```javascript\n' +
           'const mySelect = Select()\n' +
           "document.getElementById('#container').appendChild(mySelect)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -15984,11 +18912,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -16021,7 +19021,10 @@ export default [
           '```javascript\n' +
           'const myOption = Option()\n' +
           "document.getElementById('#container').appendChild(myOption)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -16376,11 +19379,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -16413,7 +19488,10 @@ export default [
           '```javascript\n' +
           'const myButton = Button()\n' +
           "document.getElementById('#container').appendChild(myButton)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -16768,11 +19846,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -16805,7 +19955,10 @@ export default [
           '```javascript\n' +
           'const myIframe = Iframe()\n' +
           "document.getElementById('#container').appendChild(myIframe)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -17160,11 +20313,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -17197,7 +20422,10 @@ export default [
           '```javascript\n' +
           'const myBlockquote = Blockquote()\n' +
           "document.getElementById('#container').appendChild(myBlockquote)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -17552,11 +20780,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -17589,7 +20889,10 @@ export default [
           '```javascript\n' +
           "const myCode = Code('code')\n" +
           "document.getElementById('#container').appendChild(myCode)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -17944,11 +21247,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -17981,7 +21356,10 @@ export default [
           '```javascript\n' +
           "const myPre = Pre('code')\n" +
           "document.getElementById('#container').appendChild(myPre)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -18336,11 +21714,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -18373,7 +21823,10 @@ export default [
           '```javascript\n' +
           'const myPolygon = Polygon()\n' +
           "document.getElementById('#container').appendChild(myPolygon)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -18728,11 +22181,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -18765,7 +22290,10 @@ export default [
           '```javascript\n' +
           'const mySvg = Svg()\n' +
           "document.getElementById('#container').appendChild(mySvg)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -19120,11 +22648,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -19157,7 +22757,10 @@ export default [
           '```javascript\n' +
           'const myPath = Path()\n' +
           "document.getElementById('#container').appendChild(myPath)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -19512,11 +23115,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -19549,7 +23224,10 @@ export default [
           '```javascript\n' +
           'const myRect = Rect()\n' +
           "document.getElementById('#container').appendChild(myRect)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -19904,11 +23582,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -19941,7 +23691,10 @@ export default [
           '```javascript\n' +
           'const myMask = Mask()\n' +
           "document.getElementById('#container').appendChild(myMask)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -20296,11 +24049,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -20333,7 +24158,10 @@ export default [
           '```javascript\n' +
           'const myDl = Dl()\n' +
           "document.getElementById('#container').appendChild(myDl)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -20688,11 +24516,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -20725,7 +24625,10 @@ export default [
           '```javascript\n' +
           'const myDt = Dt()\n' +
           "document.getElementById('#container').appendChild(myDt)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -21080,11 +24983,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -21117,7 +25092,10 @@ export default [
           '```javascript\n' +
           'const myDd = Dd()\n' +
           "document.getElementById('#container').appendChild(myDd)\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [DocumentElement](/docs/DocumentElement)',
         mdast: {
           name: {
             type: 'root',
@@ -21472,11 +25450,83 @@ export default [
                   start: { line: 23, column: 1, offset: 985 },
                   end: { line: 26, column: 4, offset: 1149 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 28, column: 1, offset: 1151 },
+                      end: { line: 28, column: 12, offset: 1162 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 28, column: 1, offset: 1151 },
+                  end: { line: 28, column: 12, offset: 1162 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/DocumentElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'DocumentElement',
+                                position: {
+                                  start: { line: 29, column: 6, offset: 1168 },
+                                  end: {
+                                    line: 29,
+                                    column: 21,
+                                    offset: 1183
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 29, column: 5, offset: 1167 },
+                              end: { line: 29, column: 45, offset: 1207 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 29, column: 5, offset: 1167 },
+                          end: { line: 29, column: 45, offset: 1207 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 29, column: 3, offset: 1165 },
+                      end: { line: 29, column: 45, offset: 1207 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 29, column: 3, offset: 1165 },
+                  end: { line: 29, column: 45, offset: 1207 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 26, column: 4, offset: 1149 }
+              end: { line: 29, column: 45, offset: 1207 }
             }
           }
         },
@@ -21870,7 +25920,10 @@ export default [
           '```javascript\n' +
           "const myReactA = A({ href: 'http://example.com/' }, 'My Anchor')\n" +
           "ReactDOM.render(myReactA, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -22172,11 +26225,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -22225,7 +26350,10 @@ export default [
           '```javascript\n' +
           "const myReactP = P('Text')\n" +
           "ReactDOM.render(myReactP, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -22527,11 +26655,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -22580,7 +26780,10 @@ export default [
           '```javascript\n' +
           "const myReactB = B('Text')\n" +
           "ReactDOM.render(myReactB, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -22882,11 +27085,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -22935,7 +27210,10 @@ export default [
           '```javascript\n' +
           "const myReactQ = Q('Text')\n" +
           "ReactDOM.render(myReactQ, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -23237,11 +27515,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -23290,7 +27640,10 @@ export default [
           '```javascript\n' +
           "const myReactI = I('Text')\n" +
           "ReactDOM.render(myReactI, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -23592,11 +27945,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -23645,7 +28070,10 @@ export default [
           '```javascript\n' +
           "const myReactS = S('Text')\n" +
           "ReactDOM.render(myReactS, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -23947,11 +28375,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -24000,7 +28500,10 @@ export default [
           '```javascript\n' +
           "const myReactU = U('Text')\n" +
           "ReactDOM.render(myReactU, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -24302,11 +28805,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -24355,7 +28930,10 @@ export default [
           '```javascript\n' +
           "const myReactUl = Ul([Li('Item1'), Li('Item2')])\n" +
           "ReactDOM.render(myReactUl, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -24657,11 +29235,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -24710,7 +29360,10 @@ export default [
           '```javascript\n' +
           "const myReactOl = Ol([Li('Item1'), Li('Item2')])\n" +
           "ReactDOM.render(myReactOl, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -25012,11 +29665,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -25065,7 +29790,10 @@ export default [
           '```javascript\n' +
           "const myReactLi = Li('Item1')\n" +
           "ReactDOM.render(myReactLi, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -25367,11 +30095,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -25420,7 +30220,10 @@ export default [
           '```javascript\n' +
           "const myReactH1 = H1('Heading')\n" +
           "ReactDOM.render(myReactH1, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -25722,11 +30525,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -25775,7 +30650,10 @@ export default [
           '```javascript\n' +
           "const myReactH2 = H2('Heading')\n" +
           "ReactDOM.render(myReactH2, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -26077,11 +30955,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -26130,7 +31080,10 @@ export default [
           '```javascript\n' +
           "const myReactH3 = H3('Heading')\n" +
           "ReactDOM.render(myReactH3, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -26432,11 +31385,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -26485,7 +31510,10 @@ export default [
           '```javascript\n' +
           "const myReactH4 = H4('Heading')\n" +
           "ReactDOM.render(myReactH4, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -26787,11 +31815,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -26840,7 +31940,10 @@ export default [
           '```javascript\n' +
           "const myReactH5 = H5('Heading')\n" +
           "ReactDOM.render(myReactH5, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -27142,11 +32245,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -27195,7 +32370,10 @@ export default [
           '```javascript\n' +
           "const myReactH6 = H6('Heading')\n" +
           "ReactDOM.render(myReactH6, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -27497,11 +32675,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -27550,7 +32800,10 @@ export default [
           '```javascript\n' +
           'const myReactHr = Hr()\n' +
           "ReactDOM.render(myReactHr, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -27852,11 +33105,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -27905,7 +33230,10 @@ export default [
           '```javascript\n' +
           'const myReactBr = Br()\n' +
           "ReactDOM.render(myReactBr, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -28207,11 +33535,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -28260,7 +33660,10 @@ export default [
           '```javascript\n' +
           "const myReactScript = Script({ src: 'https://example.com/script.js', crossorigin: true })\n" +
           "ReactDOM.render(myReactScript, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -28562,11 +33965,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -28620,7 +34095,10 @@ export default [
           '}\n' +
           '`)\n' +
           "ReactDOM.render(myReactStyle, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -28927,11 +34405,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -28980,7 +34530,10 @@ export default [
           '```javascript\n' +
           'const myReactHtml = Html()\n' +
           "ReactDOM.render(myReactHtml, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -29282,11 +34835,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -29335,7 +34960,10 @@ export default [
           '```javascript\n' +
           'const myReactMain = Main()\n' +
           "ReactDOM.render(myReactMain, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -29637,11 +35265,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -29690,7 +35390,10 @@ export default [
           '```javascript\n' +
           'const myReactBody = Body()\n' +
           "ReactDOM.render(myReactBody, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -29992,11 +35695,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -30045,7 +35820,10 @@ export default [
           '```javascript\n' +
           'const myReactHeader = Header()\n' +
           "ReactDOM.render(myReactHeader, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -30347,11 +36125,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -30400,7 +36250,10 @@ export default [
           '```javascript\n' +
           'const myReactNav = Nav()\n' +
           "ReactDOM.render(myReactNav, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -30702,11 +36555,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -30755,7 +36680,10 @@ export default [
           '```javascript\n' +
           'const myReactSection = Section()\n' +
           "ReactDOM.render(myReactSection, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -31057,11 +36985,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -31110,7 +37110,10 @@ export default [
           '```javascript\n' +
           'const myReactArticle = Article()\n' +
           "ReactDOM.render(myReactArticle, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -31412,11 +37415,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -31465,7 +37540,10 @@ export default [
           '```javascript\n' +
           'const myReactFooter = Footer()\n' +
           "ReactDOM.render(myReactFooter, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -31767,11 +37845,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -31820,7 +37970,10 @@ export default [
           '```javascript\n' +
           "const myReactSpan = Span('Text')\n" +
           "ReactDOM.render(myReactSpan, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -32122,11 +38275,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -32175,7 +38400,10 @@ export default [
           '```javascript\n' +
           "const myReactDiv = Div([P('Text1'), P('Text2'))])\n" +
           "ReactDOM.render(myReactDiv, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -32477,11 +38705,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -32530,7 +38830,10 @@ export default [
           '```javascript\n' +
           "const myReactImg = Img({ src: 'https://placehold.co/300x300', alt: 'placeholder' })\n" +
           "ReactDOM.render(myReactImg, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -32832,11 +39135,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -32885,7 +39260,10 @@ export default [
           '```javascript\n' +
           'const myReactVideo = Video()\n' +
           "ReactDOM.render(myReactVideo, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -33187,11 +39565,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -33240,7 +39690,10 @@ export default [
           '```javascript\n' +
           'const myReactPicture = Picture()\n' +
           "ReactDOM.render(myReactPicture, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -33542,11 +39995,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -33595,7 +40120,10 @@ export default [
           '```javascript\n' +
           'const myReactSource = Source()\n' +
           "ReactDOM.render(myReactSource, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -33897,11 +40425,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -33950,7 +40550,10 @@ export default [
           '```javascript\n' +
           'const myReactForm = Form()\n' +
           "ReactDOM.render(myReactForm, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -34252,11 +40855,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -34305,7 +40980,10 @@ export default [
           '```javascript\n' +
           'const myReactFieldset = Fieldset()\n' +
           "ReactDOM.render(myReactFieldset, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -34607,11 +41285,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -34660,7 +41410,10 @@ export default [
           '```javascript\n' +
           'const myReactInput = Input()\n' +
           "ReactDOM.render(myReactInput, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -34962,11 +41715,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -35015,7 +41840,10 @@ export default [
           '```javascript\n' +
           'const myReactLabel = Label()\n' +
           "ReactDOM.render(myReactLabel, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -35317,11 +42145,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -35370,7 +42270,10 @@ export default [
           '```javascript\n' +
           'const myReactTextarea = Textarea()\n' +
           "ReactDOM.render(myReactTextarea, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -35672,11 +42575,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -35725,7 +42700,10 @@ export default [
           '```javascript\n' +
           'const myReactSelect = Select()\n' +
           "ReactDOM.render(myReactSelect, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -36027,11 +43005,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -36080,7 +43130,10 @@ export default [
           '```javascript\n' +
           'const myReactOption = Option()\n' +
           "ReactDOM.render(myReactOption, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -36382,11 +43435,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -36435,7 +43560,10 @@ export default [
           '```javascript\n' +
           'const myReactButton = Button({ onClick() {} })\n' +
           "ReactDOM.render(myReactButton, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -36737,11 +43865,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -36790,7 +43990,10 @@ export default [
           '```javascript\n' +
           'const myReactIframe = Iframe()\n' +
           "ReactDOM.render(myReactIframe, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -37092,11 +44295,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -37145,7 +44420,10 @@ export default [
           '```javascript\n' +
           'const myReactBlockquote = Blockquote()\n' +
           "ReactDOM.render(myReactBlockquote, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -37447,11 +44725,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -37500,7 +44850,10 @@ export default [
           '```javascript\n' +
           "const myReactCode = Code('code')\n" +
           "ReactDOM.render(myReactCode, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -37802,11 +45155,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -37855,7 +45280,10 @@ export default [
           '```javascript\n' +
           "const myReactPre = Pre('code')\n" +
           "ReactDOM.render(myReactPre, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -38157,11 +45585,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -38210,7 +45710,10 @@ export default [
           '```javascript\n' +
           'const myReactPolygon = Polygon()\n' +
           "ReactDOM.render(myReactPolygon, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -38512,11 +46015,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -38565,7 +46140,10 @@ export default [
           '```javascript\n' +
           'const myReactSvg = Svg()\n' +
           "ReactDOM.render(myReactSvg, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -38867,11 +46445,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -38920,7 +46570,10 @@ export default [
           '```javascript\n' +
           'const myReactPath = Path()\n' +
           "ReactDOM.render(myReactPath, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -39222,11 +46875,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -39275,7 +47000,10 @@ export default [
           '```javascript\n' +
           'const myReactRect = Rect()\n' +
           "ReactDOM.render(myReactRect, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -39577,11 +47305,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -39630,7 +47430,10 @@ export default [
           '```javascript\n' +
           'const myReactMask = Mask()\n' +
           "ReactDOM.render(myReactMask, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -39932,11 +47735,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -39985,7 +47860,10 @@ export default [
           '```javascript\n' +
           'const myReactDl = Dl()\n' +
           "ReactDOM.render(myReactDl, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -40287,11 +48165,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -40340,7 +48290,10 @@ export default [
           '```javascript\n' +
           'const myReactDt = Dt()\n' +
           "ReactDOM.render(myReactDt, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -40642,11 +48595,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },
@@ -40695,7 +48720,10 @@ export default [
           '```javascript\n' +
           'const myReactDd = Dd()\n' +
           "ReactDOM.render(myReactDd, document.getElementById('react-root'))\n" +
-          '```',
+          '```\n' +
+          '\n' +
+          'References:\n' +
+          '  * [ReactElement](/docs/ReactElement)',
         mdast: {
           name: {
             type: 'root',
@@ -40997,11 +49025,83 @@ export default [
                   start: { line: 39, column: 1, offset: 1162 },
                   end: { line: 42, column: 4, offset: 1338 }
                 }
+              },
+              {
+                type: 'paragraph',
+                children: [
+                  {
+                    type: 'text',
+                    value: 'References:',
+                    position: {
+                      start: { line: 44, column: 1, offset: 1340 },
+                      end: { line: 44, column: 12, offset: 1351 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 44, column: 1, offset: 1340 },
+                  end: { line: 44, column: 12, offset: 1351 }
+                }
+              },
+              {
+                type: 'list',
+                ordered: false,
+                start: null,
+                spread: false,
+                children: [
+                  {
+                    type: 'listItem',
+                    spread: false,
+                    checked: null,
+                    children: [
+                      {
+                        type: 'paragraph',
+                        children: [
+                          {
+                            type: 'link',
+                            title: null,
+                            url: '/docs/ReactElement',
+                            children: [
+                              {
+                                type: 'text',
+                                value: 'ReactElement',
+                                position: {
+                                  start: { line: 45, column: 6, offset: 1357 },
+                                  end: {
+                                    line: 45,
+                                    column: 18,
+                                    offset: 1369
+                                  }
+                                }
+                              }
+                            ],
+                            position: {
+                              start: { line: 45, column: 5, offset: 1356 },
+                              end: { line: 45, column: 39, offset: 1390 }
+                            }
+                          }
+                        ],
+                        position: {
+                          start: { line: 45, column: 5, offset: 1356 },
+                          end: { line: 45, column: 39, offset: 1390 }
+                        }
+                      }
+                    ],
+                    position: {
+                      start: { line: 45, column: 3, offset: 1354 },
+                      end: { line: 45, column: 39, offset: 1390 }
+                    }
+                  }
+                ],
+                position: {
+                  start: { line: 45, column: 3, offset: 1354 },
+                  end: { line: 45, column: 39, offset: 1390 }
+                }
               }
             ],
             position: {
               start: { line: 1, column: 1, offset: 0 },
-              end: { line: 42, column: 4, offset: 1338 }
+              end: { line: 45, column: 39, offset: 1390 }
             }
           }
         },

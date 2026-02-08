@@ -57,7 +57,7 @@ const DocsHome = ReactElement(props => {
       cronistMap.size == 0 ? []
       : cronistMap.has(docsViewerClassName) ? [
         Div({ class: 'viewer' }, [
-          A({ href: path }, H1(docsViewerClassName)),
+          A({ href: `#${docsViewerClassName}` }, H1(docsViewerClassName)),
 
           Div({ class: 'docs' }, [
             ReactElementFromMdast({ mdast: docsData.mdast.docs }),
