@@ -50,28 +50,28 @@ module.exports = {
       title: 'Arche Docs',
       description: 'Documentation for Arche',
       url: '/docs',
-      filepath: '/docs.html',
+      filepath: '/docs/index.html',
     },
 
     {
       title: 'Arche | Arche Docs',
       description: 'Documentation for Arche',
       url: '/docs/Arche',
-      filepath: '/docs/Arche.html',
+      filepath: '/docs/Arche',
     },
 
     {
       title: 'DocumentElement | Arche Docs',
       description: 'Documentation for Arche DocumentElement',
       url: '/docs/DocumentElement',
-      filepath: '/docs/DocumentElement.html',
+      filepath: '/docs/DocumentElement',
     },
 
     {
       title: 'ReactElement | Arche Docs',
       description: 'Documentation for Arche ReactElement',
       url: '/docs/ReactElement',
-      filepath: '/docs/ReactElement.html',
+      filepath: '/docs/ReactElement',
     },
   ],
 }
