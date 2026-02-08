@@ -22,7 +22,7 @@ import DocsNavSearch from './DocsNavSearch.js'
 const DocsNav = ReactElement(props => {
   const [path, setPath] = usePath()
   const [docsViewerClassName, setDocsViewerClassName] = useDocsViewerClassName()
-  const [docsSearchQuery] = useDocsSearchQuery()
+  const [docsSearchQuery, setDocsSearchQuery] = useDocsSearchQuery()
   const [cronistMap, setCronistMap] = useCronistMap()
   const [
     isHamburgerMenuActive, setIsHamburgerMenuActive,
@@ -71,6 +71,7 @@ const DocsNav = ReactElement(props => {
             setDocsViewerClassName,
             setPath,
             setIsHamburgerMenuActive,
+            setDocsSearchQuery,
           }),
 
           className == docsViewerClassName ? [
@@ -85,6 +86,7 @@ const DocsNav = ReactElement(props => {
                 name: className,
                 method: methodData.name,
                 setIsHamburgerMenuActive,
+                setDocsSearchQuery,
               }))
             ]),
           ] : [],

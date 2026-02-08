@@ -48,9 +48,6 @@ const DocsHome = ReactElement(props => {
   const docsData = cronistMap.get(docsViewerClassName)
   const excludedMethods = ArcheClassExludedMethods.get(docsViewerClassName) ?? []
 
-  console.log(cronistMap)
-  console.log(docsData, docsViewerClassName)
-
   return Layout(props, [
     Div({ id: 'docs' }, [
       Div({ class: 'sidebar' }, [
