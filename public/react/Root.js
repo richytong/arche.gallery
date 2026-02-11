@@ -35,14 +35,17 @@ const Root = ReactElement(() => {
       }
       if (anchorTarget?.tagName == 'A') {
         const anchor = new URL(anchorTarget.href).hash
-        const offset = mediaQuery.matches ? 200 : 300
-        const desiredScrollY = anchorTarget.offsetTop + offset
-        if (window.scrollY == desiredScrollY) {
-          event.preventDefault()
-        } else if (anchor.length > 0) {
-          setTimeout(() => {
-            window.scrollTo(0, desiredScrollY)
-          }, 10)
+        const scrollToElement = document.getElementById(anchor.slice(1))
+        if (scrollToElement) {
+          const offset = mediaQuery.matches ? 200 : 300
+          const desiredScrollY = scrollToElement.offsetTop + offset
+          if (window.scrollY == desiredScrollY) {
+            event.preventDefault()
+          } else if (anchor.length > 0) {
+            setTimeout(() => {
+              window.scrollTo(0, desiredScrollY)
+            }, 10)
+          }
         }
       }
     })

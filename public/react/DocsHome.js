@@ -44,7 +44,11 @@ const DocsHome = ReactElement(props => {
     if (anchor.length > 0) {
       setTimeout(() => {
         const offset = mediaQuery.matches ? 200 : 300
-        window.scrollTo(0, document.getElementById(anchor.slice(1)).offsetTop + offset)
+        const scrollToElement = document.getElementById(anchor.slice(1))
+        if (scrollToElement) {
+          const desiredScrollY = scrollToElement.offsetTop + offset
+          window.scrollTo(0, desiredScrollY)
+        }
       }, 10)
     }
   }, [mediaQuery])
