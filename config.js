@@ -9,10 +9,10 @@ module.exports = {
     ScriptTag('https://cdn.jsdelivr.net/npm/rubico@2.8.2/dist/rubico.min.js', {
       crossorigin: true,
     }),
-    ScriptTag('https://unpkg.com/react@18.3.0/umd/react.production.min.js', {
+    ScriptTag('https://cdn.jsdelivr.net/npm/react@18.3.0/umd/react.production.min.js', {
       crossorigin: true,
     }),
-    ScriptTag('https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js', {
+    ScriptTag('https://cdn.jsdelivr.net/npm/react-dom@18.3.0/umd/react-dom.production.min.js', {
       crossorigin: true,
     }),
     ScriptTag('https://cdn.jsdelivr.net/npm/arche@1.0.2/index.js', {

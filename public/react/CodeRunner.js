@@ -75,28 +75,28 @@ const renderIntoNewHTMLDoc = el => {
   {
     const script = document.createElement('script')
     script.crossorigin = true
-    script.src = 'https://unpkg.com/react@18.3.0/umd/react.production.min.js'
+    script.src = 'https://cdn.jsdelivr.net/npm/react@18.3.0/umd/react.production.min.js'
     head.appendChild(script)
   }
 
   {
     const script = document.createElement('script')
     script.crossorigin = true
-    script.src = 'https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js'
+    script.src = 'https://cdn.jsdelivr.net/npm/react-dom@18.3.0/umd/react-dom.production.min.js'
     head.appendChild(script)
   }
 
   {
     const script = document.createElement('script')
     script.crossorigin = true
-    script.src = 'https://unpkg.com/arche@1.0.0/index.js'
+    script.src = 'https://cdn.jsdelivr.net/npm/arche@1.0.2/index.js'
     head.appendChild(script)
   }
 
   {
     const script = document.createElement('script')
     script.crossorigin = true
-    script.src = 'https://unpkg.com/styled-components@6.1.19/dist/styled-components.min.js'
+    script.src = 'https://cdn.jsdelivr.net/npm/styled-components@6.1.19/dist/styled-components.min.js'
     head.appendChild(script)
   }
 
