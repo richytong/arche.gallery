@@ -33,6 +33,9 @@ const createCronistFile = async function (source, dest, options = {}) {
   await pipe(source, [
     curry.arity(2, walkPathForJSFilePaths, __, { ignoreDirs }),
 
+    filter(not(fileName => fileName.endsWith('es.js'))),
+    filter(not(fileName => fileName.endsWith('.mjs'))),
+
     flatMap(async fileName => pipe(fileName, [
       readFileUtf8,
       cronist,
