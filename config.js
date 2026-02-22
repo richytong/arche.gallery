@@ -6,7 +6,7 @@ module.exports = {
   domain: 'arche.gallery',
 
   scripts: [
-    ScriptTag('https://cdn.jsdelivr.net/npm/rubico@2.7.7/dist/rubico.min.js', {
+    ScriptTag('https://cdn.jsdelivr.net/npm/rubico@2.8.2/dist/rubico.min.js', {
       crossorigin: true,
     }),
     ScriptTag('https://unpkg.com/react@18.3.0/umd/react.production.min.js', {
@@ -15,7 +15,7 @@ module.exports = {
     ScriptTag('https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js', {
       crossorigin: true,
     }),
-    ScriptTag('https://unpkg.com/arche@1.0.0/index.js', {
+    ScriptTag('https://cdn.jsdelivr.net/npm/arche@1.0.2/index.js', {
       crossorigin: true,
     }),
     ScriptTag('/global.js'),
