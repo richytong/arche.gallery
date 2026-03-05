@@ -130,8 +130,6 @@ const CodeRunner = ReactElement(({
   code,
   imports: propsImports,
   theme = 'default',
-  lineWrapping = true,
-  lineNumbers = true,
 }) => {
   const codeAreaRef = useRef(null)
   const outputAreaRef = useRef(null)
@@ -147,8 +145,8 @@ const CodeRunner = ReactElement(({
     const cm = CodeMirror(codeAreaRef.current, {
       value: code,
       mode: 'javascript',
-      lineWrapping,
-      lineNumbers,
+      lineWrapping: false,
+      lineNumbers: true,
       theme,
       inputStyle: 'contenteditable',
     })
