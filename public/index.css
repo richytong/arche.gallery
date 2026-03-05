@@ -68,11 +68,13 @@ code {
 .code-viewer * {
   font-family: SourceCodePro;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .code-runner * {
   font-family: SourceCodePro;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .code-runner iframe {
