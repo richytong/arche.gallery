@@ -32,7 +32,13 @@ const CodeViewer = ReactElement(({
   }, [])
 
   return Div({ class: 'code-viewer' }, [
-    Div({ ref: codeAreaRef }),
+    // Div({ ref: codeAreaRef }),
+    Pre([Code({
+      dangerouslySetInnerHTML: {
+        __html: hljs.highlight(code, { language: 'javascript' }).value,
+      }
+    })]),
+    // [Pre(code)],
   ])
 })
 

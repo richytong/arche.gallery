@@ -19,6 +19,8 @@ module.exports = {
       crossorigin: true,
     }),
     ScriptTag('/global.js'),
+    ScriptTag('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js'),
+    ScriptTag('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js'),
 
     ScriptTag('/vendor/codemirror/index.js'),
     ScriptTag('/vendor/codemirror/syntax/javascript.js', { async: true }),
@@ -29,7 +31,7 @@ module.exports = {
   ],
 
   stylesheets: [
-    StylesheetTag('https://fonts.googleapis.com'),
+    StylesheetTag('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/a11y-light.min.css'),
     StylesheetTag('/index.css'),
     StylesheetTag('/vendor/codemirror/styles.css'),
     StylesheetTag('/vendor/codemirror/theme/rubico.css'),
