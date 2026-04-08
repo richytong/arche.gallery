@@ -302,7 +302,7 @@ export default [
         }
       }
     },
-    fileName: '/Users/richard/code/arche.gallery/../Arche/index.js',
+    fileName: '/home/richard/code/arche.gallery/../Arche/index.js',
     methods: [
       {
         name: 'A',
@@ -769,7 +769,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'P',
@@ -1236,7 +1236,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'B',
@@ -1703,7 +1703,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Q',
@@ -2170,7 +2170,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'I',
@@ -2637,7 +2637,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'S',
@@ -3104,7 +3104,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'U',
@@ -3571,7 +3571,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Ul',
@@ -4038,7 +4038,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Ol',
@@ -4505,7 +4505,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Li',
@@ -4972,7 +4972,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H1',
@@ -5439,7 +5439,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H2',
@@ -5906,7 +5906,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H3',
@@ -6373,7 +6373,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H4',
@@ -6840,7 +6840,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H5',
@@ -7307,7 +7307,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H6',
@@ -7774,7 +7774,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Hr',
@@ -8241,7 +8241,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Br',
@@ -8708,7 +8708,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Script',
@@ -9175,7 +9175,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Style',
@@ -9652,7 +9652,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Html',
@@ -10119,7 +10119,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Main',
@@ -10586,7 +10586,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Body',
@@ -11053,7 +11053,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Header',
@@ -11520,7 +11520,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Nav',
@@ -11987,7 +11987,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Section',
@@ -12454,7 +12454,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Article',
@@ -12921,7 +12921,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Footer',
@@ -13388,7 +13388,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Span',
@@ -13855,7 +13855,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Div',
@@ -14322,7 +14322,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Img',
@@ -14789,7 +14789,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Video',
@@ -15256,7 +15256,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Picture',
@@ -15723,7 +15723,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Source',
@@ -16190,7 +16190,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Form',
@@ -16657,7 +16657,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Fieldset',
@@ -17124,7 +17124,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Input',
@@ -17591,7 +17591,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Label',
@@ -18058,7 +18058,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Textarea',
@@ -18525,7 +18525,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Select',
@@ -18992,7 +18992,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Option',
@@ -19459,7 +19459,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Button',
@@ -19926,7 +19926,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Iframe',
@@ -20393,7 +20393,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Blockquote',
@@ -20860,7 +20860,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Code',
@@ -21327,7 +21327,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Pre',
@@ -21794,7 +21794,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Polygon',
@@ -22261,7 +22261,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Svg',
@@ -22728,7 +22728,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Path',
@@ -23195,7 +23195,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Rect',
@@ -23662,7 +23662,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Mask',
@@ -24129,7 +24129,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Dl',
@@ -24596,7 +24596,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Dt',
@@ -25063,7 +25063,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Dd',
@@ -25530,7 +25530,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       }
     ]
   },
@@ -25875,7 +25875,7 @@ export default [
         }
       }
     },
-    fileName: '/Users/richard/code/arche.gallery/../Arche/index.js',
+    fileName: '/home/richard/code/arche.gallery/../Arche/index.js',
     methods: [
       {
         name: 'A',
@@ -26305,7 +26305,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'P',
@@ -26735,7 +26735,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'B',
@@ -27165,7 +27165,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Q',
@@ -27595,7 +27595,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'I',
@@ -28025,7 +28025,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'S',
@@ -28455,7 +28455,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'U',
@@ -28885,7 +28885,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Ul',
@@ -29315,7 +29315,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Ol',
@@ -29745,7 +29745,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Li',
@@ -30175,7 +30175,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H1',
@@ -30605,7 +30605,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H2',
@@ -31035,7 +31035,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H3',
@@ -31465,7 +31465,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H4',
@@ -31895,7 +31895,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H5',
@@ -32325,7 +32325,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'H6',
@@ -32755,7 +32755,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Hr',
@@ -33185,7 +33185,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Br',
@@ -33615,7 +33615,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Script',
@@ -34045,7 +34045,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Style',
@@ -34485,7 +34485,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Html',
@@ -34915,7 +34915,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Main',
@@ -35345,7 +35345,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Body',
@@ -35775,7 +35775,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Header',
@@ -36205,7 +36205,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Nav',
@@ -36635,7 +36635,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Section',
@@ -37065,7 +37065,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Article',
@@ -37495,7 +37495,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Footer',
@@ -37925,7 +37925,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Span',
@@ -38355,7 +38355,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Div',
@@ -38785,7 +38785,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Img',
@@ -39215,7 +39215,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Video',
@@ -39645,7 +39645,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Picture',
@@ -40075,7 +40075,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Source',
@@ -40505,7 +40505,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Form',
@@ -40935,7 +40935,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Fieldset',
@@ -41365,7 +41365,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Input',
@@ -41795,7 +41795,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Label',
@@ -42225,7 +42225,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Textarea',
@@ -42655,7 +42655,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Select',
@@ -43085,7 +43085,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Option',
@@ -43515,7 +43515,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Button',
@@ -43945,7 +43945,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Iframe',
@@ -44375,7 +44375,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Blockquote',
@@ -44805,7 +44805,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Code',
@@ -45235,7 +45235,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Pre',
@@ -45665,7 +45665,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Polygon',
@@ -46095,7 +46095,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Svg',
@@ -46525,7 +46525,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Path',
@@ -46955,7 +46955,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Rect',
@@ -47385,7 +47385,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Mask',
@@ -47815,7 +47815,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Dl',
@@ -48245,7 +48245,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Dt',
@@ -48675,7 +48675,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       },
       {
         name: 'Dd',
@@ -49105,7 +49105,7 @@ export default [
             }
           }
         },
-        fileName: '/Users/richard/code/arche.gallery/../Arche/index.js'
+        fileName: '/home/richard/code/arche.gallery/../Arche/index.js'
       }
     ]
   },
@@ -49735,7 +49735,7 @@ export default [
         }
       }
     },
-    fileName: '/Users/richard/code/arche.gallery/../Arche/index.js',
+    fileName: '/home/richard/code/arche.gallery/../Arche/index.js',
     methods: []
   }
 ]

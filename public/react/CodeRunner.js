@@ -240,6 +240,7 @@ const CodeRunner = ReactElement(({
         style: {
           visibility: outputAreaSrc ? 'visible' : 'hidden',
           width: 'calc(100% - 10px)',
+          height: '50px',
         },
         src: outputAreaSrc,
       }),
