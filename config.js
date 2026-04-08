@@ -1,6 +1,6 @@
 const ScriptTag = require('./lib/ScriptTag')
 const StylesheetTag = require('./lib/StylesheetTag')
-const Arche = require('../arche')
+const Arche = require('../Arche')
 
 module.exports = {
   domain: 'arche.gallery',
