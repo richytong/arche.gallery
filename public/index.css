@@ -105,6 +105,10 @@ code {
   padding: 3px 6px;
 }
 
+pre {
+  -webkit-text-size-adjust: none;
+}
+
 .code-viewer * {
   font-family: SourceCodePro;
   font-weight: 500;
