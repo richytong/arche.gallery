@@ -9,9 +9,6 @@
     "url": "github:richytong/arche.gallery"
   },
   "homepage": "https://github.com/richytong/arche.gallery",
-  "devDependencies": {
-    "serve": "^14.2.4"
-  },
   "dependencies": {
     "cronist": "^0.3.0",
     "jquery": "^3.7.1",
