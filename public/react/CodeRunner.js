@@ -118,7 +118,6 @@ const transformCodeToIFrameSrc = pipe([
   generateHTMLScript,
   renderIntoNewHTMLDoc,
   htmlToString,
-  tap(console.log),
   encodeURI,
   encodedHtmlString => `data:text/html;charset=utf-8,${encodedHtmlString}`,
 ])
