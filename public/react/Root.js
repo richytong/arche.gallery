@@ -55,8 +55,16 @@ const Root = ReactElement(() => {
     }
   }, [mediaQuery])
 
+  const clean =
+    path == '/' ? path
+    : path.endsWith('/') ? path.slice(0, -1)
+    : path
+
   if (path == '/') {
     return Home()
+  }
+  if (path == '/docs' || path.startsWith('/docs')) {
+    return BlogHome()
   }
   if (path == '/docs' || path.startsWith('/docs')) {
     return DocsHome()
