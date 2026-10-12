@@ -91,7 +91,7 @@ h1::-webkit-scrollbar {
 }
 
 a > code {
-  color: blue;
+  color: #F8CD60;
 }
 
 input {
@@ -234,7 +234,7 @@ pre {
   text-decoration: none;
 }
 .nav-link.active {
-  color: #A1F479;
+  color: #F8CD60;
 }
 
 #layout > footer {
@@ -396,7 +396,8 @@ a {
 }
 
 article a {
-  color: #7FB665;
+  /* color: #7FB665; */
+  color: #F8CD60;
   text-decoration: none;
 }
 
@@ -451,7 +452,7 @@ article a {
 #docs .viewer h1 {
   font-size: 42px;
   margin: 12px 0px;
-  color: #7FB665;
+  color: #F8CD60;
   overflow-x: scroll;
   width: fit-content;
 }
@@ -480,7 +481,11 @@ article a {
   font-weight: 600;
   font-size: 16px;
   overflow-x: scroll;
-  color: #7FB665;
+  color: #F8CD60;
+}
+
+.docs-nav-item a.active {
+  color: #F8CD60;
 }
 
 .docs .method > a {
@@ -491,7 +496,7 @@ article a {
 }
 
 .docs article a {
-  color: blue;
+  color: #F8CD60;
   text-decoration: none;
   font-weight: 600;
 }

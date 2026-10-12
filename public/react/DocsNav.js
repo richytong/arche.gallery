@@ -69,6 +69,7 @@ const DocsNav = ReactElement(props => {
           DocsNavClassItem({
             name: className,
             setDocsViewerClassName,
+            path,
             setPath,
             setIsHamburgerMenuActive,
             setDocsSearchQuery,

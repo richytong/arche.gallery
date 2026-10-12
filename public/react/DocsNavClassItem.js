@@ -15,6 +15,7 @@
 const DocsNavClassItem = ReactElement(props => {
   const {
     name,
+    path,
     setPath,
     setDocsViewerClassName,
     setIsHamburgerMenuActive,
