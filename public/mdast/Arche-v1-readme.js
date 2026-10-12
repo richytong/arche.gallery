@@ -1239,13 +1239,13 @@ export default {
         'const ClickExample = ReactElement(() => {\n' +
         '  const [count, setCount] = useState(0)\n' +
         '\n' +
-        "  return Div({ id: 'click-example' }, [\n" +
+        '  return Div({ id: "click-example" }, [\n' +
         '    P(`You clicked ${count} times`),\n' +
         '    Button({\n' +
         '      onClick() {\n' +
         '        setCount(count + 1)\n' +
         '      },\n' +
-        "    }, 'Click me'),\n" +
+        '    }, "Click me"),\n' +
         '  ])\n' +
         '})\n' +
         '\n' +
@@ -1299,13 +1299,13 @@ export default {
         '\n' +
         'const Root = ReactElement(() => {\n' +
         '  return [\n' +
-        "    H1('Welcome to Vanilla Microfrontends with React.'),\n" +
-        "    P('All of the content on this page was added with React.'),\n" +
+        '    H1("Welcome to Vanilla Microfrontends with React."),\n' +
+        '    P("All of the content on this page was added with React."),\n' +
         '    ClickExample(),\n' +
         '  ]\n' +
         '})\n' +
         '\n' +
-        "ReactDOM.render(Root(), document.getElementById('react-root'))",
+        'ReactDOM.render(Root(), document.getElementById("react-root"))',
       position: {
         start: { line: 195, column: 1, offset: 5230 },
         end: { line: 210, column: 4, offset: 5621 }
@@ -1470,9 +1470,9 @@ export default {
         '}\n' +
         '\n' +
         '// set missing elements\n' +
-        "window.Aside = ReactElement('aside')\n" +
-        "window.Svg = ReactElement('svg')\n" +
-        "window.Path = ReactElement('path')",
+        'window.Aside = ReactElement("aside")\n' +
+        'window.Svg = ReactElement("svg")\n' +
+        'window.Path = ReactElement("path")',
       position: {
         start: { line: 224, column: 1, offset: 5836 },
         end: { line: 238, column: 4, offset: 6161 }
@@ -1692,16 +1692,16 @@ export default {
         'const { Div, H1, Img } = ReactElement\n' +
         '\n' +
         'const Placeholders = ReactElement(() => [\n' +
-        "  Img({ src: 'https://placehold.co/300x150', alt: 'placeholder' }),\n" +
-        "  Img({ src: 'https://placehold.co/300x150', alt: 'placeholder' }),\n" +
+        '  Img({ src: "https://placehold.co/300x150", alt: "placeholder" }),\n' +
+        '  Img({ src: "https://placehold.co/300x150", alt: "placeholder" }),\n' +
         '])\n' +
         '\n' +
         'const Root = ReactElement(() => [\n' +
-        "  H1('Fragment Example'),\n" +
+        '  H1("Fragment Example"),\n' +
         '  Placeholders(),\n' +
         '])\n' +
         '\n' +
-        "ReactDOM.render(Root(), document.getElementById('react-root'))",
+        'ReactDOM.render(Root(), document.getElementById("react-root"))',
       position: {
         start: { line: 274, column: 1, offset: 6984 },
         end: { line: 289, column: 4, offset: 7414 }
@@ -1918,12 +1918,12 @@ export default {
         '      background-color: pink;\n' +
         '    `,\n' +
         '  }, [\n' +
-        "    H1('Styled Example'),\n" +
-        "    P('Text'),\n" +
+        '    H1("Styled Example"),\n' +
+        '    P("Text"),\n' +
         '  ])\n' +
         '})\n' +
         '\n' +
-        "ReactDOM.render(MyComponent(), document.getElementById('react-root'))",
+        'ReactDOM.render(MyComponent(), document.getElementById("react-root"))',
       position: {
         start: { line: 303, column: 1, offset: 7951 },
         end: { line: 321, column: 4, offset: 8335 }
