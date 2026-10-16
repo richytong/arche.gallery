@@ -115,15 +115,17 @@ pre {
 }
 
 .code-viewer, .code-runner {
+  position: relative;
   background-color: #fff;
   padding: 10px;
 }
 
 .code-viewer pre, .code-runner pre {
   overflow-x: scroll;
-  background-color: #f6f8fa;
+  background-color: #fff;
   overflow-y: hidden;
   margin: 0;
+  scrollbar-width: none;
 }
 
 .code-viewer pre code, .code-runner pre code {
@@ -132,6 +134,101 @@ pre {
 
 .code-runner iframe {
   margin-bottom: 30px;
+}
+
+.code-viewer .copy-button {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+  padding: 0;
+}
+
+.code-viewer.hover .copy-button {
+  visibility: visible;
+}
+
+.code-viewer.single-line .copy-button {
+  top: 0px;
+}
+
+.code-viewer .shebang-interpreter-directive {
+  color: #888;
+}
+
+.code-viewer .comment {
+  color: #888;
+}
+
+.code-viewer .number, .code-viewer .bigint, .code-viewer .undefined, .code-viewer .null, .code-viewer .boolean, .code-viewer .not-a-number {
+  color: #8807bf;
+}
+
+.code-viewer .variable-declaration-keyword {
+  /* color: #36e2ce; */
+  color: green;
+}
+
+.code-viewer .keyword {
+  color: red
+}
+
+.code-viewer .function-keyword {
+  color: green;
+}
+
+.code-viewer .arrow-function-operator {
+  color: green;
+}
+
+.code-viewer .function-name {
+  color: blue;
+}
+
+.code-viewer .string {
+  color: orange;
+}
+
+.code-viewer .operator {
+  color: #000;
+}
+
+.code-viewer .object-colon {
+  color: #000;
+}
+
+.code-viewer .property-accessor {
+  color: #000;
+}
+
+.code-viewer .spread-operator {
+  color: #000;
+}
+
+.code-viewer .global-object {
+  color: magenta;
+}
+
+.code-viewer .template-literal {
+  color: orange;
+}
+
+.code-viewer .template-variable {
+  color: #000;
+}
+
+.copy-icon svg {
+  width: auto;
+  height: 20px;
+}
+
+.copy-success-icon svg {
+  width: auto;
+  height: 20px;
 }
 
 #layout {
