@@ -613,6 +613,13 @@ export default {
       meta: null,
       value: 'console.log("Welcome to Vanilla Microfrontends.")\n' +
         '\n' +
+        'const DocumentElement = Arche(document)\n' +
+        'const { P } = DocumentElement\n' +
+        '\n' +
+        'const p2 = P("This element was added from index.js.")\n' +
+        '\n' +
+        'document.body.appendChild(p2)\n' +
+        '\n' +
         'const p1 = document.querySelector("#click-example > p")\n' +
         'const button = document.querySelector("#click-example > button")\n' +
         '\n' +
@@ -621,14 +628,7 @@ export default {
         'button.addEventListener("click", () => {\n' +
         '  value += 1\n' +
         '  p1.innerHTML = `You clicked ${value} times.`\n' +
-        '})\n' +
-        '\n' +
-        'const DocumentElement = Arche(document)\n' +
-        'const { P } = DocumentElement\n' +
-        '\n' +
-        'const p2 = P("This element was added from index.js.")\n' +
-        '\n' +
-        'document.body.appendChild(p2)',
+        '})',
       position: {
         start: { line: 83, column: 1, offset: 2587 },
         end: { line: 102, column: 4, offset: 3053 }
